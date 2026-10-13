@@ -1,0 +1,73 @@
+{
+  "region_lines": [
+    13,
+    14,
+    16
+  ],
+  "repaired": false,
+  "tests_failed_before": 6,
+  "tests_failed_after": null,
+  "attempts": [
+    {
+      "number": 1,
+      "line": 13,
+      "description": "line 13: statement deleted (replaced by pass)",
+      "compiles": true,
+      "tests_run": 2,
+      "accepted": false,
+      "reason": "fails test 1",
+      "diff": "--- before\n+++ after\n@@ -12,3 +12,3 @@\n     while i < len(a):\n-        result.append(a[i])\n+        pass\n         i += 1\n"
+    },
+    {
+      "number": 2,
+      "line": 14,
+      "description": "line 14: '+' -> '-'",
+      "compiles": true,
+      "tests_run": 2,
+      "accepted": false,
+      "reason": "fails test 1",
+      "diff": "--- before\n+++ after\n@@ -13,3 +13,3 @@\n         result.append(a[i])\n-        i += 1\n+        i -= 1\n     while j < len(b):\n"
+    },
+    {
+      "number": 3,
+      "line": 14,
+      "description": "line 14: statement deleted (replaced by pass)",
+      "compiles": true,
+      "tests_run": 2,
+      "accepted": false,
+      "reason": "fails test 1",
+      "diff": "--- before\n+++ after\n@@ -13,3 +13,3 @@\n         result.append(a[i])\n-        i += 1\n+        pass\n     while j < len(b):\n"
+    },
+    {
+      "number": 4,
+      "line": 14,
+      "description": "line 14: 1 -> 2",
+      "compiles": true,
+      "tests_run": 5,
+      "accepted": false,
+      "reason": "fails test 4",
+      "diff": "--- before\n+++ after\n@@ -13,3 +13,3 @@\n         result.append(a[i])\n-        i += 1\n+        i += 2\n     while j < len(b):\n"
+    },
+    {
+      "number": 5,
+      "line": 14,
+      "description": "line 14: 1 -> 0",
+      "compiles": true,
+      "tests_run": 2,
+      "accepted": false,
+      "reason": "fails test 1",
+      "diff": "--- before\n+++ after\n@@ -13,3 +13,3 @@\n         result.append(a[i])\n-        i += 1\n+        i += 0\n     while j < len(b):\n"
+    },
+    {
+      "number": 6,
+      "line": 16,
+      "description": "line 16: statement deleted (replaced by pass)",
+      "compiles": true,
+      "tests_run": 3,
+      "accepted": false,
+      "reason": "fails test 2",
+      "diff": "--- before\n+++ after\n@@ -15,3 +15,3 @@\n     while j < len(b):\n-        result.append(b[j])\n+        pass\n         j += 1\n"
+    }
+  ],
+  "accepted_source": null
+}

@@ -1,0 +1,10 @@
+CODE:
+   def has_close_elements(numbers: list[float], threshold: float) -> bool:
+       for i in range(len(numbers)):
+           for j in range(i + 1, len(numbers)):
+               if abs(numbers[i] - numbers[j]) < threshold:
+                   return True
+       return False
+
+   CONFIDENCE:
+   {"1": 0.95, "2": 0.9, "3": 0.9, "4": 0.95, "5": 0.9, "6": 0.95}

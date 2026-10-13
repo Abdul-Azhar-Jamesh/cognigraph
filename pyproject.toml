@@ -1,0 +1,13 @@
+[project]
+name = "pcg"
+version = "3.0.0"
+description = "Probabilistic Constraint Graphs: Bayesian fault localisation for small Python functions"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.pylint.format]
+max-line-length = 130

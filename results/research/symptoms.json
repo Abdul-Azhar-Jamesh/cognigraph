@@ -1,0 +1,22 @@
+{
+  "D1": {
+    "analyser_flags_some_line": 30,
+    "analyser_flags_the_faulty_line": 0,
+    "any_failing_test_does_not_terminate": 47,
+    "any_failing_test_raises_other_exception": 68,
+    "any_failing_test_raises_type_or_name_error": 42,
+    "compile_error": 0,
+    "detected_faults": 594,
+    "only_wrong_return_values": 438
+  },
+  "D2": {
+    "analyser_flags_some_line": 0,
+    "analyser_flags_the_faulty_line": 0,
+    "any_failing_test_does_not_terminate": 3,
+    "any_failing_test_raises_other_exception": 7,
+    "any_failing_test_raises_type_or_name_error": 0,
+    "compile_error": 0,
+    "detected_faults": 31,
+    "only_wrong_return_values": 22
+  }
+}

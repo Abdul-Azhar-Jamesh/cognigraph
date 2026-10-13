@@ -1,0 +1,3266 @@
+{
+  "absolute_difference": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4411,
+        "faults_with_exposure_data": 617,
+        "faulty_statements": 617,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3189,
+        "in_scope_trials": 5024,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1626,
+        "total_statements": 5028,
+        "training_cases": 617
+      },
+      "params": {
+        "leak": 0.0006142506142506142,
+        "prior_fault": 0.12286282306163022,
+        "provenance": "LOPO estimate, absolute_difference held out, scope=coverage",
+        "static_fpr": 0.011556764106050306,
+        "static_tpr": 0.0016155088852988692,
+        "theta": 0.6344750383439428,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03595976921897898,
+          0.1618529100302475,
+          0.001594896338062199,
+          0.0015948963507104264,
+          0.03255427568105379,
+          0.248970880437907,
+          0.001594896331738437,
+          0.001594896331738437,
+          0.001594896331738437,
+          0.5126876829478249
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4411,
+        "faults_with_exposure_data": 547,
+        "faulty_statements": 617,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2689,
+        "in_scope_trials": 4471,
+        "out_scope_fails": 500,
+        "out_scope_trials": 2179,
+        "total_statements": 5028,
+        "training_cases": 617
+      },
+      "params": {
+        "leak": 0.2297111416781293,
+        "prior_fault": 0.12286282306163022,
+        "provenance": "LOPO estimate, absolute_difference held out, scope=slice",
+        "static_fpr": 0.011556764106050306,
+        "static_tpr": 0.0016155088852988692,
+        "theta": 0.48251373319280766,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33007705519457675,
+          0.0017953321364452416,
+          0.0017953321364452416,
+          0.0017953321364452416,
+          0.04478612105272546,
+          0.16216625036808163,
+          0.0017953321364452494,
+          0.0017953321364452416,
+          0.0017953321364452416,
+          0.4521985805659446
+        ]
+      }
+    }
+  },
+  "average_above": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4256,
+        "faults_with_exposure_data": 602,
+        "faulty_statements": 602,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3082,
+        "in_scope_trials": 4902,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1606,
+        "total_statements": 4858,
+        "training_cases": 602
+      },
+      "params": {
+        "leak": 0.0006218905472636816,
+        "prior_fault": 0.12407407407407407,
+        "provenance": "LOPO estimate, average_above held out, scope=coverage",
+        "static_fpr": 0.012447158290277125,
+        "static_tpr": 0.0016556291390728477,
+        "theta": 0.6284394030602248,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03971501653579544,
+          0.1639652075005652,
+          0.0016339869288935498,
+          0.0016339869322810057,
+          0.027700500314844653,
+          0.2541131639989959,
+          0.0016339869281045746,
+          0.0016339869281045746,
+          0.0016339869281045746,
+          0.5063361770043107
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4256,
+        "faults_with_exposure_data": 534,
+        "faulty_statements": 602,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2601,
+        "in_scope_trials": 4377,
+        "out_scope_fails": 481,
+        "out_scope_trials": 2131,
+        "total_statements": 4858,
+        "training_cases": 602
+      },
+      "params": {
+        "leak": 0.22597280825128926,
+        "prior_fault": 0.12407407407407407,
+        "provenance": "LOPO estimate, average_above held out, scope=slice",
+        "static_fpr": 0.012447158290277125,
+        "static_tpr": 0.0016556291390728477,
+        "theta": 0.47572848166231396,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33425041624633284,
+          0.0018382352941176466,
+          0.0018382352941176466,
+          0.0018382352941176466,
+          0.02399548244385138,
+          0.19479913249645717,
+          0.0018382352941178385,
+          0.0018382352941176466,
+          0.0018382352941176466,
+          0.4359255570486525
+        ]
+      }
+    }
+  },
+  "binary_search": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4162,
+        "faults_with_exposure_data": 594,
+        "faulty_statements": 594,
+        "flagged_clean": 45,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3053,
+        "in_scope_trials": 4790,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1556,
+        "total_statements": 4756,
+        "training_cases": 594
+      },
+      "params": {
+        "leak": 0.0006418485237483953,
+        "prior_fault": 0.12505254308532998,
+        "provenance": "LOPO estimate, binary_search held out, scope=coverage",
+        "static_fpr": 0.011047070124879923,
+        "static_tpr": 0.0016778523489932886,
+        "theta": 0.6370792468286365,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03737075737787712,
+          0.1607987291814636,
+          0.0016556291646181486,
+          0.0016556291654225923,
+          0.025511359497926434,
+          0.24758185599326463,
+          0.0016556291390728494,
+          0.0016556291390728494,
+          0.0016556291390728494,
+          0.5204591522022088
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4162,
+        "faults_with_exposure_data": 525,
+        "faulty_statements": 594,
+        "flagged_clean": 45,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2580,
+        "in_scope_trials": 4264,
+        "out_scope_fails": 473,
+        "out_scope_trials": 2082,
+        "total_statements": 4756,
+        "training_cases": 594
+      },
+      "params": {
+        "leak": 0.22744721689059502,
+        "prior_fault": 0.12505254308532998,
+        "provenance": "LOPO estimate, binary_search held out, scope=slice",
+        "static_fpr": 0.011047070124879923,
+        "static_tpr": 0.0016778523489932886,
+        "theta": 0.48872931426591315,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.32694618434408756,
+          0.001869158878504674,
+          0.001869158878504674,
+          0.001869158878504674,
+          0.031246510447443025,
+          0.17064096288762495,
+          0.0018691588785048467,
+          0.001869158878504674,
+          0.001869158878504674,
+          0.4599513890498162
+        ]
+      }
+    }
+  },
+  "bubble_sort": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4264,
+        "faults_with_exposure_data": 603,
+        "faulty_statements": 603,
+        "flagged_clean": 42,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3092,
+        "in_scope_trials": 4915,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1581,
+        "total_statements": 4867,
+        "training_cases": 603
+      },
+      "params": {
+        "leak": 0.0006317119393556538,
+        "prior_fault": 0.12405011295953995,
+        "provenance": "LOPO estimate, bubble_sort held out, scope=coverage",
+        "static_fpr": 0.010079699953117674,
+        "static_tpr": 0.001652892561983471,
+        "theta": 0.6288076121775712,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03638576817726866,
+          0.1665192593435337,
+          0.0016313214416217615,
+          0.001631321553271802,
+          0.033725124244808856,
+          0.24975002995711337,
+          0.0016313213703099514,
+          0.0016313213703099507,
+          0.0016313213703099507,
+          0.5054632111714521
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4264,
+        "faults_with_exposure_data": 536,
+        "faulty_statements": 603,
+        "flagged_clean": 42,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2619,
+        "in_scope_trials": 4389,
+        "out_scope_fails": 473,
+        "out_scope_trials": 2107,
+        "total_statements": 4867,
+        "training_cases": 603
+      },
+      "params": {
+        "leak": 0.22475106685633,
+        "prior_fault": 0.12405011295953995,
+        "provenance": "LOPO estimate, bubble_sort held out, scope=slice",
+        "static_fpr": 0.010079699953117674,
+        "static_tpr": 0.001652892561983471,
+        "theta": 0.47974777432571636,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33344600105619476,
+          0.0018315018315018315,
+          0.0018315018315018315,
+          0.0018315018315018315,
+          0.04039205026666039,
+          0.16885334235327196,
+          0.0018315018315018835,
+          0.0018315018315018315,
+          0.0018315018315018315,
+          0.446319595334862
+        ]
+      }
+    }
+  },
+  "clamp": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4408,
+        "faults_with_exposure_data": 618,
+        "faulty_statements": 618,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3193,
+        "in_scope_trials": 5016,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1636,
+        "total_statements": 5026,
+        "training_cases": 618
+      },
+      "params": {
+        "leak": 0.0006105006105006105,
+        "prior_fault": 0.12311058074781225,
+        "provenance": "LOPO estimate, clamp held out, scope=coverage",
+        "static_fpr": 0.012018140589569161,
+        "static_tpr": 0.0016129032258064516,
+        "theta": 0.6362865218505988,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03466929116253973,
+          0.15976138912587445,
+          0.0015923566892040684,
+          0.0015923566951217376,
+          0.04549427390424436,
+          0.2336533450170947,
+          0.0015923566878980888,
+          0.0015923566878980888,
+          0.0015923566878980888,
+          0.5184599173422267
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4408,
+        "faults_with_exposure_data": 546,
+        "faulty_statements": 618,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2685,
+        "in_scope_trials": 4455,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2197,
+        "total_statements": 5026,
+        "training_cases": 618
+      },
+      "params": {
+        "leak": 0.23146884947703503,
+        "prior_fault": 0.12311058074781225,
+        "provenance": "LOPO estimate, clamp held out, scope=slice",
+        "static_fpr": 0.012018140589569161,
+        "static_tpr": 0.0016129032258064516,
+        "theta": 0.4829715373596217,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3292552890543728,
+          0.0017985611510791377,
+          0.0017985611510791377,
+          0.0017985611510791377,
+          0.06374899206886706,
+          0.13727004056036266,
+          0.0017985611510791483,
+          0.0017985611510791377,
+          0.0017985611510791377,
+          0.45893431140992264
+        ]
+      }
+    }
+  },
+  "classify_triangle": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4160,
+        "faults_with_exposure_data": 590,
+        "faulty_statements": 590,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3093,
+        "in_scope_trials": 4689,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1541,
+        "total_statements": 4750,
+        "training_cases": 590
+      },
+      "params": {
+        "leak": 0.0006480881399870382,
+        "prior_fault": 0.12436868686868686,
+        "provenance": "LOPO estimate, classify_triangle held out, scope=coverage",
+        "static_fpr": 0.012734262373858721,
+        "static_tpr": 0.0016891891891891893,
+        "theta": 0.6593400835720138,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.0016666666666666661,
+          0.18910005648893097,
+          0.0016666737218762218,
+          0.001666667751405736,
+          0.032613120051610524,
+          0.22513363393347446,
+          0.0016666666666670165,
+          0.0016666666666666661,
+          0.0016666666666666661,
+          0.543153181386035
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4160,
+        "faults_with_exposure_data": 518,
+        "faulty_statements": 590,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2585,
+        "in_scope_trials": 4128,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2102,
+        "total_statements": 4750,
+        "training_cases": 590
+      },
+      "params": {
+        "leak": 0.24192015209125475,
+        "prior_fault": 0.12436868686868686,
+        "provenance": "LOPO estimate, classify_triangle held out, scope=slice",
+        "static_fpr": 0.012734262373858721,
+        "static_tpr": 0.0016891891891891893,
+        "theta": 0.5068463039006581,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3302270896577202,
+          0.0018939393939393983,
+          0.0018939393939393983,
+          0.0018939393939393983,
+          0.0018947963212822033,
+          0.17838668205983524,
+          0.0018939722916428581,
+          0.0018939393939393983,
+          0.0018939393939393983,
+          0.4781277626998225
+        ]
+      }
+    }
+  },
+  "collatz_steps": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4258,
+        "faults_with_exposure_data": 595,
+        "faulty_statements": 595,
+        "flagged_clean": 51,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2981,
+        "in_scope_trials": 4824,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1592,
+        "total_statements": 4853,
+        "training_cases": 595
+      },
+      "params": {
+        "leak": 0.0006273525721455458,
+        "prior_fault": 0.12276004119464469,
+        "provenance": "LOPO estimate, collatz_steps held out, scope=coverage",
+        "static_fpr": 0.012206572769953052,
+        "static_tpr": 0.0016750418760469012,
+        "theta": 0.6176631652830491,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.038241101524730176,
+          0.17039617864798914,
+          0.0016528932940203587,
+          0.001652893564257559,
+          0.01878497150387858,
+          0.2756613266178789,
+          0.001652892561992182,
+          0.0016528925619834704,
+          0.0016528925619834704,
+          0.48865195716128623
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4258,
+        "faults_with_exposure_data": 525,
+        "faulty_statements": 595,
+        "flagged_clean": 51,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2492,
+        "in_scope_trials": 4282,
+        "out_scope_fails": 489,
+        "out_scope_trials": 2134,
+        "total_statements": 4853,
+        "training_cases": 595
+      },
+      "params": {
+        "leak": 0.22940074906367042,
+        "prior_fault": 0.12276004119464469,
+        "provenance": "LOPO estimate, collatz_steps held out, scope=slice",
+        "static_fpr": 0.012206572769953052,
+        "static_tpr": 0.0016750418760469012,
+        "theta": 0.45747776631916437,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.34961000311247564,
+          0.0018691588785046717,
+          0.0018691588785046717,
+          0.0018691588785046717,
+          0.00466340794136379,
+          0.217606094421852,
+          0.0018691588834196878,
+          0.0018691588785046717,
+          0.0018691588785046717,
+          0.4169055412483655
+        ]
+      }
+    }
+  },
+  "count_in_range": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4380,
+        "faults_with_exposure_data": 611,
+        "faulty_statements": 611,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3142,
+        "in_scope_trials": 4973,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1616,
+        "total_statements": 4991,
+        "training_cases": 611
+      },
+      "params": {
+        "leak": 0.0006180469715698393,
+        "prior_fault": 0.12257160024033648,
+        "provenance": "LOPO estimate, count_in_range held out, scope=coverage",
+        "static_fpr": 0.012094933820173437,
+        "static_tpr": 0.0016313213703099511,
+        "theta": 0.6315310628591317,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03790251782126355,
+          0.1642211981695384,
+          0.0016103060370486744,
+          0.0016103060910728079,
+          0.032082275709017165,
+          0.24590486050185795,
+          0.0016103059581320466,
+          0.0016103059581320466,
+          0.0016103059581320466,
+          0.5118376177958054
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4380,
+        "faults_with_exposure_data": 541,
+        "faulty_statements": 611,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2647,
+        "in_scope_trials": 4425,
+        "out_scope_fails": 495,
+        "out_scope_trials": 2164,
+        "total_statements": 4991,
+        "training_cases": 611
+      },
+      "params": {
+        "leak": 0.22899353647276086,
+        "prior_fault": 0.12257160024033648,
+        "provenance": "LOPO estimate, count_in_range held out, scope=slice",
+        "static_fpr": 0.012094933820173437,
+        "static_tpr": 0.0016313213703099511,
+        "theta": 0.4787951993009688,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33660547703899807,
+          0.0018148820326678793,
+          0.0018148820326678793,
+          0.0018148820326678793,
+          0.026286562247506043,
+          0.1769160420484104,
+          0.001814882032667991,
+          0.0018148820326678793,
+          0.0018148820326678793,
+          0.4493026264690781
+        ]
+      }
+    }
+  },
+  "count_positive": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4384,
+        "faults_with_exposure_data": 612,
+        "faulty_statements": 612,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3152,
+        "in_scope_trials": 4981,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1617,
+        "total_statements": 4996,
+        "training_cases": 612
+      },
+      "params": {
+        "leak": 0.0006176652254478073,
+        "prior_fault": 0.12264905962384955,
+        "provenance": "LOPO estimate, count_positive held out, scope=coverage",
+        "static_fpr": 0.01208390332877337,
+        "static_tpr": 0.0016286644951140066,
+        "theta": 0.6325243776925602,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.037222119252829526,
+          0.16604430042512808,
+          0.0016077170550169216,
+          0.0016077170559032443,
+          0.01318522826058871,
+          0.26468172558988173,
+          0.001607717041800644,
+          0.0016077170418006435,
+          0.0016077170418006435,
+          0.5108280412352498
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4384,
+        "faults_with_exposure_data": 542,
+        "faulty_statements": 612,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2657,
+        "in_scope_trials": 4433,
+        "out_scope_fails": 495,
+        "out_scope_trials": 2165,
+        "total_statements": 4996,
+        "training_cases": 612
+      },
+      "params": {
+        "leak": 0.22888786340562992,
+        "prior_fault": 0.12264905962384955,
+        "provenance": "LOPO estimate, count_positive held out, scope=slice",
+        "static_fpr": 0.01208390332877337,
+        "static_tpr": 0.0016286644951140066,
+        "theta": 0.480391478210767,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3328593283618795,
+          0.0018115942028985518,
+          0.0018115942028985518,
+          0.0018115942028985518,
+          0.020070297731206655,
+          0.18886733375285056,
+          0.0018115942028987509,
+          0.0018115942028985518,
+          0.0018115942028985518,
+          0.44733347493667175
+        ]
+      }
+    }
+  },
+  "count_vowels": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4396,
+        "faults_with_exposure_data": 615,
+        "faulty_statements": 615,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3156,
+        "in_scope_trials": 5001,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1624,
+        "total_statements": 5011,
+        "training_cases": 615
+      },
+      "params": {
+        "leak": 0.0006150061500615006,
+        "prior_fault": 0.12288051067225214,
+        "provenance": "LOPO estimate, count_vowels held out, scope=coverage",
+        "static_fpr": 0.01205093224192815,
+        "static_tpr": 0.0016207455429497568,
+        "theta": 0.6307943234059564,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03792917585073967,
+          0.16256478346081393,
+          0.001600000021563212,
+          0.0016000000475586062,
+          0.028153198685153084,
+          0.2565394494324559,
+          0.0015999999999999973,
+          0.0015999999999999973,
+          0.0015999999999999973,
+          0.5068133925017158
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4396,
+        "faults_with_exposure_data": 545,
+        "faulty_statements": 615,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2662,
+        "in_scope_trials": 4454,
+        "out_scope_fails": 494,
+        "out_scope_trials": 2171,
+        "total_statements": 5011,
+        "training_cases": 615
+      },
+      "params": {
+        "leak": 0.22779567418315694,
+        "prior_fault": 0.12288051067225214,
+        "provenance": "LOPO estimate, count_vowels held out, scope=slice",
+        "static_fpr": 0.01205093224192815,
+        "static_tpr": 0.0016207455429497568,
+        "theta": 0.47892183243709374,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.332663181996338,
+          0.0018018018018018014,
+          0.0018018018018018014,
+          0.0018018018018018014,
+          0.0385014428056326,
+          0.17352934217743315,
+          0.0018018018018018406,
+          0.0018018018018018014,
+          0.0018018018018018014,
+          0.4444952222097855
+        ]
+      }
+    }
+  },
+  "days_in_month": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4152,
+        "faults_with_exposure_data": 589,
+        "faulty_statements": 589,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3061,
+        "in_scope_trials": 4708,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1438,
+        "total_statements": 4741,
+        "training_cases": 589
+      },
+      "params": {
+        "leak": 0.0006944444444444445,
+        "prior_fault": 0.12439384355892895,
+        "provenance": "LOPO estimate, days_in_month held out, scope=coverage",
+        "static_fpr": 0.012758786711603274,
+        "static_tpr": 0.001692047377326565,
+        "theta": 0.6498630064225421,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.05393022515575633,
+          0.11363357509161216,
+          0.0016694490857323363,
+          0.0016694492824089174,
+          0.0658462410417782,
+          0.24148485825329793,
+          0.0016694490818030046,
+          0.0016694490818030046,
+          0.0016694490818030046,
+          0.5167578548440052
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4152,
+        "faults_with_exposure_data": 517,
+        "faulty_statements": 589,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2553,
+        "in_scope_trials": 4147,
+        "out_scope_fails": 508,
+        "out_scope_trials": 1999,
+        "total_statements": 4741,
+        "training_cases": 589
+      },
+      "params": {
+        "leak": 0.2543728135932034,
+        "prior_fault": 0.12439384355892895,
+        "provenance": "LOPO estimate, days_in_month held out, scope=slice",
+        "static_fpr": 0.012758786711603274,
+        "static_tpr": 0.001692047377326565,
+        "theta": 0.48442064595170387,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.32991424226246463,
+          0.0018975332068311196,
+          0.0018975332068311196,
+          0.0018975332068311196,
+          0.05777136001822502,
+          0.15180903608432553,
+          0.001897533206831142,
+          0.0018975332068311196,
+          0.0018975332068311196,
+          0.4491201623939981
+        ]
+      }
+    }
+  },
+  "factorial": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4292,
+        "faults_with_exposure_data": 604,
+        "faulty_statements": 604,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3133,
+        "in_scope_trials": 4946,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1600,
+        "total_statements": 4896,
+        "training_cases": 604
+      },
+      "params": {
+        "leak": 0.0006242197253433209,
+        "prior_fault": 0.12351980400163332,
+        "provenance": "LOPO estimate, factorial held out, scope=coverage",
+        "static_fpr": 0.011877037727061016,
+        "static_tpr": 0.0016501650165016502,
+        "theta": 0.6331582372981317,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03968002096002435,
+          0.15509530418823822,
+          0.0016286646674256431,
+          0.0016286647185984916,
+          0.043272362941538974,
+          0.2438429702802145,
+          0.0016286644951140038,
+          0.0016286644951140038,
+          0.0016286644951140038,
+          0.5099660187586178
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4292,
+        "faults_with_exposure_data": 535,
+        "faulty_statements": 604,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2641,
+        "in_scope_trials": 4401,
+        "out_scope_fails": 492,
+        "out_scope_trials": 2145,
+        "total_statements": 4896,
+        "training_cases": 604
+      },
+      "params": {
+        "leak": 0.2296227293898463,
+        "prior_fault": 0.12351980400163332,
+        "provenance": "LOPO estimate, factorial held out, scope=slice",
+        "static_fpr": 0.011877037727061016,
+        "static_tpr": 0.0016501650165016502,
+        "theta": 0.48083284426552086,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3305961628367131,
+          0.0018348623853211002,
+          0.0018348623853211002,
+          0.0018348623853211002,
+          0.0491906542508952,
+          0.16034590132897658,
+          0.0018348623853212606,
+          0.0018348623853211002,
+          0.0018348623853211002,
+          0.4488581072714884
+        ]
+      }
+    }
+  },
+  "fib": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4372,
+        "faults_with_exposure_data": 614,
+        "faulty_statements": 614,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3151,
+        "in_scope_trials": 4988,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1638,
+        "total_statements": 4986,
+        "training_cases": 614
+      },
+      "params": {
+        "leak": 0.0006097560975609756,
+        "prior_fault": 0.12329591018444266,
+        "provenance": "LOPO estimate, fib held out, scope=coverage",
+        "static_fpr": 0.011659807956104253,
+        "static_tpr": 0.0016233766233766235,
+        "theta": 0.6314385940887266,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03842318821385364,
+          0.16164162174709126,
+          0.0016025641096766136,
+          0.0016025641238809802,
+          0.03618376500699839,
+          0.2454926400619812,
+          0.0016025641025641025,
+          0.0016025641025641025,
+          0.0016025641025641025,
+          0.5102459644288257
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4372,
+        "faults_with_exposure_data": 547,
+        "faulty_statements": 614,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2677,
+        "in_scope_trials": 4464,
+        "out_scope_fails": 474,
+        "out_scope_trials": 2162,
+        "total_statements": 4986,
+        "training_cases": 614
+      },
+      "params": {
+        "leak": 0.21950092421441775,
+        "prior_fault": 0.12329591018444266,
+        "provenance": "LOPO estimate, fib held out, scope=slice",
+        "static_fpr": 0.011659807956104253,
+        "static_tpr": 0.0016233766233766235,
+        "theta": 0.4870483837226044,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3229946212112786,
+          0.00179533213644524,
+          0.00179533213644524,
+          0.00179533213644524,
+          0.05572376383878416,
+          0.15851292427198402,
+          0.0017953321364452424,
+          0.00179533213644524,
+          0.00179533213644524,
+          0.45199669785928176
+        ]
+      }
+    }
+  },
+  "first_negative_index": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4362,
+        "faults_with_exposure_data": 610,
+        "faulty_statements": 610,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3157,
+        "in_scope_trials": 4965,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1615,
+        "total_statements": 4972,
+        "training_cases": 610
+      },
+      "params": {
+        "leak": 0.0006184291898577613,
+        "prior_fault": 0.12283876156011259,
+        "provenance": "LOPO estimate, first_negative_index held out, scope=coverage",
+        "static_fpr": 0.012144821264894592,
+        "static_tpr": 0.0016339869281045752,
+        "theta": 0.6355708816804773,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03884821260219703,
+          0.16293432192119747,
+          0.0016129032397608329,
+          0.0016129032632718101,
+          0.016742423533215214,
+          0.2542820712108333,
+          0.001612903225806452,
+          0.0016129032258064505,
+          0.0016129032258064505,
+          0.519128454552105
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4362,
+        "faults_with_exposure_data": 540,
+        "faulty_statements": 610,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2660,
+        "in_scope_trials": 4436,
+        "out_scope_fails": 497,
+        "out_scope_trials": 2144,
+        "total_statements": 4972,
+        "training_cases": 610
+      },
+      "params": {
+        "leak": 0.2320596458527493,
+        "prior_fault": 0.12283876156011259,
+        "provenance": "LOPO estimate, first_negative_index held out, scope=slice",
+        "static_fpr": 0.012144821264894592,
+        "static_tpr": 0.0016339869281045752,
+        "theta": 0.478598063065231,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3346450149122486,
+          0.0018181818181818193,
+          0.0018181818181818193,
+          0.0018181818181818193,
+          0.028010394958167695,
+          0.1823744914023623,
+          0.0018181818181818557,
+          0.0018181818181818193,
+          0.0018181818181818193,
+          0.4440610078181304
+        ]
+      }
+    }
+  },
+  "fizzbuzz": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4306,
+        "faults_with_exposure_data": 603,
+        "faulty_statements": 603,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3111,
+        "in_scope_trials": 4875,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1579,
+        "total_statements": 4909,
+        "training_cases": 603
+      },
+      "params": {
+        "leak": 0.0006325110689437065,
+        "prior_fault": 0.12298920790063124,
+        "provenance": "LOPO estimate, fizzbuzz held out, scope=coverage",
+        "static_fpr": 0.012302692664809656,
+        "static_tpr": 0.001652892561983471,
+        "theta": 0.6378681384852174,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.0440959703759967,
+          0.1558950403832545,
+          0.001631321370309954,
+          0.001631321370309954,
+          0.0016323761434952162,
+          0.26818429772669256,
+          0.001631321370309954,
+          0.001631321370309954,
+          0.001631321370309954,
+          0.5220357085190113
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4306,
+        "faults_with_exposure_data": 531,
+        "faulty_statements": 603,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2603,
+        "in_scope_trials": 4314,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2140,
+        "total_statements": 4909,
+        "training_cases": 603
+      },
+      "params": {
+        "leak": 0.2376283846872082,
+        "prior_fault": 0.12298920790063124,
+        "provenance": "LOPO estimate, fizzbuzz held out, scope=slice",
+        "static_fpr": 0.012302692664809656,
+        "static_tpr": 0.001652892561983471,
+        "theta": 0.47969786726159425,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33401026524947147,
+          0.0018484288354898369,
+          0.0018484288354898369,
+          0.0018484288354898369,
+          0.002237172183070525,
+          0.19702347348992483,
+          0.0018484288355091602,
+          0.0018484288354898369,
+          0.0018484288354898369,
+          0.45563851606457473
+        ]
+      }
+    }
+  },
+  "gcd": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4404,
+        "faults_with_exposure_data": 617,
+        "faulty_statements": 617,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3166,
+        "in_scope_trials": 5004,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1639,
+        "total_statements": 5021,
+        "training_cases": 617
+      },
+      "params": {
+        "leak": 0.0006093845216331506,
+        "prior_fault": 0.12303404340035835,
+        "provenance": "LOPO estimate, gcd held out, scope=coverage",
+        "static_fpr": 0.011575124829777576,
+        "static_tpr": 0.0016155088852988692,
+        "theta": 0.6324168315095057,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.038649594384582105,
+          0.15976359754677877,
+          0.0015948963354964739,
+          0.0015948963529703619,
+          0.04239359763382855,
+          0.23639236747986822,
+          0.0015948963317384342,
+          0.0015948963317384342,
+          0.0015948963317384342,
+          0.5148263612712602
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4404,
+        "faults_with_exposure_data": 547,
+        "faulty_statements": 617,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2671,
+        "in_scope_trials": 4459,
+        "out_scope_fails": 495,
+        "out_scope_trials": 2184,
+        "total_statements": 5021,
+        "training_cases": 617
+      },
+      "params": {
+        "leak": 0.22689844464775846,
+        "prior_fault": 0.12303404340035835,
+        "provenance": "LOPO estimate, gcd held out, scope=slice",
+        "static_fpr": 0.011575124829777576,
+        "static_tpr": 0.0016155088852988692,
+        "theta": 0.4812697553683535,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33125230737533023,
+          0.0017953321364452427,
+          0.0017953321364452427,
+          0.0017953321364452427,
+          0.04155342766526128,
+          0.16515367626825,
+          0.0017953321364480531,
+          0.0017953321364452427,
+          0.0017953321364452427,
+          0.4512685958724843
+        ]
+      }
+    }
+  },
+  "grade": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4232,
+        "faults_with_exposure_data": 599,
+        "faulty_statements": 599,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3123,
+        "in_scope_trials": 4824,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1582,
+        "total_statements": 4831,
+        "training_cases": 599
+      },
+      "params": {
+        "leak": 0.0006313131313131314,
+        "prior_fault": 0.12414649286157665,
+        "provenance": "LOPO estimate, grade held out, scope=coverage",
+        "static_fpr": 0.012517713745866793,
+        "static_tpr": 0.0016638935108153079,
+        "theta": 0.6471041911063442,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.05229068795406741,
+          0.09770975512883397,
+          0.030730122897955583,
+          0.001648058187399046,
+          0.04320796357873036,
+          0.24750686249571976,
+          0.0016420361247947452,
+          0.0016420361247947448,
+          0.0016420361247947448,
+          0.5219804413829097
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4232,
+        "faults_with_exposure_data": 527,
+        "faulty_statements": 599,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2615,
+        "in_scope_trials": 4263,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2143,
+        "total_statements": 4831,
+        "training_cases": 599
+      },
+      "params": {
+        "leak": 0.2372960372960373,
+        "prior_fault": 0.12414649286157665,
+        "provenance": "LOPO estimate, grade held out, scope=slice",
+        "static_fpr": 0.012517713745866793,
+        "static_tpr": 0.0016638935108153079,
+        "theta": 0.4930727734989695,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3098303821667504,
+          0.0018621973929236505,
+          0.0018621973929236505,
+          0.0018621973929236505,
+          0.0866532250778171,
+          0.13226636977504727,
+          0.0018621973929236705,
+          0.0018621973929236505,
+          0.0018621973929236505,
+          0.46007683862284326
+        ]
+      }
+    }
+  },
+  "has_close_elements": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4396,
+        "faults_with_exposure_data": 615,
+        "faulty_statements": 615,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3174,
+        "in_scope_trials": 4979,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1619,
+        "total_statements": 5011,
+        "training_cases": 615
+      },
+      "params": {
+        "leak": 0.0006169031462060457,
+        "prior_fault": 0.12288051067225214,
+        "provenance": "LOPO estimate, has_close_elements held out, scope=coverage",
+        "static_fpr": 0.01205093224192815,
+        "static_tpr": 0.0016207455429497568,
+        "theta": 0.6371983909225427,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.039384223214257136,
+          0.15700930095558177,
+          0.0016000223932769028,
+          0.0016000389057963988,
+          0.03695547276389039,
+          0.23813768297283208,
+          0.0016000000000052192,
+          0.0015999999999999986,
+          0.0015999999999999986,
+          0.5205132587943601
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4396,
+        "faults_with_exposure_data": 543,
+        "faulty_statements": 615,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2666,
+        "in_scope_trials": 4418,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2180,
+        "total_statements": 5011,
+        "training_cases": 615
+      },
+      "params": {
+        "leak": 0.23327222731439046,
+        "prior_fault": 0.12288051067225214,
+        "provenance": "LOPO estimate, has_close_elements held out, scope=slice",
+        "static_fpr": 0.01205093224192815,
+        "static_tpr": 0.0016207455429497568,
+        "theta": 0.48272861767816233,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33786077033287354,
+          0.0018083182640144674,
+          0.0018083182640144674,
+          0.0018083182640144674,
+          0.0019278519452516265,
+          0.19508563466512066,
+          0.001808318264369179,
+          0.0018083182640144674,
+          0.0018083182640144674,
+          0.45427583347231254
+        ]
+      }
+    }
+  },
+  "index_of_min": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4360,
+        "faults_with_exposure_data": 612,
+        "faulty_statements": 612,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3167,
+        "in_scope_trials": 4988,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1610,
+        "total_statements": 4972,
+        "training_cases": 612
+      },
+      "params": {
+        "leak": 0.0006203473945409429,
+        "prior_fault": 0.12324085243264978,
+        "provenance": "LOPO estimate, index_of_min held out, scope=coverage",
+        "static_fpr": 0.012150389729481889,
+        "static_tpr": 0.0016286644951140066,
+        "theta": 0.6346430912725513,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03729670879317852,
+          0.16087967270667886,
+          0.001607717042782196,
+          0.0016077170467064038,
+          0.025710955931811174,
+          0.2546154514312902,
+          0.0016077170418006424,
+          0.0016077170418006424,
+          0.0016077170418006424,
+          0.5134586259221506
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4360,
+        "faults_with_exposure_data": 542,
+        "faulty_statements": 612,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2671,
+        "in_scope_trials": 4439,
+        "out_scope_fails": 496,
+        "out_scope_trials": 2159,
+        "total_statements": 4972,
+        "training_cases": 612
+      },
+      "params": {
+        "leak": 0.22998611753817677,
+        "prior_fault": 0.12324085243264978,
+        "provenance": "LOPO estimate, index_of_min held out, scope=slice",
+        "static_fpr": 0.012150389729481889,
+        "static_tpr": 0.0016286644951140066,
+        "theta": 0.48269282191294416,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3296277938273005,
+          0.0018115942028985494,
+          0.0018115942028985494,
+          0.0018115942028985494,
+          0.0377140566380498,
+          0.1695874451936129,
+          0.0018115942028985792,
+          0.0018115942028985494,
+          0.0018115942028985494,
+          0.45220113912364546
+        ]
+      }
+    }
+  },
+  "int_sqrt": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4322,
+        "faults_with_exposure_data": 602,
+        "faulty_statements": 602,
+        "flagged_clean": 51,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3091,
+        "in_scope_trials": 4860,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1604,
+        "total_statements": 4924,
+        "training_cases": 602
+      },
+      "params": {
+        "leak": 0.0006226650062266501,
+        "prior_fault": 0.12241169305724726,
+        "provenance": "LOPO estimate, int_sqrt held out, scope=coverage",
+        "static_fpr": 0.012025901942645698,
+        "static_tpr": 0.0016556291390728477,
+        "theta": 0.6357254620036368,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.035787174223652574,
+          0.16038348545205072,
+          0.0017305798759541166,
+          0.001636306646047032,
+          0.030096606565342673,
+          0.24822128660333312,
+          0.0016339869281692824,
+          0.001633986928104573,
+          0.001633986928104573,
+          0.5172425998492414
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4322,
+        "faults_with_exposure_data": 531,
+        "faulty_statements": 602,
+        "flagged_clean": 51,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2592,
+        "in_scope_trials": 4308,
+        "out_scope_fails": 499,
+        "out_scope_trials": 2156,
+        "total_statements": 4924,
+        "training_cases": 602
+      },
+      "params": {
+        "leak": 0.23169601482854496,
+        "prior_fault": 0.12241169305724726,
+        "provenance": "LOPO estimate, int_sqrt held out, scope=slice",
+        "static_fpr": 0.012025901942645698,
+        "static_tpr": 0.0016556291390728477,
+        "theta": 0.4814866540348559,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3340162704410291,
+          0.0018484288354898319,
+          0.0018484288354898319,
+          0.0018484288354898319,
+          0.002621656327852117,
+          0.20259231278017412,
+          0.0018484288357747188,
+          0.0018484288354898319,
+          0.0018484288354898319,
+          0.44967918743772073
+        ]
+      }
+    }
+  },
+  "is_leap_year": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4282,
+        "faults_with_exposure_data": 599,
+        "faulty_statements": 599,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3129,
+        "in_scope_trials": 4893,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1563,
+        "total_statements": 4881,
+        "training_cases": 599
+      },
+      "params": {
+        "leak": 0.0006389776357827476,
+        "prior_fault": 0.12287528158918698,
+        "provenance": "LOPO estimate, is_leap_year held out, scope=coverage",
+        "static_fpr": 0.012371615312791783,
+        "static_tpr": 0.0016638935108153079,
+        "theta": 0.639197442977724,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.04581598288897172,
+          0.1514462189379654,
+          0.0016420361247947524,
+          0.0016420361247953595,
+          0.026575606688450753,
+          0.2425681211051961,
+          0.0016420361247947454,
+          0.0016420361247947454,
+          0.0016420361247947454,
+          0.5253838897554418
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4282,
+        "faults_with_exposure_data": 527,
+        "faulty_statements": 599,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2621,
+        "in_scope_trials": 4332,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2124,
+        "total_statements": 4881,
+        "training_cases": 599
+      },
+      "params": {
+        "leak": 0.23941674506114768,
+        "prior_fault": 0.12287528158918698,
+        "provenance": "LOPO estimate, is_leap_year held out, scope=slice",
+        "static_fpr": 0.012371615312791783,
+        "static_tpr": 0.0016638935108153079,
+        "theta": 0.4806404837389081,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3356006724061039,
+          0.001862197392923652,
+          0.001862197392923652,
+          0.001862197392923652,
+          0.03633517651376484,
+          0.15307403411268172,
+          0.0018621973929236698,
+          0.001862197392923652,
+          0.001862197392923652,
+          0.4638169326099075
+        ]
+      }
+    }
+  },
+  "is_palindrome": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4278,
+        "faults_with_exposure_data": 602,
+        "faulty_statements": 602,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3107,
+        "in_scope_trials": 4890,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1596,
+        "total_statements": 4880,
+        "training_cases": 602
+      },
+      "params": {
+        "leak": 0.0006257822277847309,
+        "prior_fault": 0.12351495288816058,
+        "provenance": "LOPO estimate, is_palindrome held out, scope=coverage",
+        "static_fpr": 0.01191588785046729,
+        "static_tpr": 0.0016556291390728477,
+        "theta": 0.6350946249893121,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03375397841017801,
+          0.1732771112355236,
+          0.0016339870253302441,
+          0.0016339869464733362,
+          0.005965965512054215,
+          0.25759460992496325,
+          0.001633986928104576,
+          0.0016339869281045759,
+          0.0016339869281045759,
+          0.5212384001611637
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4278,
+        "faults_with_exposure_data": 534,
+        "faulty_statements": 602,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2625,
+        "in_scope_trials": 4361,
+        "out_scope_fails": 482,
+        "out_scope_trials": 2125,
+        "total_statements": 4880,
+        "training_cases": 602
+      },
+      "params": {
+        "leak": 0.22708039492242596,
+        "prior_fault": 0.12351495288816058,
+        "provenance": "LOPO estimate, is_palindrome held out, scope=slice",
+        "static_fpr": 0.01191588785046729,
+        "static_tpr": 0.0016556291390728477,
+        "theta": 0.4849133640383384,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33096172830149134,
+          0.001838235294117651,
+          0.001838235294117651,
+          0.001838235294117651,
+          0.01461804778727633,
+          0.18584309654089085,
+          0.0018382352941176583,
+          0.001838235294117651,
+          0.001838235294117651,
+          0.4575477156056356
+        ]
+      }
+    }
+  },
+  "is_prime": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4264,
+        "faults_with_exposure_data": 600,
+        "faulty_statements": 600,
+        "flagged_clean": 51,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3121,
+        "in_scope_trials": 4870,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1548,
+        "total_statements": 4864,
+        "training_cases": 600
+      },
+      "params": {
+        "leak": 0.0006451612903225806,
+        "prior_fault": 0.12351006987258528,
+        "provenance": "LOPO estimate, is_prime held out, scope=coverage",
+        "static_fpr": 0.012189404594467886,
+        "static_tpr": 0.0016611295681063123,
+        "theta": 0.6405727091263922,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03637141220495851,
+          0.15905187390712838,
+          0.0016416905774763008,
+          0.0016394170002383298,
+          0.038251640955478075,
+          0.23217473569683905,
+          0.0016393442622950852,
+          0.0016393442622950798,
+          0.0016393442622950798,
+          0.5259511968709961
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4264,
+        "faults_with_exposure_data": 529,
+        "faulty_statements": 600,
+        "flagged_clean": 51,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2622,
+        "in_scope_trials": 4318,
+        "out_scope_fails": 499,
+        "out_scope_trials": 2100,
+        "total_statements": 4864,
+        "training_cases": 600
+      },
+      "params": {
+        "leak": 0.23786869647954328,
+        "prior_fault": 0.12351006987258528,
+        "provenance": "LOPO estimate, is_prime held out, scope=slice",
+        "static_fpr": 0.012189404594467886,
+        "static_tpr": 0.0016611295681063123,
+        "theta": 0.48457165811254455,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3373495490390815,
+          0.0018552875695732876,
+          0.0018552875695732876,
+          0.0018552875695732876,
+          0.0077938835241549665,
+          0.182054293317431,
+          0.0018552875695739112,
+          0.0018552875695732876,
+          0.0018552875695732876,
+          0.4616705487018922
+        ]
+      }
+    }
+  },
+  "is_sorted": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4399,
+        "faults_with_exposure_data": 613,
+        "faulty_statements": 613,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3167,
+        "in_scope_trials": 4976,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1620,
+        "total_statements": 5012,
+        "training_cases": 613
+      },
+      "params": {
+        "leak": 0.0006165228113440197,
+        "prior_fault": 0.1224571200638213,
+        "provenance": "LOPO estimate, is_sorted held out, scope=coverage",
+        "static_fpr": 0.012042717564189957,
+        "static_tpr": 0.0016260162601626016,
+        "theta": 0.6361758548222914,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.04016310139197085,
+          0.15812901093672635,
+          0.001605136440557385,
+          0.0016051364642479706,
+          0.030756204334093814,
+          0.24321863442897798,
+          0.0016051364365971127,
+          0.0016051364365971127,
+          0.0016051364365971127,
+          0.5197073666936344
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4399,
+        "faults_with_exposure_data": 541,
+        "faulty_statements": 613,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2659,
+        "in_scope_trials": 4415,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2181,
+        "total_statements": 5012,
+        "training_cases": 613
+      },
+      "params": {
+        "leak": 0.2331653687585891,
+        "prior_fault": 0.1224571200638213,
+        "provenance": "LOPO estimate, is_sorted held out, scope=slice",
+        "static_fpr": 0.012042717564189957,
+        "static_tpr": 0.0016260162601626016,
+        "theta": 0.48126847260327144,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3363774551721397,
+          0.0018148820326678765,
+          0.0018148820326678765,
+          0.0018148820326678765,
+          0.016398417106206497,
+          0.18087148967113645,
+          0.0018148820326681304,
+          0.0018148820326678765,
+          0.0018148820326678765,
+          0.45546334585451
+        ]
+      }
+    }
+  },
+  "max_of_list": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4354,
+        "faults_with_exposure_data": 611,
+        "faulty_statements": 611,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3167,
+        "in_scope_trials": 4967,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1622,
+        "total_statements": 4965,
+        "training_cases": 611
+      },
+      "params": {
+        "leak": 0.0006157635467980296,
+        "prior_fault": 0.1232132071673042,
+        "provenance": "LOPO estimate, max_of_list held out, scope=coverage",
+        "static_fpr": 0.012167125803489439,
+        "static_tpr": 0.0016313213703099511,
+        "theta": 0.6373295082623789,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03635152321288613,
+          0.15718753372653282,
+          0.0016103059776508256,
+          0.0016103059874996277,
+          0.024191561544665126,
+          0.2581700391316576,
+          0.001610305958132043,
+          0.001610305958132043,
+          0.001610305958132043,
+          0.5160478125447118
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4354,
+        "faults_with_exposure_data": 541,
+        "faulty_statements": 611,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2670,
+        "in_scope_trials": 4417,
+        "out_scope_fails": 497,
+        "out_scope_trials": 2172,
+        "total_statements": 4965,
+        "training_cases": 611
+      },
+      "params": {
+        "leak": 0.22907083716651333,
+        "prior_fault": 0.1232132071673042,
+        "provenance": "LOPO estimate, max_of_list held out, scope=slice",
+        "static_fpr": 0.012167125803489439,
+        "static_tpr": 0.0016313213703099511,
+        "theta": 0.4868988923400309,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3225028404217241,
+          0.001814882032667877,
+          0.001814882032667877,
+          0.001814882032667877,
+          0.04155617088469162,
+          0.1704178750276902,
+          0.0018148820326679262,
+          0.001814882032667877,
+          0.001814882032667877,
+          0.45463382146988673
+        ]
+      }
+    }
+  },
+  "median": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4264,
+        "faults_with_exposure_data": 600,
+        "faulty_statements": 600,
+        "flagged_clean": 44,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3065,
+        "in_scope_trials": 4870,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1596,
+        "total_statements": 4864,
+        "training_cases": 600
+      },
+      "params": {
+        "leak": 0.0006257822277847309,
+        "prior_fault": 0.12351006987258528,
+        "provenance": "LOPO estimate, median held out, scope=coverage",
+        "static_fpr": 0.010548523206751054,
+        "static_tpr": 0.0016611295681063123,
+        "theta": 0.6290782285751301,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03860691096157714,
+          0.16595253167946297,
+          0.0016393470878302986,
+          0.001639344944169346,
+          0.007763691500624662,
+          0.2747466632213008,
+          0.0016393442622959086,
+          0.0016393442622950815,
+          0.0016393442622950815,
+          0.5047334778181487
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4264,
+        "faults_with_exposure_data": 531,
+        "faulty_statements": 600,
+        "flagged_clean": 44,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2586,
+        "in_scope_trials": 4338,
+        "out_scope_fails": 479,
+        "out_scope_trials": 2128,
+        "total_statements": 4864,
+        "training_cases": 600
+      },
+      "params": {
+        "leak": 0.22535211267605634,
+        "prior_fault": 0.12351006987258528,
+        "provenance": "LOPO estimate, median held out, scope=slice",
+        "static_fpr": 0.010548523206751054,
+        "static_tpr": 0.0016611295681063123,
+        "theta": 0.4785798072894847,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.333038050010191,
+          0.0018484288354898369,
+          0.0018484288354898369,
+          0.0018484288354898369,
+          0.006402264010614809,
+          0.2105237204992949,
+          0.0018484288354924461,
+          0.0018484288354898369,
+          0.0018484288354898369,
+          0.4389453924669577
+        ]
+      }
+    }
+  },
+  "merge_sorted": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 3802,
+        "faults_with_exposure_data": 582,
+        "faulty_statements": 582,
+        "flagged_clean": 45,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2910,
+        "in_scope_trials": 4689,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1513,
+        "total_statements": 4384,
+        "training_cases": 582
+      },
+      "params": {
+        "leak": 0.0006600660066006601,
+        "prior_fault": 0.13292293661650706,
+        "provenance": "LOPO estimate, merge_sorted held out, scope=coverage",
+        "static_fpr": 0.012092534174553101,
+        "static_tpr": 0.0017123287671232876,
+        "theta": 0.6202993618573693,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.036830428584561,
+          0.1749198060773177,
+          0.0016891891894677846,
+          0.0016891891898234643,
+          0.01428851369362325,
+          0.26766670295542516,
+          0.0016891891891891895,
+          0.0016891891891891895,
+          0.0016891891891891895,
+          0.49784860274221415
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 3802,
+        "faults_with_exposure_data": 517,
+        "faulty_statements": 582,
+        "flagged_clean": 45,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2462,
+        "in_scope_trials": 4188,
+        "out_scope_fails": 448,
+        "out_scope_trials": 2014,
+        "total_statements": 4384,
+        "training_cases": 582
+      },
+      "params": {
+        "leak": 0.22271825396825398,
+        "prior_fault": 0.13292293661650706,
+        "provenance": "LOPO estimate, merge_sorted held out, scope=slice",
+        "static_fpr": 0.012092534174553101,
+        "static_tpr": 0.0017123287671232876,
+        "theta": 0.4697265955194624,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3394590027871825,
+          0.0018975332068311198,
+          0.0018975332068311198,
+          0.0018975332068311198,
+          0.03161987118832571,
+          0.17798932109206156,
+          0.001897533206831122,
+          0.0018975332068311198,
+          0.0018975332068311198,
+          0.4395466056914435
+        ]
+      }
+    }
+  },
+  "ranges_overlap": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4396,
+        "faults_with_exposure_data": 615,
+        "faulty_statements": 615,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3175,
+        "in_scope_trials": 5000,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1616,
+        "total_statements": 5011,
+        "training_cases": 615
+      },
+      "params": {
+        "leak": 0.0006180469715698393,
+        "prior_fault": 0.12288051067225214,
+        "provenance": "LOPO estimate, ranges_overlap held out, scope=coverage",
+        "static_fpr": 0.01205093224192815,
+        "static_tpr": 0.0016207455429497568,
+        "theta": 0.6347202615552419,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.039997888656511243,
+          0.154364757634488,
+          0.0016000000217978214,
+          0.0016000000315625946,
+          0.044603475284446685,
+          0.23904474802639242,
+          0.0016000000000000012,
+          0.0016000000000000012,
+          0.0016000000000000012,
+          0.5139891303448012
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4396,
+        "faults_with_exposure_data": 543,
+        "faulty_statements": 615,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2667,
+        "in_scope_trials": 4439,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2177,
+        "total_statements": 5011,
+        "training_cases": 615
+      },
+      "params": {
+        "leak": 0.2335933914639743,
+        "prior_fault": 0.12288051067225214,
+        "provenance": "LOPO estimate, ranges_overlap held out, scope=slice",
+        "static_fpr": 0.01205093224192815,
+        "static_tpr": 0.0016207455429497568,
+        "theta": 0.47908277118359544,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33369293850902115,
+          0.0018083182640144674,
+          0.0018083182640144674,
+          0.0018083182640144674,
+          0.050444145584103706,
+          0.15359910521010614,
+          0.0018083182640144988,
+          0.0018083182640144674,
+          0.0018083182640144674,
+          0.45141390111268215
+        ]
+      }
+    }
+  },
+  "remove_duplicates": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4396,
+        "faults_with_exposure_data": 618,
+        "faulty_statements": 618,
+        "flagged_clean": 48,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3171,
+        "in_scope_trials": 5014,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1638,
+        "total_statements": 5014,
+        "training_cases": 618
+      },
+      "params": {
+        "leak": 0.0006097560975609756,
+        "prior_fault": 0.12340510366826156,
+        "provenance": "LOPO estimate, remove_duplicates held out, scope=coverage",
+        "static_fpr": 0.011141427921782628,
+        "static_tpr": 0.0016129032258064516,
+        "theta": 0.6321520980330909,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.037876931619864024,
+          0.16140424068420917,
+          0.0015923567094210701,
+          0.0015923567464748328,
+          0.0313265773577087,
+          0.2501315062957748,
+          0.0015923566878980888,
+          0.0015923566878980886,
+          0.0015923566878980886,
+          0.5112989605228531
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4396,
+        "faults_with_exposure_data": 550,
+        "faulty_statements": 618,
+        "flagged_clean": 48,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2693,
+        "in_scope_trials": 4487,
+        "out_scope_fails": 478,
+        "out_scope_trials": 2165,
+        "total_statements": 5014,
+        "training_cases": 618
+      },
+      "params": {
+        "leak": 0.22104291647438856,
+        "prior_fault": 0.12340510366826156,
+        "provenance": "LOPO estimate, remove_duplicates held out, scope=slice",
+        "static_fpr": 0.011141427921782628,
+        "static_tpr": 0.0016129032258064516,
+        "theta": 0.4866644794700896,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.323369872626434,
+          0.001785714285714286,
+          0.001785714285714286,
+          0.001785714285714286,
+          0.0448664073326154,
+          0.1709466578956499,
+          0.001785714285714434,
+          0.001785714285714286,
+          0.001785714285714286,
+          0.4501027764310149
+        ]
+      }
+    }
+  },
+  "running_max": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4384,
+        "faults_with_exposure_data": 616,
+        "faulty_statements": 616,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3162,
+        "in_scope_trials": 4998,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1636,
+        "total_statements": 5000,
+        "training_cases": 616
+      },
+      "params": {
+        "leak": 0.0006105006105006105,
+        "prior_fault": 0.12335065973610555,
+        "provenance": "LOPO estimate, running_max held out, scope=coverage",
+        "static_fpr": 0.011627906976744186,
+        "static_tpr": 0.0016181229773462784,
+        "theta": 0.632375565058033,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03595039376899997,
+          0.16227006025498708,
+          0.001597444097289214,
+          0.001597444113008034,
+          0.03160590103078372,
+          0.2516901139383486,
+          0.0015974440894568674,
+          0.0015974440894568674,
+          0.0015974440894568674,
+          0.5104963105282126
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4384,
+        "faults_with_exposure_data": 548,
+        "faulty_statements": 616,
+        "flagged_clean": 50,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2687,
+        "in_scope_trials": 4471,
+        "out_scope_fails": 475,
+        "out_scope_trials": 2163,
+        "total_statements": 5000,
+        "training_cases": 616
+      },
+      "params": {
+        "leak": 0.21986143187066975,
+        "prior_fault": 0.12335065973610555,
+        "provenance": "LOPO estimate, running_max held out, scope=slice",
+        "static_fpr": 0.011627906976744186,
+        "static_tpr": 0.0016181229773462784,
+        "theta": 0.48847416450548564,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3204563254014771,
+          0.0017921146953405037,
+          0.0017921146953405037,
+          0.0017921146953405037,
+          0.05664541768284102,
+          0.15933156729066034,
+          0.0017921146953406067,
+          0.0017921146953405037,
+          0.0017921146953405037,
+          0.4528140014529784
+        ]
+      }
+    }
+  },
+  "second_largest": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4172,
+        "faults_with_exposure_data": 598,
+        "faulty_statements": 598,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3111,
+        "in_scope_trials": 4839,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1555,
+        "total_statements": 4770,
+        "training_cases": 598
+      },
+      "params": {
+        "leak": 0.0006422607578676942,
+        "prior_fault": 0.12552388935456832,
+        "provenance": "LOPO estimate, second_largest held out, scope=coverage",
+        "static_fpr": 0.012697652132247245,
+        "static_tpr": 0.0016666666666666668,
+        "theta": 0.642612852195976,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03817726770138315,
+          0.15593199078049233,
+          0.0016447368421052993,
+          0.0016447368421052967,
+          0.00223108970485172,
+          0.27211541758784213,
+          0.0016447368421052637,
+          0.0016447368421052637,
+          0.0016447368421052637,
+          0.5233205500149043
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4172,
+        "faults_with_exposure_data": 531,
+        "faulty_statements": 598,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2624,
+        "in_scope_trials": 4304,
+        "out_scope_fails": 487,
+        "out_scope_trials": 2090,
+        "total_statements": 4770,
+        "training_cases": 598
+      },
+      "params": {
+        "leak": 0.2332695984703633,
+        "prior_fault": 0.12552388935456832,
+        "provenance": "LOPO estimate, second_largest held out, scope=slice",
+        "static_fpr": 0.012697652132247245,
+        "static_tpr": 0.0016666666666666668,
+        "theta": 0.4908438379202944,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3200669151503495,
+          0.0018484288354898317,
+          0.0018484288354898317,
+          0.0018484288354898317,
+          0.0267097483992529,
+          0.18214763779942653,
+          0.0018484288354898325,
+          0.0018484288354898317,
+          0.0018484288354898317,
+          0.459985125638032
+        ]
+      }
+    }
+  },
+  "shipping_cost": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4236,
+        "faults_with_exposure_data": 596,
+        "faulty_statements": 596,
+        "flagged_clean": 51,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3094,
+        "in_scope_trials": 4890,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1536,
+        "total_statements": 4832,
+        "training_cases": 596
+      },
+      "params": {
+        "leak": 0.0006501950585175553,
+        "prior_fault": 0.1235002068680182,
+        "provenance": "LOPO estimate, shipping_cost held out, scope=coverage",
+        "static_fpr": 0.012269938650306749,
+        "static_tpr": 0.0016722408026755853,
+        "theta": 0.6324265820313435,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.0378630437712469,
+          0.15769733713552397,
+          0.001650165075489885,
+          0.0016501651333157175,
+          0.0315643880511076,
+          0.2633868022526063,
+          0.0016501650165016502,
+          0.0016501650165016498,
+          0.0016501650165016498,
+          0.5012376035312046
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4236,
+        "faults_with_exposure_data": 527,
+        "faulty_statements": 596,
+        "flagged_clean": 51,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2602,
+        "in_scope_trials": 4345,
+        "out_scope_fails": 492,
+        "out_scope_trials": 2081,
+        "total_statements": 4832,
+        "training_cases": 596
+      },
+      "params": {
+        "leak": 0.23667786845895344,
+        "prior_fault": 0.1235002068680182,
+        "provenance": "LOPO estimate, shipping_cost held out, scope=slice",
+        "static_fpr": 0.012269938650306749,
+        "static_tpr": 0.0016722408026755853,
+        "theta": 0.4744077097919045,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33767536317529523,
+          0.001862197392923647,
+          0.001862197392923647,
+          0.001862197392923647,
+          0.03866576773047268,
+          0.17626572537783428,
+          0.001862197392923798,
+          0.001862197392923647,
+          0.001862197392923647,
+          0.4362199593588557
+        ]
+      }
+    }
+  },
+  "sign": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4368,
+        "faults_with_exposure_data": 608,
+        "faulty_statements": 608,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3177,
+        "in_scope_trials": 4995,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1599,
+        "total_statements": 4976,
+        "training_cases": 608
+      },
+      "params": {
+        "leak": 0.0006246096189881324,
+        "prior_fault": 0.12233828846926477,
+        "provenance": "LOPO estimate, sign held out, scope=coverage",
+        "static_fpr": 0.012128146453089244,
+        "static_tpr": 0.001639344262295082,
+        "theta": 0.6357540774464678,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.041869571281458996,
+          0.1519130753551936,
+          0.0016181230288836678,
+          0.0016181230463730362,
+          0.031056035268296995,
+          0.2532558878269592,
+          0.0016181229773462812,
+          0.0016181229773462812,
+          0.0016181229773462812,
+          0.5138148152607958
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4368,
+        "faults_with_exposure_data": 536,
+        "faulty_statements": 608,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2669,
+        "in_scope_trials": 4434,
+        "out_scope_fails": 508,
+        "out_scope_trials": 2160,
+        "total_statements": 4976,
+        "training_cases": 608
+      },
+      "params": {
+        "leak": 0.23543015726179464,
+        "prior_fault": 0.12233828846926477,
+        "provenance": "LOPO estimate, sign held out, scope=slice",
+        "static_fpr": 0.012128146453089244,
+        "static_tpr": 0.001639344262295082,
+        "theta": 0.479306689970472,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.33309493045676425,
+          0.0018315018315018315,
+          0.0018315018315018315,
+          0.0018315018315018315,
+          0.03166893460166076,
+          0.1755160599545807,
+          0.0018315018315018681,
+          0.0018315018315018315,
+          0.0018315018315018315,
+          0.44873106399798335
+        ]
+      }
+    }
+  },
+  "sum_even": {
+    "coverage": {
+      "counts": {
+        "clean_statements": 4384,
+        "faults_with_exposure_data": 612,
+        "faulty_statements": 612,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 3138,
+        "in_scope_trials": 4969,
+        "out_scope_fails": 0,
+        "out_scope_trials": 1629,
+        "total_statements": 4996,
+        "training_cases": 612
+      },
+      "params": {
+        "leak": 0.0006131207847946045,
+        "prior_fault": 0.12264905962384955,
+        "provenance": "LOPO estimate, sum_even held out, scope=coverage",
+        "static_fpr": 0.01208390332877337,
+        "static_tpr": 0.0016286644951140066,
+        "theta": 0.6312363857613422,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.03926361332959741,
+          0.16024298113767652,
+          0.001607717044268203,
+          0.0016077170560914796,
+          0.0479452944358959,
+          0.2311585163002881,
+          0.0016077170418006435,
+          0.0016077170418006435,
+          0.0016077170418006435,
+          0.5133510095707804
+        ]
+      }
+    },
+    "slice": {
+      "counts": {
+        "clean_statements": 4384,
+        "faults_with_exposure_data": 542,
+        "faulty_statements": 612,
+        "flagged_clean": 52,
+        "flagged_faulty": 0,
+        "in_scope_fails": 2644,
+        "in_scope_trials": 4423,
+        "out_scope_fails": 494,
+        "out_scope_trials": 2175,
+        "total_statements": 4996,
+        "training_cases": 612
+      },
+      "params": {
+        "leak": 0.2273771244832338,
+        "prior_fault": 0.12264905962384955,
+        "provenance": "LOPO estimate, sum_even held out, scope=slice",
+        "static_fpr": 0.01208390332877337,
+        "static_tpr": 0.0016286644951140066,
+        "theta": 0.47935804161040463,
+        "theta_grid": [
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.45,
+          0.55,
+          0.65,
+          0.75,
+          0.85,
+          0.95
+        ],
+        "theta_weights": [
+          0.3343255697384032,
+          0.001811594202898552,
+          0.001811594202898552,
+          0.001811594202898552,
+          0.05183049235616305,
+          0.1496723599467221,
+          0.0018115942028986015,
+          0.001811594202898552,
+          0.001811594202898552,
+          0.4533020127413203
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "mutants_detected": 594,
+    "mutants_excluded": 1,
+    "mutants_generated": 625,
+    "mutants_not_detected": 30,
+    "mutants_valid": 624,
+    "programs": 34
+  },
+  "environment": {
+    "matplotlib": "3.10.5",
+    "networkx": "3.5",
+    "numpy": "2.2.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pylint": "4.1.3",
+    "python": "3.12.3",
+    "seed": 20261013,
+    "step_limit": 20000
+  },
+  "files": {
+    "SUMMARY.md": "6de0ff8a59259500fe97786d6512910510dadb4bfecdd7f11834b639a9ed2844",
+    "calibration.json": "d655407f79dbdef0117d022b7ee17986bf66db9fd02a43ad59c2bbd439aaf60f",
+    "cases.jsonl": "fe42562a48bb72db39a12bf15436852af7fd72f9b934789bc6c094f56b310a53",
+    "excluded_mutants.json": "b3c24ff39b7938dbf2cb2c9e192a7b609066dfa67d48e21e79cffe21a928be12",
+    "fault_free_programs.csv": "eecc54011b4ebf2c409603a6a25e084e7e3cc1406259233bb446c0db6c622a0d",
+    "fig_method_comparison.png": "5b3f8b893e5ae7a9a795f0cb018e5c32569afdc33c4b43201fd378be737cedd4",
+    "fig_reliability.png": "db78838395ba77ec959ae77db92cb9263c485eb1ad95c984558a774f1f21e4e5",
+    "fig_sensitivity.png": "cc9d3f8a6715432f787632dcb7b6ae83a29ccf8d94b549b74141ba19873613ae",
+    "first_order_per_case.csv": "f07e942cd46c62ca664a35d8b13400833af83fe49f0cf8b1435a51251f359d67",
+    "first_order_summary.json": "c8bba11ab4593764e26b43a2a7748c635f6bd4edb5800a049957b2fbcbf57039",
+    "params_lopo.json": "58407046720a64e4deb346a41c3716c32df777bc768d6644876dd8998cee13cc",
+    "params_pooled.json": "f52dfb9395e26330a4e108cb22cf168a0d23f39364414c8531a0722e123f1f20",
+    "programs.json": "916f74e1b78df226c92aee68674ad9d3de58dc8926efb4144006b50d1b72cf78",
+    "repair_attempts.jsonl": "0492e2b4a1df91cbcc97ec74d21c33d079e9c1b7bb3cda3aab6c2d5afe4d0951",
+    "repair_per_case.csv": "801796f5457f231a9c13b77c92f18caf086c2adf094bb1d1fd30ac8df9a1eec2",
+    "repair_summary.json": "ac47010e88671ff9f65c301e480046b0bd611043e44aa0b0e1c1d1181dbf4a30",
+    "sensitivity.csv": "7c25310ecd8219e8ee7e92edebe4a01e2b8f49118eb69369c87c829961926bae",
+    "simulated_llm_summary.json": "847ba0aac7db0cd0c6b238a0c581eaf225a67e5b1e0c54de47b3a0661168725f",
+    "slice_ablation_without_sdl.json": "096f69e72c7cc6049a05c146b9ad4dfe9a7f8dd414e35b0eb1319847f98f7930",
+    "two_fault_cases.jsonl": "948f79085cf71dc5a247f12a9274f164d40a85b6747b0b84d5d68d7f6f1ee1c0",
+    "two_fault_per_case.csv": "e1aefe112dc48872c351af1032a4029484459d099f139e9caca8b99cd9aeb6a9",
+    "two_fault_summary.json": "cd747721cf6849dac0ce8271852a01a7ba362ff9307ddcb527a38f112e5182a6"
+  },
+  "status": "complete"
+}

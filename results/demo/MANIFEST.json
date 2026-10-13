@@ -1,0 +1,41 @@
+{
+  "cases": {
+    "clear_success": "days_in_month:3:CRP:0",
+    "human_bug": "quixbugs:knapsack",
+    "original_example": "has_close_elements:4:ROR-flip:0",
+    "worst_case": "merge_sorted:5:ROR-flip:0"
+  },
+  "environment": {
+    "matplotlib": "3.10.5",
+    "networkx": "3.5",
+    "numpy": "2.2.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pylint": "4.1.3",
+    "python": "3.12.3",
+    "seed": 20261013,
+    "step_limit": 20000
+  },
+  "files": {
+    "DEMO.md": "2519976bbe754225f84e63def9ffef6e2a3e9405933713674c2e2a04a49bd086",
+    "clear_success/faulty_program.py": "d1833cacabec7775c46cfc3b7978939e0a2606f806faa5b6c826891bd44c0b51",
+    "clear_success/graph.json": "aa93a32ec27774b4278ed78257ff97a183d60bb0f2c09e8c8c8b83f1c65f3d60",
+    "clear_success/graph.png": "b16965265308a9fd804bde054bf6ba488ba0e322d5db251edf5b766f390b15d4",
+    "clear_success/repair_report.json": "c32b0bc192208a91a4a566f9ff8a9b6108158b66c18e3646a5507114c1c2de78",
+    "clear_success/repaired_program.py": "34c69b02538f573403a35b7786be8e91b4fdee592bcbe32a827babebc80d8b5c",
+    "fault_free/graph.json": "f2a02426b70dd91cd7ddfa4a18b6793e7af48bb7bb36abdccf617d226528c6cb",
+    "human_bug/faulty_program.py": "cf80136450ec5d95d0da5ba437bb96229f1a4a3409fc513f6af2298c73b566aa",
+    "human_bug/graph.json": "122f85941b9818ad04aab5af4e7085e831250c11fd06f2ea29d2fd01e20967b3",
+    "human_bug/graph.png": "138ec9346d5c59e947a33b67f5849051a643eee037bf83fe26864351dd45c1fa",
+    "human_bug/repair_report.json": "ea89a116fea8a8c7982a7b51a55d9bf0261a35ab2669cf667abb562097843c45",
+    "original_example/faulty_program.py": "9930a4af029f22890b4f5e12370b744030b481f315fa1b2f8d451f82273ed75e",
+    "original_example/graph.json": "d1b3f2d06469d0b461b27cb2984afb32fff1a35747f7c81d7a10aafae0bfe6f1",
+    "original_example/graph.png": "dd21324e070dad66878cdbbedd59e28d9314aa7648352d2af35a0e19d88c2dab",
+    "original_example/repair_report.json": "fbbb3d9904d12b60dd5f515be80aa741da89056fb6e7c90a7ba791efb8e8464f",
+    "original_example/repaired_program.py": "f3c7e64f78e40b9c543b2caa8cae45491dbe0358e22c0813b6d11b511b389d3b",
+    "worst_case/faulty_program.py": "317e12287aea60e67df19654f9aaaa02afacb670a2f453a61083e30d0bea365b",
+    "worst_case/graph.json": "e4bcb0e1c1c9ce63a1dfc1b9a68d529b24dae0f80a58839c3c95c227ae72e62f",
+    "worst_case/graph.png": "bb30981ee961d65af76eac11de824881d9ffb7c4dc6cf7f7de4273a0c941949a",
+    "worst_case/repair_report.json": "bdb4f9004892dd37c580ed98512f5e4e8c83020ae1fb1ebafe56f33765f973de"
+  },
+  "status": "complete"
+}

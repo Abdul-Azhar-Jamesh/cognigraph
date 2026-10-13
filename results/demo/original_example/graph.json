@@ -1,0 +1,580 @@
+{
+  "edges": [
+    {
+      "kind": "mutation",
+      "source": "m:2",
+      "target": "s:2"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:3",
+      "target": "s:3"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:4",
+      "target": "s:4"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:5",
+      "target": "s:5"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:6",
+      "target": "s:6"
+    },
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:2",
+      "target": "s:3"
+    },
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:2",
+      "target": "s:4"
+    },
+    {
+      "kind": "control",
+      "source": "s:2",
+      "target": "s:5"
+    },
+    {
+      "kind": "control",
+      "source": "s:2",
+      "target": "s:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:10"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:11"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:8"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:9"
+    },
+    {
+      "kind": "def",
+      "source": "s:2",
+      "target": "v:i"
+    },
+    {
+      "kind": "control",
+      "source": "s:3",
+      "target": "s:2"
+    },
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:3",
+      "target": "s:4"
+    },
+    {
+      "kind": "control",
+      "source": "s:3",
+      "target": "s:5"
+    },
+    {
+      "kind": "control",
+      "source": "s:3",
+      "target": "s:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:10"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:11"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:8"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:9"
+    },
+    {
+      "kind": "def",
+      "source": "s:3",
+      "target": "v:j"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:2"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:3"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:5"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:10"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:11"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:11"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:10"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:8"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:9"
+    },
+    {
+      "kind": "use",
+      "source": "v:i",
+      "target": "s:3"
+    },
+    {
+      "kind": "use",
+      "source": "v:i",
+      "target": "s:4"
+    },
+    {
+      "kind": "use",
+      "source": "v:j",
+      "target": "s:4"
+    },
+    {
+      "kind": "use",
+      "source": "v:numbers",
+      "target": "s:2"
+    },
+    {
+      "kind": "use",
+      "source": "v:numbers",
+      "target": "s:3"
+    },
+    {
+      "kind": "use",
+      "source": "v:numbers",
+      "target": "s:4"
+    },
+    {
+      "kind": "use",
+      "source": "v:threshold",
+      "target": "s:4"
+    }
+  ],
+  "graph": {
+    "func_name": "has_close_elements",
+    "mutation_analysis_run": true,
+    "static_analysis_run": true
+  },
+  "nodes": [
+    {
+      "context": 2,
+      "id": "m:2",
+      "kind": "mutation_evidence",
+      "level": 0,
+      "line": 2,
+      "metallaxis": 0.0,
+      "muse": -5.1
+    },
+    {
+      "context": 2,
+      "id": "m:3",
+      "kind": "mutation_evidence",
+      "level": 2,
+      "line": 3,
+      "metallaxis": 0.4472135954999579,
+      "muse": 0.3333333333333333
+    },
+    {
+      "context": 2,
+      "id": "m:4",
+      "kind": "mutation_evidence",
+      "level": 4,
+      "line": 4,
+      "metallaxis": 1.0,
+      "muse": 1.475
+    },
+    {
+      "context": 1,
+      "id": "m:5",
+      "kind": "mutation_evidence",
+      "level": 2,
+      "line": 5,
+      "metallaxis": 0.6324555320336759,
+      "muse": -2.8
+    },
+    {
+      "context": 1,
+      "id": "m:6",
+      "kind": "mutation_evidence",
+      "level": 2,
+      "line": 6,
+      "metallaxis": 0.22360679774997896,
+      "muse": -4.1
+    },
+    {
+      "code": "for i in range(len(numbers)):",
+      "id": "s:2",
+      "kind": "statement",
+      "line": 2,
+      "posterior": 0.16279673449333812,
+      "posterior_fused": 0.052262221058863315,
+      "posterior_with_static": 0.16317231962911016,
+      "prior": 0.12288051067225214
+    },
+    {
+      "code": "for j in range(i + 1, len(numbers)):",
+      "id": "s:3",
+      "kind": "statement",
+      "line": 3,
+      "posterior": 0.2986946619103316,
+      "posterior_fused": 0.0049775346012546715,
+      "posterior_with_static": 0.29897859716759684,
+      "prior": 0.12288051067225214
+    },
+    {
+      "code": "if abs(numbers[i] - numbers[j]) > threshold:",
+      "id": "s:4",
+      "kind": "statement",
+      "line": 4,
+      "posterior": 0.5821684497270901,
+      "posterior_fused": 0.9983662489782186,
+      "posterior_with_static": 0.5821504341511234,
+      "prior": 0.12288051067225214
+    },
+    {
+      "code": "return True",
+      "id": "s:5",
+      "kind": "statement",
+      "line": 5,
+      "posterior": 0.08171024082038555,
+      "posterior_fused": 0.09852719592121797,
+      "posterior_with_static": 0.08257832242859961,
+      "prior": 0.12288051067225214
+    },
+    {
+      "code": "return False",
+      "id": "s:6",
+      "kind": "statement",
+      "line": 6,
+      "posterior": 0.0471854422887378,
+      "posterior_fused": 0.05359042634102775,
+      "posterior_with_static": 0.04771295623898411,
+      "prior": 0.12288051067225214
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:0",
+      "index": 0,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": true,
+      "id": "t:1",
+      "index": 1,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:10",
+      "index": 10,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": true,
+      "id": "t:11",
+      "index": 11,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:2",
+      "index": 2,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": true,
+      "id": "t:3",
+      "index": 3,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:4",
+      "index": 4,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:5",
+      "index": 5,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": true,
+      "id": "t:6",
+      "index": 6,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:7",
+      "index": 7,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:8",
+      "index": 8,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": true,
+      "id": "t:9",
+      "index": 9,
+      "kind": "test"
+    },
+    {
+      "id": "v:i",
+      "kind": "variable",
+      "name": "i"
+    },
+    {
+      "id": "v:j",
+      "kind": "variable",
+      "name": "j"
+    },
+    {
+      "id": "v:numbers",
+      "kind": "variable",
+      "name": "numbers"
+    },
+    {
+      "id": "v:threshold",
+      "kind": "variable",
+      "name": "threshold"
+    }
+  ]
+}

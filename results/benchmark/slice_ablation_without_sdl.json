@@ -1,0 +1,112 @@
+{
+  "comparisons": [
+    {
+      "cases_a_better": 12,
+      "cases_b_better": 4,
+      "ci_high": 0.028807040595658476,
+      "ci_low": 0.0,
+      "comparison": "pcg_slice - pcg",
+      "mean_difference": 0.009784735812133072,
+      "metric": "top1",
+      "programs_a_better": 2,
+      "programs_b_better": 0,
+      "programs_equal": 32,
+      "sign_flip_p_value": 0.49912504374781264
+    },
+    {
+      "cases_a_better": 13,
+      "cases_b_better": 7,
+      "ci_high": 0.017129620837232854,
+      "ci_low": 0.0,
+      "comparison": "pcg_slice - pcg",
+      "mean_difference": 0.0062121423912030556,
+      "metric": "reciprocal_rank",
+      "programs_a_better": 2,
+      "programs_b_better": 0,
+      "programs_equal": 32,
+      "sign_flip_p_value": 0.49912504374781264
+    },
+    {
+      "cases_a_better": 7,
+      "cases_b_better": 13,
+      "ci_high": 0.0,
+      "ci_low": -0.009296148738379813,
+      "comparison": "pcg_slice - pcg",
+      "mean_difference": -0.003587736464448793,
+      "metric": "exam",
+      "programs_a_better": 0,
+      "programs_b_better": 2,
+      "programs_equal": 32,
+      "sign_flip_p_value": 0.49912504374781264
+    }
+  ],
+  "n_detected": 511,
+  "overall": {
+    "ochiai": {
+      "exam": {
+        "ci_high": 0.2577763787748569,
+        "ci_low": 0.2215786685252583,
+        "mean": 0.23826664746429913
+      },
+      "reciprocal_rank": {
+        "ci_high": 0.7652377393451794,
+        "ci_low": 0.6904865075781056,
+        "mean": 0.7283221931362832
+      },
+      "top1": {
+        "ci_high": 0.6017295750539936,
+        "ci_low": 0.4921619968965183,
+        "mean": 0.5462398658093374
+      },
+      "top3": {
+        "ci_high": 0.9418410489841599,
+        "ci_low": 0.860513313669444,
+        "mean": 0.9035970552604604
+      }
+    },
+    "pcg": {
+      "exam": {
+        "ci_high": 0.26142304039661995,
+        "ci_low": 0.224325616445256,
+        "mean": 0.2424525870954442
+      },
+      "reciprocal_rank": {
+        "ci_high": 0.7695072079085492,
+        "ci_low": 0.6911843588889682,
+        "mean": 0.7307085351280906
+      },
+      "top1": {
+        "ci_high": 0.6112802272828607,
+        "ci_low": 0.5027793844902735,
+        "mean": 0.5565604323921348
+      },
+      "top3": {
+        "ci_high": 0.9363357073575383,
+        "ci_low": 0.8517476962068612,
+        "mean": 0.8965846612617651
+      }
+    },
+    "pcg_slice": {
+      "exam": {
+        "ci_high": 0.2569865611448541,
+        "ci_low": 0.22189130708382537,
+        "mean": 0.2388648506309954
+      },
+      "reciprocal_rank": {
+        "ci_high": 0.7750914368091698,
+        "ci_low": 0.6987881972672598,
+        "mean": 0.7369206775192937
+      },
+      "top1": {
+        "ci_high": 0.6199000652466282,
+        "ci_low": 0.5147322610511386,
+        "mean": 0.566345168204268
+      },
+      "top3": {
+        "ci_high": 0.9404626931985844,
+        "ci_low": 0.8572802544994113,
+        "mean": 0.9014770291678316
+      }
+    }
+  }
+}

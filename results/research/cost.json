@@ -1,0 +1,26 @@
+{
+  "D1": {
+    "cases": 594,
+    "seconds": 43.767539501190186,
+    "variant_texts_run": 6969,
+    "variants_generated": 13430
+  },
+  "D1_first_order_excluded": [
+    {
+      "case_id": "gcd:3:AOR:0",
+      "reason": "runner_timeout_or_crash"
+    }
+  ],
+  "D1_two_fault": {
+    "cases": 410,
+    "seconds": 16.93405294418335,
+    "variant_texts_run": 7559,
+    "variants_generated": 8111
+  },
+  "external": {
+    "cases": 413,
+    "seconds": 268.76273131370544,
+    "variant_texts_run": 6065,
+    "variants_generated": 8621
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "comparisons": [
+    {
+      "cases_a_better": 4,
+      "cases_b_better": 6,
+      "ci_high": 0.008369079849513014,
+      "ci_low": -0.014540168138400488,
+      "comparison": "pcg_top3 - ochiai_top3",
+      "mean_difference": -0.003367003367003367,
+      "metric": "repaired",
+      "programs_a_better": 2,
+      "programs_b_better": 4,
+      "programs_equal": 28,
+      "sign_flip_p_value": 0.720013999300035
+    },
+    {
+      "cases_a_better": 15,
+      "cases_b_better": 33,
+      "ci_high": -0.039145150942939466,
+      "ci_low": -0.19014693932827734,
+      "comparison": "pcg_top3 - ochiai_top3",
+      "mean_difference": -0.1111111111111111,
+      "metric": "candidates_tried",
+      "programs_a_better": 7,
+      "programs_b_better": 18,
+      "programs_equal": 9,
+      "sign_flip_p_value": 0.010249487525623718
+    }
+  ],
+  "overall": {
+    "ochiai_top3": {
+      "candidates_tried": {
+        "ci_high": 5.320454185475568,
+        "ci_low": 4.371970334928229,
+        "mean": 4.856902356902357
+      },
+      "exact": {
+        "ci_high": 0.679635122410546,
+        "ci_low": 0.5447422660553993,
+        "mean": 0.6127946127946128
+      },
+      "fault_line_in_region": {
+        "ci_high": 0.9601388051641424,
+        "ci_low": 0.8796110052166934,
+        "mean": 0.9225589225589226
+      },
+      "repaired": {
+        "ci_high": 0.8171395042471402,
+        "ci_low": 0.6821695436745784,
+        "mean": 0.7525252525252525
+      }
+    },
+    "pcg_top3": {
+      "candidates_tried": {
+        "ci_high": 5.2078134084302325,
+        "ci_low": 4.265728085499949,
+        "mean": 4.745791245791246
+      },
+      "exact": {
+        "ci_high": 0.6783094362745098,
+        "ci_low": 0.5393414570732642,
+        "mean": 0.6094276094276094
+      },
+      "fault_line_in_region": {
+        "ci_high": 0.9530777287947366,
+        "ci_low": 0.8593244430833145,
+        "mean": 0.9090909090909091
+      },
+      "repaired": {
+        "ci_high": 0.8153376670278079,
+        "ci_low": 0.6762433146534274,
+        "mean": 0.7491582491582491
+      }
+    },
+    "unguided_all": {
+      "candidates_tried": {
+        "ci_high": 15.547550491109423,
+        "ci_low": 11.136366616362782,
+        "mean": 13.377104377104377
+      },
+      "exact": {
+        "ci_high": 0.7039594178642703,
+        "ci_low": 0.6110156321141296,
+        "mean": 0.6582491582491582
+      },
+      "fault_line_in_region": {
+        "ci_high": 1.0,
+        "ci_low": 1.0,
+        "mean": 1.0
+      },
+      "repaired": {
+        "ci_high": 0.8681175889328062,
+        "ci_low": 0.7870196293691499,
+        "mean": 0.8282828282828283
+      }
+    }
+  }
+}

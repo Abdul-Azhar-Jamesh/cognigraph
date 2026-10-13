@@ -1,0 +1,33 @@
+{
+  "region_lines": [
+    4,
+    3,
+    2
+  ],
+  "repaired": true,
+  "tests_failed_before": 5,
+  "tests_failed_after": 0,
+  "attempts": [
+    {
+      "number": 1,
+      "line": 4,
+      "description": "line 4: negate condition",
+      "compiles": true,
+      "tests_run": 11,
+      "accepted": false,
+      "reason": "fails test 10",
+      "diff": "--- before\n+++ after\n@@ -3,3 +3,3 @@\n         for j in range(i + 1, len(numbers)):\n-            if abs(numbers[i] - numbers[j]) > threshold:\n+            if not abs(numbers[i] - numbers[j]) > threshold:\n                 return True\n"
+    },
+    {
+      "number": 2,
+      "line": 4,
+      "description": "line 4: '>' -> '<'",
+      "compiles": true,
+      "tests_run": 12,
+      "accepted": true,
+      "reason": "passes all tests",
+      "diff": "--- before\n+++ after\n@@ -3,3 +3,3 @@\n         for j in range(i + 1, len(numbers)):\n-            if abs(numbers[i] - numbers[j]) > threshold:\n+            if abs(numbers[i] - numbers[j]) < threshold:\n                 return True\n"
+    }
+  ],
+  "accepted_source": "def has_close_elements(numbers, threshold):\n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            if abs(numbers[i] - numbers[j]) < threshold:\n                return True\n    return False\n"
+}

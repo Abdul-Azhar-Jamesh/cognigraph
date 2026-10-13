@@ -1,0 +1,543 @@
+{
+  "d2_cases": 31,
+  "d2_detected": 31,
+  "d3_cases": 402,
+  "d3_detected": 382,
+  "excluded_runs": [
+    {
+      "case_id": "quixbugs-mutant:gcd:5:AOR:0",
+      "reason": "runner limit or crash"
+    }
+  ],
+  "per_program": [
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        4
+      ],
+      "program": "bitcount",
+      "statements": 5,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 9,
+      "tests_kept": 9
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        6
+      ],
+      "program": "bucketsort",
+      "statements": 7,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 7,
+      "tests_kept": 7
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        4
+      ],
+      "program": "find_first_in_sorted",
+      "statements": 10,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 7,
+      "tests_kept": 7
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        10
+      ],
+      "program": "find_in_sorted",
+      "statements": 10,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 7,
+      "tests_kept": 7
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        7
+      ],
+      "program": "flatten",
+      "statements": 5,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 7,
+      "tests_kept": 7
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        5
+      ],
+      "program": "gcd",
+      "statements": 3,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 6,
+      "tests_kept": 6
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        7
+      ],
+      "program": "get_factors",
+      "statements": 6,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 11,
+      "tests_kept": 11
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        6
+      ],
+      "program": "hanoi",
+      "statements": 7,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 8,
+      "tests_kept": 8
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        10
+      ],
+      "program": "is_valid_parenthesization",
+      "statements": 8,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 3,
+      "tests_kept": 3
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        5
+      ],
+      "program": "kheapsort",
+      "statements": 7,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 4,
+      "tests_kept": 4
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        8
+      ],
+      "program": "knapsack",
+      "statements": 9,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 1,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 10,
+      "tests_kept": 9
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        10
+      ],
+      "program": "kth",
+      "statements": 10,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 7,
+      "tests_kept": 7
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        7
+      ],
+      "program": "lcs_length",
+      "statements": 7,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 9,
+      "tests_kept": 9
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        5
+      ],
+      "program": "levenshtein",
+      "statements": 5,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 2,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 7,
+      "tests_kept": 5
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        9
+      ],
+      "program": "lis",
+      "statements": 9,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 12,
+      "tests_kept": 12
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        5
+      ],
+      "program": "longest_common_subsequence",
+      "statements": 5,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 2,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 10,
+      "tests_kept": 8
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        5
+      ],
+      "program": "max_sublist_sum",
+      "statements": 6,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 6,
+      "tests_kept": 6
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        16
+      ],
+      "program": "mergesort",
+      "statements": 18,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 14,
+      "tests_kept": 14
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        15
+      ],
+      "program": "next_palindrome",
+      "statements": 13,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 5,
+      "tests_kept": 5
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        5
+      ],
+      "program": "next_permutation",
+      "statements": 8,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 8,
+      "tests_kept": 8
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        5
+      ],
+      "program": "pascal",
+      "statements": 9,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 5,
+      "tests_kept": 5
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        4
+      ],
+      "program": "possible_change",
+      "statements": 6,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 4,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 10,
+      "tests_kept": 6
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        5
+      ],
+      "program": "powerset",
+      "statements": 5,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 5,
+      "tests_kept": 5
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        6
+      ],
+      "program": "quicksort",
+      "statements": 6,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 13,
+      "tests_kept": 13
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        12
+      ],
+      "program": "rpn_eval",
+      "statements": 10,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 6,
+      "tests_kept": 6
+    },
+    {
+      "fault_kind": "missing line",
+      "fault_lines": [
+        11
+      ],
+      "program": "shunting_yard",
+      "statements": 11,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 6,
+      "tests_kept": 6
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        4
+      ],
+      "program": "sieve",
+      "statements": 5,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 6,
+      "tests_kept": 6
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        3
+      ],
+      "program": "sqrt",
+      "statements": 4,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 2,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 7,
+      "tests_kept": 5
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        3
+      ],
+      "program": "subsequences",
+      "statements": 6,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 12,
+      "tests_kept": 12
+    },
+    {
+      "fault_kind": "modified line",
+      "fault_lines": [
+        9
+      ],
+      "program": "to_base",
+      "statements": 7,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 10,
+      "tests_kept": 10
+    },
+    {
+      "fault_kind": "missing line",
+      "fault_lines": [
+        9
+      ],
+      "program": "wrap",
+      "statements": 8,
+      "status": "used",
+      "tests_dropped": {
+        "duplicate_input": 0,
+        "reference_disagrees_with_expected_output": 0,
+        "reference_exceeded_step_limit": 0,
+        "reference_raised": 0
+      },
+      "tests_in_benchmark": 5,
+      "tests_kept": 5
+    }
+  ],
+  "programs_used": 31,
+  "programs_with_json_tests": 31
+}

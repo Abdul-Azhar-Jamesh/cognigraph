@@ -1,0 +1,13 @@
+# Versions the reported results were produced with (Python 3.12.3, Windows 11).
+numpy==2.2.5
+networkx==3.5
+matplotlib==3.10.5
+pylint==4.1.3
+pytest==9.1.1
+
+# Optional. Only tests/test_model.py uses it, as an independent cross-check of
+# exact inference; that one test is skipped when it is not installed.
+# pgmpy==1.1.2
+
+# Optional. Only pcg/llm.py uses it. Not needed for the benchmark or the demo.
+# anthropic

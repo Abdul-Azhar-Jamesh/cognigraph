@@ -1,0 +1,33 @@
+{
+  "region_lines": [
+    3,
+    6,
+    7
+  ],
+  "repaired": true,
+  "tests_failed_before": 3,
+  "tests_failed_after": 0,
+  "attempts": [
+    {
+      "number": 1,
+      "line": 3,
+      "description": "line 3: 1 -> 2",
+      "compiles": true,
+      "tests_run": 1,
+      "accepted": false,
+      "reason": "fails test 0",
+      "diff": "--- before\n+++ after\n@@ -2,3 +2,3 @@\n     if month < 1 or month > 12:\n-        return 1\n+        return 2\n     if month == 2:\n"
+    },
+    {
+      "number": 2,
+      "line": 3,
+      "description": "line 3: 1 -> 0",
+      "compiles": true,
+      "tests_run": 16,
+      "accepted": true,
+      "reason": "passes all tests",
+      "diff": "--- before\n+++ after\n@@ -2,3 +2,3 @@\n     if month < 1 or month > 12:\n-        return 1\n+        return 0\n     if month == 2:\n"
+    }
+  ],
+  "accepted_source": "def days_in_month(month, leap):\n    if month < 1 or month > 12:\n        return 0\n    if month == 2:\n        if leap:\n            return 29\n        return 28\n    if month in [4, 6, 9, 11]:\n        return 30\n    return 31\n"
+}

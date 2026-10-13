@@ -1,0 +1,499 @@
+{
+  "edges": [
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:2",
+      "target": "s:3"
+    },
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:2",
+      "target": "s:4"
+    },
+    {
+      "kind": "control",
+      "source": "s:2",
+      "target": "s:5"
+    },
+    {
+      "kind": "control",
+      "source": "s:2",
+      "target": "s:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:10"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:11"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:8"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:9"
+    },
+    {
+      "kind": "def",
+      "source": "s:2",
+      "target": "v:i"
+    },
+    {
+      "kind": "control",
+      "source": "s:3",
+      "target": "s:2"
+    },
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:3",
+      "target": "s:4"
+    },
+    {
+      "kind": "control",
+      "source": "s:3",
+      "target": "s:5"
+    },
+    {
+      "kind": "control",
+      "source": "s:3",
+      "target": "s:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:10"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:11"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:8"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:9"
+    },
+    {
+      "kind": "def",
+      "source": "s:3",
+      "target": "v:j"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:2"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:3"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:5"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:10"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:11"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:10"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:11"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:8"
+    },
+    {
+      "kind": "use",
+      "source": "v:i",
+      "target": "s:3"
+    },
+    {
+      "kind": "use",
+      "source": "v:i",
+      "target": "s:4"
+    },
+    {
+      "kind": "use",
+      "source": "v:j",
+      "target": "s:4"
+    },
+    {
+      "kind": "use",
+      "source": "v:numbers",
+      "target": "s:2"
+    },
+    {
+      "kind": "use",
+      "source": "v:numbers",
+      "target": "s:3"
+    },
+    {
+      "kind": "use",
+      "source": "v:numbers",
+      "target": "s:4"
+    },
+    {
+      "kind": "use",
+      "source": "v:threshold",
+      "target": "s:4"
+    }
+  ],
+  "graph": {
+    "func_name": "has_close_elements",
+    "static_analysis_run": false
+  },
+  "nodes": [
+    {
+      "code": "for i in range(len(numbers)):",
+      "id": "s:2",
+      "kind": "statement",
+      "line": 2,
+      "posterior": 0.0075207144801638735,
+      "prior": 0.12288051067225214
+    },
+    {
+      "code": "for j in range(i + 1, len(numbers)):",
+      "id": "s:3",
+      "kind": "statement",
+      "line": 3,
+      "posterior": 0.00832477285922705,
+      "prior": 0.12288051067225214
+    },
+    {
+      "code": "if abs(numbers[i] - numbers[j]) < threshold:",
+      "id": "s:4",
+      "kind": "statement",
+      "line": 4,
+      "posterior": 0.009244964062671297,
+      "prior": 0.12288051067225214
+    },
+    {
+      "code": "return True",
+      "id": "s:5",
+      "kind": "statement",
+      "line": 5,
+      "posterior": 0.016917370632519687,
+      "prior": 0.12288051067225214
+    },
+    {
+      "code": "return False",
+      "id": "s:6",
+      "kind": "statement",
+      "line": 6,
+      "posterior": 0.012980614260009312,
+      "prior": 0.12288051067225214
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:0",
+      "index": 0,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:1",
+      "index": 1,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:10",
+      "index": 10,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:11",
+      "index": 11,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:2",
+      "index": 2,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:3",
+      "index": 3,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:4",
+      "index": 4,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:5",
+      "index": 5,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:6",
+      "index": 6,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:7",
+      "index": 7,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 6,
+      "failed": false,
+      "id": "t:8",
+      "index": 8,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 5,
+      "failed": false,
+      "id": "t:9",
+      "index": 9,
+      "kind": "test"
+    },
+    {
+      "id": "v:i",
+      "kind": "variable",
+      "name": "i"
+    },
+    {
+      "id": "v:j",
+      "kind": "variable",
+      "name": "j"
+    },
+    {
+      "id": "v:numbers",
+      "kind": "variable",
+      "name": "numbers"
+    },
+    {
+      "id": "v:threshold",
+      "kind": "variable",
+      "name": "threshold"
+    }
+  ]
+}

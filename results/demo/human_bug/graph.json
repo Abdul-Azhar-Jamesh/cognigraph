@@ -1,0 +1,1032 @@
+{
+  "edges": [
+    {
+      "kind": "mutation",
+      "source": "m:10",
+      "target": "s:10"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:2",
+      "target": "s:2"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:3",
+      "target": "s:3"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:4",
+      "target": "s:4"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:5",
+      "target": "s:5"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:6",
+      "target": "s:6"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:7",
+      "target": "s:7"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:8",
+      "target": "s:8"
+    },
+    {
+      "kind": "mutation",
+      "source": "m:9",
+      "target": "s:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:10",
+      "target": "t:8"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:2",
+      "target": "t:8"
+    },
+    {
+      "kind": "data",
+      "source": "s:3",
+      "target": "s:10"
+    },
+    {
+      "kind": "data",
+      "source": "s:3",
+      "target": "s:5"
+    },
+    {
+      "kind": "data",
+      "source": "s:3",
+      "target": "s:7"
+    },
+    {
+      "kind": "data",
+      "source": "s:3",
+      "target": "s:8"
+    },
+    {
+      "kind": "data",
+      "source": "s:3",
+      "target": "s:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:3",
+      "target": "t:8"
+    },
+    {
+      "kind": "def",
+      "source": "s:3",
+      "target": "v:int"
+    },
+    {
+      "kind": "def",
+      "source": "s:3",
+      "target": "v:memo"
+    },
+    {
+      "kind": "data",
+      "source": "s:4",
+      "target": "s:10"
+    },
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:4",
+      "target": "s:5"
+    },
+    {
+      "kind": "control",
+      "source": "s:4",
+      "target": "s:6"
+    },
+    {
+      "kind": "data",
+      "source": "s:4",
+      "target": "s:7"
+    },
+    {
+      "kind": "data",
+      "source": "s:4",
+      "target": "s:8"
+    },
+    {
+      "kind": "data",
+      "source": "s:4",
+      "target": "s:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:4",
+      "target": "t:8"
+    },
+    {
+      "kind": "def",
+      "source": "s:4",
+      "target": "v:i"
+    },
+    {
+      "kind": "data",
+      "source": "s:5",
+      "target": "s:10"
+    },
+    {
+      "kind": "data",
+      "source": "s:5",
+      "target": "s:4"
+    },
+    {
+      "kind": "data",
+      "source": "s:5",
+      "target": "s:8"
+    },
+    {
+      "kind": "data",
+      "source": "s:5",
+      "target": "s:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:5",
+      "target": "t:8"
+    },
+    {
+      "kind": "def",
+      "source": "s:5",
+      "target": "v:value"
+    },
+    {
+      "kind": "def",
+      "source": "s:5",
+      "target": "v:weight"
+    },
+    {
+      "kind": "data",
+      "source": "s:6",
+      "target": "s:10"
+    },
+    {
+      "kind": "data",
+      "source": "s:6",
+      "target": "s:5"
+    },
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:6",
+      "target": "s:7"
+    },
+    {
+      "also_control": true,
+      "kind": "data",
+      "source": "s:6",
+      "target": "s:8"
+    },
+    {
+      "kind": "data",
+      "source": "s:6",
+      "target": "s:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:6",
+      "target": "t:8"
+    },
+    {
+      "kind": "def",
+      "source": "s:6",
+      "target": "v:j"
+    },
+    {
+      "kind": "data",
+      "source": "s:7",
+      "target": "s:10"
+    },
+    {
+      "kind": "data",
+      "source": "s:7",
+      "target": "s:5"
+    },
+    {
+      "kind": "data",
+      "source": "s:7",
+      "target": "s:8"
+    },
+    {
+      "kind": "data",
+      "source": "s:7",
+      "target": "s:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:7",
+      "target": "t:8"
+    },
+    {
+      "kind": "def",
+      "source": "s:7",
+      "target": "v:memo"
+    },
+    {
+      "kind": "control",
+      "source": "s:8",
+      "target": "s:9"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:8",
+      "target": "t:8"
+    },
+    {
+      "kind": "data",
+      "source": "s:9",
+      "target": "s:10"
+    },
+    {
+      "kind": "data",
+      "source": "s:9",
+      "target": "s:5"
+    },
+    {
+      "kind": "data",
+      "source": "s:9",
+      "target": "s:7"
+    },
+    {
+      "kind": "data",
+      "source": "s:9",
+      "target": "s:8"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:0"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:1"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:2"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:3"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:4"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:5"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:6"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:7"
+    },
+    {
+      "kind": "in_scope",
+      "source": "s:9",
+      "target": "t:8"
+    },
+    {
+      "kind": "def",
+      "source": "s:9",
+      "target": "v:memo"
+    },
+    {
+      "kind": "use",
+      "source": "v:capacity",
+      "target": "s:10"
+    },
+    {
+      "kind": "use",
+      "source": "v:capacity",
+      "target": "s:6"
+    },
+    {
+      "kind": "use",
+      "source": "v:defaultdict",
+      "target": "s:3"
+    },
+    {
+      "kind": "use",
+      "source": "v:i",
+      "target": "s:5"
+    },
+    {
+      "kind": "use",
+      "source": "v:i",
+      "target": "s:7"
+    },
+    {
+      "kind": "use",
+      "source": "v:i",
+      "target": "s:9"
+    },
+    {
+      "kind": "use",
+      "source": "v:int",
+      "target": "s:3"
+    },
+    {
+      "kind": "use",
+      "source": "v:items",
+      "target": "s:10"
+    },
+    {
+      "kind": "use",
+      "source": "v:items",
+      "target": "s:4"
+    },
+    {
+      "kind": "use",
+      "source": "v:items",
+      "target": "s:5"
+    },
+    {
+      "kind": "use",
+      "source": "v:j",
+      "target": "s:7"
+    },
+    {
+      "kind": "use",
+      "source": "v:j",
+      "target": "s:8"
+    },
+    {
+      "kind": "use",
+      "source": "v:j",
+      "target": "s:9"
+    },
+    {
+      "kind": "use",
+      "source": "v:memo",
+      "target": "s:10"
+    },
+    {
+      "kind": "use",
+      "source": "v:memo",
+      "target": "s:7"
+    },
+    {
+      "kind": "use",
+      "source": "v:memo",
+      "target": "s:9"
+    },
+    {
+      "kind": "use",
+      "source": "v:value",
+      "target": "s:9"
+    },
+    {
+      "kind": "use",
+      "source": "v:weight",
+      "target": "s:8"
+    },
+    {
+      "kind": "use",
+      "source": "v:weight",
+      "target": "s:9"
+    }
+  ],
+  "graph": {
+    "func_name": "knapsack",
+    "mutation_analysis_run": true,
+    "static_analysis_run": true
+  },
+  "nodes": [
+    {
+      "context": 2,
+      "id": "m:10",
+      "kind": "mutation_evidence",
+      "level": 0,
+      "line": 10,
+      "metallaxis": 0.0,
+      "muse": -1.2769230769230768
+    },
+    {
+      "context": 2,
+      "id": "m:2",
+      "kind": "mutation_evidence",
+      "level": 0,
+      "line": 2,
+      "metallaxis": 0.0,
+      "muse": -1.2769230769230768
+    },
+    {
+      "context": 2,
+      "id": "m:3",
+      "kind": "mutation_evidence",
+      "level": 1,
+      "line": 3,
+      "metallaxis": 0.816496580927726,
+      "muse": -0.27692307692307694
+    },
+    {
+      "context": 2,
+      "id": "m:4",
+      "kind": "mutation_evidence",
+      "level": 1,
+      "line": 4,
+      "metallaxis": 0.8333333333333334,
+      "muse": -0.24000000000000005
+    },
+    {
+      "context": 2,
+      "id": "m:5",
+      "kind": "mutation_evidence",
+      "level": 1,
+      "line": 5,
+      "metallaxis": 0.816496580927726,
+      "muse": -0.2076923076923077
+    },
+    {
+      "context": 2,
+      "id": "m:6",
+      "kind": "mutation_evidence",
+      "level": 1,
+      "line": 6,
+      "metallaxis": 0.816496580927726,
+      "muse": -0.11076923076923077
+    },
+    {
+      "context": 2,
+      "id": "m:7",
+      "kind": "mutation_evidence",
+      "level": 1,
+      "line": 7,
+      "metallaxis": 0.8660254037844387,
+      "muse": -0.25384615384615383
+    },
+    {
+      "context": 2,
+      "id": "m:8",
+      "kind": "mutation_evidence",
+      "level": 4,
+      "line": 8,
+      "metallaxis": 1.0,
+      "muse": 1.8153846153846154
+    },
+    {
+      "context": 2,
+      "id": "m:9",
+      "kind": "mutation_evidence",
+      "level": 1,
+      "line": 9,
+      "metallaxis": 0.816496580927726,
+      "muse": -0.26153846153846155
+    },
+    {
+      "code": "return memo[len(items), capacity]",
+      "id": "s:10",
+      "kind": "statement",
+      "line": 10,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.08115586374584086,
+      "posterior_with_static": 0.16137403653356683,
+      "prior": 0.12356662712534598
+    },
+    {
+      "code": "from collections import defaultdict",
+      "id": "s:2",
+      "kind": "statement",
+      "line": 2,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.08115586374584086,
+      "posterior_with_static": 0.16137403653356686,
+      "prior": 0.12356662712534598
+    },
+    {
+      "code": "memo = defaultdict(int)",
+      "id": "s:3",
+      "kind": "statement",
+      "line": 3,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.0024681048460218668,
+      "posterior_with_static": 0.16137403653356686,
+      "prior": 0.12356662712534598
+    },
+    {
+      "code": "for i in range(1, len(items) + 1):",
+      "id": "s:4",
+      "kind": "statement",
+      "line": 4,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.0024681048460218663,
+      "posterior_with_static": 0.16137403653356686,
+      "prior": 0.12356662712534598
+    },
+    {
+      "code": "weight, value = items[i - 1]",
+      "id": "s:5",
+      "kind": "statement",
+      "line": 5,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.0024681048460218663,
+      "posterior_with_static": 0.16137403653356686,
+      "prior": 0.12356662712534598
+    },
+    {
+      "code": "for j in range(1, capacity + 1):",
+      "id": "s:6",
+      "kind": "statement",
+      "line": 6,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.0024681048460218663,
+      "posterior_with_static": 0.16137403653356683,
+      "prior": 0.12356662712534598
+    },
+    {
+      "code": "memo[i, j] = memo[i - 1, j]",
+      "id": "s:7",
+      "kind": "statement",
+      "line": 7,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.0024681048460218663,
+      "posterior_with_static": 0.16137403653356683,
+      "prior": 0.12356662712534598
+    },
+    {
+      "code": "if weight < j:",
+      "id": "s:8",
+      "kind": "statement",
+      "line": 8,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.9908553122634884,
+      "posterior_with_static": 0.16137403653356683,
+      "prior": 0.12356662712534598
+    },
+    {
+      "code": "memo[i, j] = max(memo[i, j], value + memo[i - 1, j - weight])",
+      "id": "s:9",
+      "kind": "statement",
+      "line": 9,
+      "posterior": 0.1608763108960424,
+      "posterior_fused": 0.0024681048460218668,
+      "posterior_with_static": 0.16137403653356683,
+      "prior": 0.12356662712534598
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": false,
+      "id": "t:0",
+      "index": 0,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": true,
+      "id": "t:1",
+      "index": 1,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": false,
+      "id": "t:2",
+      "index": 2,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": true,
+      "id": "t:3",
+      "index": 3,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": true,
+      "id": "t:4",
+      "index": 4,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": true,
+      "id": "t:5",
+      "index": 5,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": true,
+      "id": "t:6",
+      "index": 6,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": true,
+      "id": "t:7",
+      "index": 7,
+      "kind": "test"
+    },
+    {
+      "exit_kind": "return",
+      "exit_line": 10,
+      "failed": false,
+      "id": "t:8",
+      "index": 8,
+      "kind": "test"
+    },
+    {
+      "id": "v:capacity",
+      "kind": "variable",
+      "name": "capacity"
+    },
+    {
+      "id": "v:defaultdict",
+      "kind": "variable",
+      "name": "defaultdict"
+    },
+    {
+      "id": "v:i",
+      "kind": "variable",
+      "name": "i"
+    },
+    {
+      "id": "v:int",
+      "kind": "variable",
+      "name": "int"
+    },
+    {
+      "id": "v:items",
+      "kind": "variable",
+      "name": "items"
+    },
+    {
+      "id": "v:j",
+      "kind": "variable",
+      "name": "j"
+    },
+    {
+      "id": "v:memo",
+      "kind": "variable",
+      "name": "memo"
+    },
+    {
+      "id": "v:value",
+      "kind": "variable",
+      "name": "value"
+    },
+    {
+      "id": "v:weight",
+      "kind": "variable",
+      "name": "weight"
+    }
+  ]
+}
