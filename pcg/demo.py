@@ -11,7 +11,7 @@ Six cases are executed live (nothing is read from a saved answer):
    under PCG (first in file order among equals).
 4. ``human_bug``         a human-written bug from QuixBugs: the one on which
    mutation evidence changes the fault's reciprocal rank the most (first in
-   file order among equals). Needs the research results and a QuixBugs clone.
+   file order among equals). Needs the research results and data/external/QuixBugs.
 5. ``fault_free``        the correct program: what the model says when every
    test passes.
 6. ``compile_error``     a syntactically broken program: compiler evidence.
@@ -259,7 +259,7 @@ def _run_human_bug(out: ex.OutputDir, research_dir: Path, say: Callable[[str], N
     from .quixbugs import load_quixbugs
 
     if not (config.QUIXBUGS_DIR / "json_testcases").is_dir():
-        say("\n## Case `human_bug`: skipped (no QuixBugs clone found)\n")
+        say("\n## Case `human_bug`: skipped (QuixBugs data not found)\n")
         return None
     with open(research_dir / "d2_transfer_per_case.csv", newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))

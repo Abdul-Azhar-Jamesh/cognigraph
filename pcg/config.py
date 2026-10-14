@@ -69,8 +69,8 @@ MUTATION_LEVELS = 5
 LOGISTIC_L2 = 1.0
 #: Largest candidate (set of statements) considered by the Barinel baseline.
 BARINEL_MAX_CANDIDATE_SIZE = 3
-#: Default location of the QuixBugs clone, next to the project folder.
-QUIXBUGS_DIR = PROJECT_ROOT.parent / "QuixBugs"
+#: Default location of the QuixBugs files (python programs and JSON tests only; see data/external/README.md).
+QUIXBUGS_DIR = PROJECT_ROOT / "data" / "external" / "QuixBugs"
 
 # --- repair ------------------------------------------------------------------
 #: A "targeted" repair may only edit the K most suspicious statements.
@@ -153,3 +153,25 @@ class ModelParams:
     @classmethod
     def from_dict(cls, data: dict) -> "ModelParams":
         return cls(**data)
+
+# ----------------------------------------------------------------------------
+# Version 4 (interventional multi-fault model); see research/RESEARCH_PROTOCOL.md
+# ----------------------------------------------------------------------------
+
+#: The Python split of HumanEvalPack as JSON lines (see data/external/README.md).
+HUMANEVALPACK_FILE = PROJECT_ROOT / "data" / "external" / "HumanEvalPack" / "humanevalpack_python.jsonl"
+#: Architecture of the variant layer, fixed on development data (protocol section 2).
+IV_NONREPAIR_KINDS = 5
+IV_REPAIR_KINDS = 1
+IV_MAX_FAULTS = 3
+#: Sampling of held-out cases per program: (two-fault, three-fault, human bug plus one injected fault).
+QUIXBUGS_MULTI_PER_PROGRAM = (10, 6, 6)
+#: HumanEvalFix: (one, two, three injected faults, human bug plus one injected fault) per problem.
+HUMANEVAL_PER_PROGRAM = (8, 8, 4, 4)
+HUMANEVAL_FOLDS = 5
+#: Wall-clock limit of one runner batch for HumanEval programs. They run in milliseconds; a batch
+#: that needs longer contains a runaway program, which is then reported as "no result".
+HUMANEVAL_TIMEOUT_S = 20.0
+#: Cases compared with one more allowed fault (hypothesis H6), and their size limit.
+TRUNCATION_CHECK_CASES = 100
+TRUNCATION_CHECK_MAX_ACTIVE = 14

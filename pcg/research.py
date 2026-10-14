@@ -1,4 +1,4 @@
-"""Experiments of the research phase (version 3). Protocol: research/RESEARCH_PROPOSAL.md.
+"""Experiments of the research phase (version 3). Protocol: research/v3/RESEARCH_PROPOSAL.md.
 
 Datasets
     D1  the project's benchmark, leave-one-program-out.

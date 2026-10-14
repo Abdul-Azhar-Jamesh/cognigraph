@@ -1,0 +1,18 @@
+{
+  "environment": {
+    "matplotlib": "3.10.5",
+    "networkx": "3.5",
+    "numpy": "2.2.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pylint": "4.1.3",
+    "python": "3.12.3",
+    "seed": 20261013,
+    "step_limit": 20000
+  },
+  "files": {
+    "SUMMARY.md": "0f6d183b85bcf44efc457b2044a5e794bd8e6ac12060c6922fe77abf203de41a",
+    "per_case.csv": "60d4ac77df38b2c360669bb64463871d8238beea58e356ca12fa5a667f789069",
+    "summary.json": "6d05e9f05307f7dede391b30227476e262488aa8c8b16bab89cc5ec7e2865407"
+  },
+  "status": "complete"
+}

@@ -52,7 +52,7 @@ several faults are likely.**
 **Mutation evidence is treated as independent of test outcomes given the fault state and the
 coverage context.** It is computed from the same executions. The conditioning that was designed to
 remove the most obvious part of this dependence made results worse (hypothesis H3), so the
-dependence structure is not understood well enough; see `research/RESEARCH_PROPOSAL.md`, section 7.
+dependence structure is not understood well enough; see `research/v3/RESEARCH_PROPOSAL.md`, section 7.
 
 **Static flags are assumed independent of test outcomes.** A warning and a crash can describe the
 same defect.
@@ -146,7 +146,7 @@ process protects against crashes and endless loops and is not a security sandbox
 * The sampling unit is the program: 34 programs in D1, 31 in D2 and D3.
 * Many comparisons are reported and none is corrected for multiplicity. Individual p-values near
   0.05 are not findings. The pre-registered primary comparisons are listed in
-  `research/RESEARCH_PROPOSAL.md`, section 5; everything else is exploratory.
+  `research/v3/RESEARCH_PROPOSAL.md`, section 5; everything else is exploratory.
 * The sign-flip test and the bootstrap interval can disagree when most programs move slightly one
   way and a few move a lot the other way (example: size-aware prior, Brier difference +0.0003,
   interval includes 0, p = 0.0005). Such a difference has no practical relevance.

@@ -6,7 +6,7 @@ This document has two parts.
   `python -m pcg benchmark`; results in `results/benchmark`.
 * **Part B** (sections 7 to 15): the research experiments of version 3.0.0. Command:
   `python -m pcg research`; results in `results/research`. Their protocol was fixed beforehand in
-  `research/RESEARCH_PROPOSAL.md`.
+  `research/v3/RESEARCH_PROPOSAL.md`.
 
 # Part A: version 2.0.0
 
@@ -323,7 +323,7 @@ arithmetic mutants whose inverse edit is not among the operators.
 Tables are copied from the generated file `results/research/SUMMARY.md`. Intervals are 95%
 bootstrap intervals over programs. No multiple-comparison correction is applied. The question,
 hypotheses and comparisons were written down before the code existed
-(`research/RESEARCH_PROPOSAL.md`, section 5); section 15 says which hypotheses held.
+(`research/v3/RESEARCH_PROPOSAL.md`, section 5); section 15 says which hypotheses held.
 
 ## 7. Datasets
 

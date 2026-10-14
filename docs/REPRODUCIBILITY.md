@@ -20,7 +20,7 @@ The exact environment of a run is also written into `results/benchmark/MANIFEST.
 
 ## Setup
 
-From the project folder (`pcg-project-main`), in PowerShell:
+From the project folder (`cognigraph`), in PowerShell:
 
 ```powershell
 python -m venv .venv
@@ -32,16 +32,12 @@ On Linux or macOS replace the second line by `source .venv/bin/activate`.
 
 No API key is needed for anything below.
 
-### QuixBugs (needed only for `research` and for one demonstration case)
+### External data (included)
 
-The external benchmark is not shipped with the project. Clone it next to the project folder:
-
-```powershell
-git clone --depth 1 https://github.com/jkoppel/QuixBugs.git ..\QuixBugs
-```
-
-The reported results used commit `4257f44b0ff1181dedaedee6a447e133219fcebf` (MIT licence, 2.3 MB).
-Another location can be given with `python -m pcg research --quixbugs PATH`.
+QuixBugs and HumanEvalPack are kept in `data/external/` (files read by the code only; sources, commits, checksums and
+licences in [../data/external/README.md](../data/external/README.md)). Nothing has to be downloaded. Another QuixBugs
+location can be given with `python -m pcg research --quixbugs PATH`, another HumanEvalPack file with
+`python -m pcg v4 --humaneval FILE`.
 
 ## Commands
 
@@ -141,5 +137,46 @@ library versions.
 | `ModuleNotFoundError: No module named 'pcg'` | Run the commands from the project folder |
 | One test reported as skipped | pgmpy is not installed (the cross-check is optional), or the benchmark has not been run yet |
 | More entries than expected in `excluded_mutants.json` | The machine was overloaded; close other programs and re-run |
-| `FileNotFoundError: QuixBugs was not found` | Clone QuixBugs as described under Setup, or pass `--quixbugs PATH` |
+| `FileNotFoundError: QuixBugs was not found` | `data/external/QuixBugs` is missing; restore it from the repository or pass `--quixbugs PATH` |
 | The demonstration prints "The research results are missing" | Run `python -m pcg research` first |
+
+# Version 4 (interventional multi-fault model)
+
+Protocol: [../research/RESEARCH_PROTOCOL.md](../research/RESEARCH_PROTOCOL.md). Version 4 adds
+commands and result folders; it does not change what `benchmark`, `research` or `all` do.
+
+## Commands
+
+| Command | What it does | Needs |
+|---|---|---|
+| `python -m pcg v4` | All version 4 experiments; writes `results/v4` | QuixBugs, HumanEvalPack |
+| `python -m pcg v4-report` | Rebuilds `summary.json`, `tables/`, `figures/` and `SUMMARY.md` from the raw files in `results/v4` | a finished `v4` run |
+| `python -m pcg v4-synthetic` | Controlled study on simulated programs; writes `results/v4_synthetic` | `results/v4/fitted_on_d1.json` |
+| `python -m pytest tests/test_v4.py` | The 30 tests of the version 4 mathematics and data handling | nothing |
+
+## Artefacts of `results/v4`
+
+```
+per_case.csv               raw: one row per scored case, every method and metric
+per_case_secondary.csv     raw: HumanEvalFix under the in-suite and human-fitted conditions
+probabilities.jsonl        raw: per-statement probabilities and labels
+truncation_check.json      raw: three against four allowed faults
+fitted_on_d1.json          parameters estimated on D1 (the transfer condition)
+fitted_secondary.json      variant-layer parameters of the secondary conditions
+loading_report.json        every benchmark program: used or excluded, and why
+cost.json                  variants executed and seconds
+summary.json               derived: everything in SUMMARY.md, machine-readable
+tables/*.csv               derived: ranking, calibration, paired comparisons
+figures/*.png, *.pdf       derived: eight figures
+SUMMARY.md                 derived: all tables
+MANIFEST.json              SHA-256 of every file; written only when the run completed
+```
+
+Raw files are written by `pcg.v4`; derived files by `pcg.v4_report` from the raw files only, so
+every figure and table can be rebuilt without re-running an experiment.
+
+## What differs between two runs
+
+`cost.json` (wall-clock seconds) and, through it, the cost section of `summary.json` and
+`SUMMARY.md`. Everything else is expected to be identical; the comparison actually made is reported
+in [../research/FINAL_RESEARCH_AUDIT.md](../research/FINAL_RESEARCH_AUDIT.md).

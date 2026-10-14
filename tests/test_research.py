@@ -1,4 +1,4 @@
-"""Tests of the version-3 components (research/MATHEMATICAL_DESIGN.md, section 8)."""
+"""Tests of the version-3 components (research/v3/MATHEMATICAL_DESIGN.md, section 8)."""
 
 import inspect
 

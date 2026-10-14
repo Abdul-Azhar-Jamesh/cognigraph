@@ -1,0 +1,25 @@
+{
+  "environment": {
+    "matplotlib": "3.10.5",
+    "networkx": "3.5",
+    "numpy": "2.2.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pylint": "4.1.3",
+    "python": "3.12.3",
+    "seed": 20261013,
+    "step_limit": 20000
+  },
+  "files": {
+    "DEMO_V4.md": "beb85f8aa53aa08df054a79cf72a1008491c9f01a0db907bdfdded6a6145595a",
+    "cost_of_generality/faulty_program.py": "62dc66e564c25ddf79b070b24fc0445d845570f0d49b3f198bcc56d215ad013c",
+    "cost_of_generality/posteriors.pdf": "5f9b86c4045ceb5e912f61cba4dc175594ce3d4f213db2437c4070dfaa70d5a9",
+    "cost_of_generality/posteriors.png": "d7f1131ec7704251a49f0273f9d80b1daaa76c0380d163df3f840bbe52b8c2c2",
+    "no_repair/faulty_program.py": "c2c92f8bd1ac25ecc2c7c5f7d5ffd9ca8a4d3817902617f611f3e19750ca959c",
+    "no_repair/posteriors.pdf": "a658b7b7e3ef06ca3afeb75aa39e45e028c86afb58cdbf6c5bacb9f480b20013",
+    "no_repair/posteriors.png": "e44fc603c8a5a45540974a83fe008b23bcf124c625254ee03ee935123c387469",
+    "two_faults/faulty_program.py": "56aa297721223755f3c9839cdd4ae96811bd3e77ad12b5d842ac371b897ac414",
+    "two_faults/posteriors.pdf": "0c36f7638702a3f25a9afe7ebd90e925e9fe689c1cb128ae0dcc721fb2b55a8e",
+    "two_faults/posteriors.png": "399b621a727aa75721d385410a6add6ec8d0b5de174aacdcc90c2cb14254edc7"
+  },
+  "status": "complete"
+}

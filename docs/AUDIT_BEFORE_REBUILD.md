@@ -1,7 +1,7 @@
 # Audit of the original project (before the rebuild)
 
 Date of audit: 2026-10-13. The original project is preserved unchanged in
-`../pcg-project-original-backup/` (47 files, verified identical by `diff -r` before anything was
+`archive/original-third-party-backup/` (47 files, verified identical by `diff -r` before anything was
 changed). Every finding below was checked by reading the code and, where possible, by running it
 in an isolated copy. Commands and outputs are in [BASELINE_RESULTS.md](BASELINE_RESULTS.md).
 

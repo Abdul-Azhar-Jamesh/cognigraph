@@ -1,6 +1,6 @@
 """Version-3 model components: size-aware prior and the mutation-evidence factor.
 
-See research/MATHEMATICAL_DESIGN.md, sections 3 and 4. Everything here is
+See research/v3/MATHEMATICAL_DESIGN.md, sections 3 and 4. Everything here is
 estimated from labelled cases of *other* programs; nothing is set by hand.
 """
 

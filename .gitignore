@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# protected local backups (original third-party project, version 2.0.0 snapshot): kept on disk, not published
+archive/
+*.pkl

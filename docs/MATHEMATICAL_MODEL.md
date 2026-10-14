@@ -293,7 +293,7 @@ Full references are in REPORT.md.
 Sections 1 to 9 describe the model of version 2, which is unchanged and is called `pcg` in the
 research experiments. Version 3 adds two per-statement components. Their derivation, the
 examination of the version-2 assumptions and a second worked example are in
-[../research/MATHEMATICAL_DESIGN.md](../research/MATHEMATICAL_DESIGN.md). Code: `pcg/fusion.py`,
+[../research/v3/MATHEMATICAL_DESIGN.md](../research/v3/MATHEMATICAL_DESIGN.md). Code: `pcg/fusion.py`,
 `pcg/mbfl.py`.
 
 **Size-aware prior.** `P(F_i = 1) = min(mu / n, 1/2)`, where `n` is the number of statements and

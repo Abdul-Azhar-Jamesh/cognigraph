@@ -2,8 +2,8 @@
 
 QuixBugs (Lin, Koppel, Chen, Solar-Lezama, SPLASH Companion 2017) contains 40
 small Python programs, each with one bug on a single line, plus a correct
-version and test cases. It is not shipped with this project: clone
-https://github.com/jkoppel/QuixBugs next to the project folder (MIT licence).
+version and test cases. Its python programs and JSON tests are kept in data/external/QuixBugs (MIT licence; source and
+commit in data/external/README.md).
 
 Only the 31 programs with JSON test cases are used; the other nine take
 object graphs as input, which the runner cannot receive as JSON.

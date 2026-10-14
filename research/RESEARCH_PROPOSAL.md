@@ -1,211 +1,155 @@
-# Research proposal
+# Research proposal, version 4
 
-Written on 13 October 2026, **before** any of the new code or experiments existed. The hypotheses,
-metrics and comparisons below are fixed here and are not to be changed after results are seen.
-Whatever the experiments show is reported in `docs/EXPERIMENTS.md`, including refutations.
+Written at Gate 1, after the literature audit and before the model was designed. The version 3
+proposal is in [v3/RESEARCH_PROPOSAL.md](v3/RESEARCH_PROPOSAL.md). Provisional title, abstract,
+contributions and venue assessment are at the end and were added after the experiments; they are
+marked as such.
 
-## 1. Honest starting point
+## 1. Starting point
 
-Three facts from the literature review limit what can be claimed:
-
-1. Bayesian fault localisation over program spectra has existed since Barinel (2009), and far
-   richer probabilistic localisers exist (SmartFL). **No new localisation algorithm will be claimed.**
-2. For single faults, good spectrum formulas cannot be beaten on ranking by using spectra alone
-   (Barinel's theorem; Xie et al.). Version 2.0.0 confirmed this: parity with Ochiai.
-3. Results on injected faults do not predict results on real faults (Pearson et al.).
-
-What the review did *not* find is any study of whether the probabilities of a classical fault
-localiser are trustworthy, whether a model-based combination of evidence is as good as a learned
-black-box one, and whether either survives the move from injected to human-written faults.
-The proposal is therefore a **rigorous engineering and empirical contribution**: a model-based,
-dependence-aware fusion of two real evidence families, evaluated for calibration, abstention and
-transfer against strong baselines. It is not a claim of a novel algorithm.
+Version 3.0.0 is frozen ([BASELINE_FREEZE.md](BASELINE_FREEZE.md)). Its most informative result is
+a failure: with two faults, fusing mutation evidence makes localisation worse than not fusing it.
+Its novelty statement needed a correction ([RELATED_WORK_AND_NOVELTY.md](RELATED_WORK_AND_NOVELTY.md),
+section 1).
 
 ## 2. Candidate directions
 
-### Candidate A: model-based fusion of spectrum and mutation evidence (gaps G1, G2, G6)
+Each candidate is described by the same ten points: (1) question, (2) contribution, (3) strongest
+existing methods, (4) hypothesis and why it could be true, (5) assumptions, (6) failure modes,
+(7) smallest falsifying experiment, (8) data and compute, (9) novelty risk, (10) impact.
 
-| Item | Content |
-|---|---|
-| Research question | Does adding mutation-analysis evidence to the Bayesian network as a learned, coverage-conditioned likelihood improve localisation, and is this model-based fusion as good as a discriminative fusion given the same inputs? |
-| State of the art | Hybrids by averaging (Pearson et al.); learning to rank (Zou et al., Rezaalipour and Furia). Both are black-box combinations of scores |
-| Evidence for the gap | Zou et al. §6.5 list the limits of black-box linear combination and ask for alternatives; no probabilistic white-box fusion of these two families was found |
-| Falsifiable hypothesis | H1: the fused model has higher Top-1 and MRR than the spectrum-only model. H2: it is not worse than logistic fusion by more than 0.02 MRR. H3: conditioning on coverage context lowers the log loss compared with unconditioned fusion |
-| Change | One categorical evidence variable per statement summarising its mutants, with a likelihood table learned per coverage context |
-| New relative to prior work | The explicit likelihood formulation and the treatment of the structural dependence between mutation and coverage evidence. The use of mutation evidence itself is not new |
-| Practical value | A ranking that degrades to spectrum evidence where statements cannot be mutated, and one probability per statement |
-| Data, compute | The project's 624 mutants; QuixBugs. About 20 analysis mutants per faulty program; minutes of compute |
-| Baselines | Ochiai, Barinel, Metallaxis, MUSE, hybrid average, logistic regression on spectrum features, logistic regression on all features, PCG without the new evidence |
-| Metrics, statistics | Top-1, Top-3, MRR; paired differences with bootstrap intervals over programs and a sign-flip test |
-| Risks | On injected faults the analysis mutants contain the exact inverse of the injected edit, which inflates every mutation-based method. The naive-Bayes style fusion may be beaten by logistic regression |
-| Effort | Medium |
-| Refutation | No gain over the spectrum-only model on human-written bugs, or a clear loss to the hybrid average and to logistic fusion on both benchmarks |
+### C1. Interventional multi-fault diagnosis
 
-### Candidate B: calibration, recalibration and selective localisation under shift (gaps G3, G4, G5, G8)
+1. Can mutation evidence be used in a Bayesian localiser without assuming a single fault?
+2. A noisy-OR model in which a variant is an intervention and a repair flips a failing test only if
+   its statement is the sole cause; exact inference for a bounded number of faults.
+3. Barinel; FLITSR; MUSE; the Bayesian framework of Kang et al. (single fault); Prosecutor.
+4. It beats single-fault fusion and coverage-only multi-fault methods on multi-fault programs,
+   because "a repair fixes only some failing tests" is evidence *for* a fault once a second fault
+   is allowed, and against it in a single-fault table.
+5. Independent exposures per test and fault; at most one repair per statement; coverage unchanged
+   by a variant; a restoring variant exists often enough.
+6. Fault interaction; no repair among the variants (human-written bugs); maskers on fault-free
+   statements; cost of the extra hypotheses when there is one fault.
+7. On the 410 existing two-fault programs: abandon if it does not beat the spectrum-only model and
+   Barinel on "both faults in the top 3", or loses more than 0.02 single-fault Top-1.
+8. Existing variant runs; minutes of CPU.
+9. Medium. Closest: Kang et al. (single-fault assumption stated as a limitation), Prosecutor.
+10. Academic: removes a stated limitation of Bayesian debugging in a small setting. Practical:
+    low until it scales.
 
-| Item | Content |
-|---|---|
-| Research question | Are the fault probabilities calibrated on programs and faults the parameters never saw, including human-written bugs; does a size-aware prior or post-hoc recalibration help; and does the posterior identify the cases where the top-ranked statement is right? |
-| State of the art | Calibration is studied for code LLMs (Spiess et al.) and neural classifiers (Guo et al.); confidence-based filtering exists for an LLM localiser (Kang et al.). No calibration study of classical localisers was found |
-| Evidence for the gap | Review §12: searches; Barinel and all combination studies report ranking metrics only |
-| Falsifiable hypothesis | H4: the size-aware prior lowers Brier score and ECE. H5: confidence from the posterior gives a smaller area under the risk-coverage curve than confidence derived from Ochiai. H6: with parameters estimated only on injected faults, the Brier skill score on human-written bugs stays above zero |
-| Change | Prior `mu / n`; a two-parameter recalibration of posterior log-odds fitted on other programs; an abstention rule |
-| New | The evaluation itself; the methods are standard |
-| Practical value | A user, or a repair tool, can decide when to trust the localiser |
-| Data, compute | Same as A; nested leave-one-program-out for recalibration |
-| Baselines | Base rate; logistic regression (calibrated by construction on its training distribution); Ochiai mapped to a confidence |
-| Metrics | Brier score, skill score against the base rate, log loss, ECE with its table, risk-coverage curve and its area |
-| Risks | Only 31 human-written bugs are available: intervals will be wide |
-| Effort | Low to medium |
-| Refutation | Skill score at or below zero under shift; posterior confidence no better than Ochiai-based confidence |
+### C2. Risk-controlled abstention
 
-### Candidate C: dependence-structured exposure, "soft slicing" (gap G10)
+1. Can a localiser give a guarantee on the share of wrong answers among those it gives?
+2. Conformal thresholds on the top posterior.
+3. A conformal-cutoff preprint for spectrum-based localisation; version 3's selective results.
+4. A calibrated posterior should need a smaller threshold margin than a score.
+5. Exchangeability of programs.
+6. Shift between injected and human-written bugs breaks exchangeability; 31 to 150 programs give
+   wide guarantees.
+7. Empirical coverage of the guarantee on held-out programs.
+8. Existing data.
+9. High: the preprint exists and reports no gain over a fixed cutoff.
+10. Modest.
 
-Make the exposure rate depend on the structural relation between a statement and the statement
-that ended the test (same statement, control ancestor, data ancestor, outside the slice), learned
-from data, so that plain coverage and hard slicing are both special cases.
+### C3. Correlated tests
 
-| Item | Content |
-|---|---|
-| Hypothesis | Recovers the 14-point loss of hard slicing and adds a small gain |
-| Evidence | Version 2.0.0: without omission faults, slicing changed 2 of 34 programs, +0.01 Top-1, not significant |
-| New | Little: SmartFL and the PPDG model program semantics far more deeply |
-| Risk | Expected effect close to zero on programs this small; more parameters |
-| Refutation | No gain over coverage scopes |
+1. Does modelling shared execution paths between tests improve localisation or calibration?
+2. A latent path variable per group of tests.
+3. Barinel's per-candidate health already absorbs part of it.
+4. Tests that run the same statements fail together more than the model expects.
+5. Path groups can be derived from coverage.
+6. Version 3 found the independent-test model already well calibrated in distribution; the gain
+   may be nil.
+7. Compare log loss with tests de-duplicated by coverage signature.
+8. Existing data.
+9. High, and weak prior evidence of benefit.
+10. Low.
 
-### Candidate D: exact inference that scales with coverage classes (gap G11)
+### C4. Posterior-guided variant execution
 
-Group statements with identical coverage and enumerate fault *counts* per group.
+1. Can the posterior choose which variant to run next and reach the same answer with fewer runs?
+2. Expected-information-gain ordering of variants.
+3. Entropy-based test prioritisation for localisation; patch prioritisation in unified debugging.
+4. Most variants are uninformative; the model knows which statements are still ambiguous.
+5. A posterior that is already good.
+6. Depends on C1 working; savings matter only where variant runs are expensive, which small
+   functions are not.
+7. Runs needed to reach the final Top-1, against random order.
+8. Existing data.
+9. Medium.
+10. Practical if scaled; not testable convincingly here.
 
-| Item | Content |
-|---|---|
-| Value | Removes the 22-statement limit when many statements share coverage |
-| Evidence of need | None in reach: the largest program in either benchmark has 18 statements |
-| Risk | Cannot be validated on real data; adds code without changing any result |
+### C5. Calibration study across methods on a larger human-written benchmark
 
-### Candidate E: type-checker evidence, following the base paper (gap G9)
+1. Are fault probabilities from any method trustworthy on human-written bugs and with several
+   faults?
+2. An empirical study, pre-registered, with HumanEvalFix added.
+3. None found for classical localisers.
+4. Model-based probabilities degrade more gracefully than learned ones (seen on 31 bugs in
+   version 3).
+5. Benchmarks of small functions are informative.
+6. Small programs; hand-inserted bugs are not project bugs.
+7. Brier skill against the base rate on HumanEvalFix.
+8. HumanEvalFix (one file); minutes of CPU.
+9. Low risk, low mathematical novelty.
+10. Useful as evidence; a workshop-level study alone.
 
-Run a Python type checker and feed its diagnostics in as evidence.
+### C6. Language-model evidence
 
-| Item | Content |
-|---|---|
-| Hypothesis | Type diagnostics help localise faults |
-| Evidence against | The base paper's own Table 3: type-correct programs still fail tests in 18 to 70% of cases. In version 2.0.0, pylint's behavioural findings flagged no faulty line in 624 mutants |
-| Decision | Not as an evidence channel. Instead *measure* how many faults show any compile-time or analyser symptom (E7), which is the quantitative link to the base paper |
+No API access on this machine; HumanEval is a likely part of every model's training data. Not
+feasible honestly. Future work.
+
+### C7. Repository-scale approximate inference
+
+Strong systems exist (SmartFL, Prosecutor); BugsInPy and Defects4J cannot be run with this tool
+chain. Not feasible.
 
 ## 3. Ranking
 
-| Rank | Candidate | Evidence for gap | Feasibility | Technical depth | Expected contribution | Decision |
-|---|---|---|---|---|---|---|
-| 1 | A fusion | Strong (explicitly requested in the literature) | High | Medium: likelihood design, dependence treatment | A real second evidence source and a fair model-versus-learner comparison | **Primary** |
-| 2 | B calibration and abstention | Strong (nothing found) | High | Medium: nested validation, shift | Makes the value of probabilities measurable | **Complementary 1** |
-| 3 | external human-written bugs (part of A and B) | Deficiency, not a gap | Medium | Low | Removes the largest threat to validity | **Required for A and B** |
-| 4 | C soft slicing | Weak | Medium | Medium | Likely null | Not selected |
-| 5 | D lifted inference | None | Medium | Medium | No effect on results | Not selected |
-| 6 | E type-checker channel | Negative | High | Low | Likely null | Replaced by measurement E7 |
+Scores 1 (poor) to 5 (good). "Risk" is scored so that higher is better (less risk). Weights:
+novelty and scientific value count double, because the aim is a research contribution, not a
+feature; ease is deliberately not a criterion.
 
-Complexity was not a criterion: C and D are the most intricate and are rejected.
-Only **one** complementary improvement is selected; the size-aware prior belongs to it.
+| Candidate | Novelty (x2) | Scientific value (x2) | Feasibility | Evaluation quality possible | Implementation risk | Relevance | Total (of 40) |
+|---|---|---|---|---|---|---|---|
+| C1 Interventional multi-fault | 4 | 4 | 4 | 3 | 3 | 5 | **31** |
+| C5 Calibration study | 2 | 3 | 5 | 3 | 5 | 4 | 27 |
+| C4 Posterior-guided variants | 3 | 3 | 3 | 2 | 3 | 4 | 24 |
+| C2 Risk-controlled abstention | 2 | 2 | 4 | 3 | 4 | 3 | 22 |
+| C3 Correlated tests | 2 | 2 | 4 | 3 | 4 | 3 | 22 |
+| C7 Repository scale | 2 | 4 | 1 | 1 | 1 | 5 | 20 |
+| C6 Language-model evidence | 2 | 3 | 1 | 1 | 2 | 4 | 18 |
 
-## 4. Selected work
+The scores are judgements. The ranking is robust to moderate changes: C1 stays first unless its
+novelty is scored 2, which is what a reviewer who equates it with Barinel plus MUSE would do.
 
-**Primary (A).** Mutation-analysis evidence as a coverage-conditioned likelihood factor in the
-Bayesian network, compared with averaging and with logistic fusion.
+## 4. Selection
 
-**Complementary (B).** Size-aware prior, post-hoc recalibration, selective localisation, all
-evaluated out-of-fold and under synthetic-to-real shift.
+**Primary: C1.** It is the only candidate that answers a limitation stated by the closest prior
+work and at the same time addresses this project's worst result.
 
-**Evaluation infrastructure required by both.** Barinel, Metallaxis, MUSE, hybrid average and two
-logistic baselines; QuixBugs as an external benchmark; support for nested functions and generators.
+**Complementary: C5** (the evaluation C1 needs anyway: a larger human-written benchmark and
+calibration with an unknown number of faults) and **bounded-cardinality inference** (part of C1;
+removes the 22-statement limit; not claimed as new).
 
-## 5. Pre-registered evaluation protocol
+Why this combination: C1 alone on the project's own programs would be a result on data the model
+was designed on. C5 supplies held-out programs and the part of the evaluation that can embarrass
+the model (human-written bugs, where mutation evidence is known to be weak).
 
-### Datasets
+Not selected: C2 and C3 have the weakest evidence that they would matter; C4 depends on C1 and
+cannot be evaluated convincingly on small functions; C6 and C7 are infeasible here.
 
-| ID | Content | Role |
+## 5. Gates
+
+| Gate | Evidence required to continue | Outcome |
 |---|---|---|
-| D1 | The project's benchmark: 594 detected single-fault mutants of 34 programs | In-distribution, leave-one-program-out |
-| D2 | QuixBugs: the human-written bug of each program that has JSON tests and whose bug the tests detect (at most 31) | External; parameters come from D1 only ("transfer") |
-| D3 | Mutants of the correct QuixBugs programs, at most 15 per program, sampled with the project seed | External programs, injected faults; also the training set for the "in-suite" variant of D2 |
+| 1 Literature and opportunity | A gap with an author-stated part | Met: this document, the gap matrix |
+| 2 Design and protocol | Mathematical design; pre-registered protocol | Met: MATHEMATICAL_DESIGN.md, RESEARCH_PROTOCOL.md |
+| 3 Proof of concept | Falsification experiment on development data | Criterion (a) met, criterion (b) missed by 0.002; continued with the 0.02 margin kept as hypothesis H2 (protocol section 2) |
+| 4 Full evaluation | Held-out sets, baselines, ablations | RESULTS.md |
+| 5 Audit | Reproduction, checks of claims | FINAL_RESEARCH_AUDIT.md |
 
-Exclusions are reported with reasons: programs without JSON tests, tests on which the reference
-program fails or exceeds the step limit, bugs the tests do not detect, runs that hit the time limit.
+## 6. Provisional paper outline (added after the experiments)
 
-### Methods
-
-| Name | Description |
-|---|---|
-| `ochiai`, `tarantula` | As in version 2.0.0 |
-| `barinel` | Candidate-based Bayesian localiser with maximum-likelihood health (paper 2), exhaustive minimal hitting sets up to size 3 |
-| `metallaxis`, `muse` | Mutation-based, as defined in paper 3 §III-A |
-| `hybrid_avg` | Mean of Ochiai and Metallaxis, in the spirit of paper 3's MCBFL-hybrid-avg (their coverage adjustment of mutants is not reproduced) |
-| `lr_spectrum` | Logistic regression on spectrum features |
-| `lr_fusion` | Logistic regression on spectrum, mutation and static features |
-| `pcg` | Version 2.0.0 model, unchanged |
-| `pcg_size` | `pcg` with the size-aware prior |
-| `pcg_fused` | `pcg_size` plus mutation evidence with coverage context: **the proposed model** |
-| `pcg_fused_nocontext` | Ablation: mutation evidence without context conditioning |
-| `pcg_fused_const` | Ablation: mutation evidence with the constant prior |
-| `pcg_fused_recal` | `pcg_fused` after recalibration (probabilities only; the ranking cannot change) |
-
-Every trained method uses the same training programs in every fold. No method sees ground truth
-of the program it analyses.
-
-### Primary comparisons
-
-| ID | Comparison | Metric | Dataset |
-|---|---|---|---|
-| P1 | `pcg_fused` versus `pcg_size` | Top-1, MRR | D1, D2 |
-| P2 | `pcg_fused` versus `lr_fusion` | Top-1, MRR, Brier score, log loss | D1, D2 |
-| P3 | `pcg_fused` versus `hybrid_avg` and versus `metallaxis` | Top-1, MRR | D1, D2 |
-| P4 | `pcg_size` versus `pcg` | Brier score, ECE | D1 |
-| P5 | `pcg_fused` versus `pcg_fused_nocontext` | log loss, Brier score | D1 |
-| P6 | posterior confidence versus Ochiai-based confidence | area under the risk-coverage curve | D1, D2 |
-
-All other numbers are secondary and labelled exploratory. Statistics as in version 2.0.0: the
-program is the unit; 95% bootstrap intervals over programs; paired sign-flip test on per-program
-mean differences; no multiple-comparison correction, stated wherever p-values appear.
-
-### Known bias and its stress test
-
-On D1 and D3 the analysis mutants are produced by the same operators that injected the fault, so
-the exact repair is usually among them. This inflates `metallaxis`, `muse`, `hybrid_avg`,
-`lr_fusion` and `pcg_fused` alike. Therefore:
-
-* the comparison that counts for mutation-based methods is D2, where the bugs were written by
-  people;
-* on D1 a stress test repeats the analysis after removing from the analysis mutants the one whose
-  text equals the reference program. This uses ground truth to *remove* information and is
-  reported as a stress test, not as a result.
-
-### What would count as failure
-
-| Outcome | Conclusion to be reported |
-|---|---|
-| `pcg_fused` not better than `pcg_size` on D2 | Mutation evidence does not transfer to human-written bugs in this setting |
-| `pcg_fused` clearly worse than `lr_fusion` on ranking and on probabilistic metrics, on D1 and D2 | The generative model adds nothing over a learned combiner |
-| Brier skill score at or below zero on D2 | The probabilities are not usable outside the training benchmark |
-| Posterior confidence no better than Ochiai-based confidence | The posterior adds no decision value |
-
-## 6. Out of scope
-
-Real LLM evidence (no credentials), BugsInPy and Defects4J (see REFERENCE_VERIFICATION.md), soft
-slicing, lifted inference, any change to the repair search. The existing experiments of version
-2.0.0 are kept and must reproduce bit for bit.
-
-## 7. Amendments after the first results
-
-The sections above are unchanged from the pre-registered text.
-
-**Post hoc analysis added: two-fault programs.** Hypothesis H3 (conditioning the mutation evidence
-on the coverage context lowers the log loss) was refuted on D1, D2 and D3: the ablation without
-conditioning had the better probabilities. The proposed explanation is that with exactly one fault,
-"not executed by every failing test" is conclusive evidence of innocence, and the unconditioned
-table happens to encode it. To test that explanation, the fused models were also run on the 410
-two-fault programs of version 2.0.0, where a faulty statement need not be executed by every failing
-test. This analysis was not planned, is labelled post hoc wherever it is reported, and does not
-change which model is called "proposed": `pcg_fused` remains the pre-registered model, and the
-better-performing ablation is reported next to it.
-
-**No other change.** No metric, dataset, exclusion rule or comparison was altered after results
-were seen.
+See [RESULTS.md](RESULTS.md), section "Paper outline", which is written from the measured results.

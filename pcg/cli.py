@@ -4,8 +4,13 @@ Commands:
     all        benchmark, research experiments, then the demonstration
     benchmark  run the version-2 experiments and write results/benchmark
     research   run the version-3 experiments (fusion, calibration, QuixBugs)
-               and write results/research; needs a QuixBugs clone
+               and write results/research; uses data/external/QuixBugs
+    v4         run the version-4 experiments (interventional multi-fault model) and
+               write results/v4; uses data/external/QuixBugs and data/external/HumanEvalPack
+    v4-synthetic  controlled study on simulated programs; writes results/v4_synthetic
+    v4-report  rebuild summary, tables and figures from the raw files in results/v4
     demo       run the demonstration (needs a finished benchmark run)
+    demo-v4    three rule-selected cases for the version-4 model; writes results/demo_v4
     analyze    analyse your own function with your own tests
 """
 
@@ -56,8 +61,14 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("all", help="benchmark, research, then demo")
     sub.add_parser("benchmark", help="run the version-2 experiments")
     r = sub.add_parser("research", help="run the version-3 experiments")
-    r.add_argument("--quixbugs", help="path of the QuixBugs clone (default: next to the project folder)")
+    r.add_argument("--quixbugs", help="folder with QuixBugs (default: data/external/QuixBugs)")
     sub.add_parser("demo", help="run the demonstration")
+    v = sub.add_parser("v4", help="run the version-4 experiments (interventional multi-fault model)")
+    v.add_argument("--quixbugs", help="folder with QuixBugs (default: data/external/QuixBugs)")
+    v.add_argument("--humaneval", help="HumanEvalPack Python split as JSON lines")
+    sub.add_parser("v4-report", help="rebuild summary, tables and figures from results/v4")
+    sub.add_parser("demo-v4", help="demonstration of the version-4 model on three rule-selected cases")
+    sub.add_parser("v4-synthetic", help="controlled study on simulated programs (needs results/v4)")
     p = sub.add_parser("analyze", help="analyse your own function")
     p.add_argument("source", help="Python file containing the function")
     p.add_argument("--function", required=True, help="name of the function under test")
@@ -75,6 +86,20 @@ def main(argv: list[str] | None = None) -> int:
         from .research import run_research
         quixbugs = getattr(args, "quixbugs", None)
         run_research(quixbugs_dir=Path(quixbugs) if quixbugs else None)
+    if args.command == "v4":
+        from .v4 import run_v4
+        run_v4(quixbugs_dir=Path(args.quixbugs) if args.quixbugs else None,
+               humaneval_file=Path(args.humaneval) if args.humaneval else None)
+    if args.command == "v4-synthetic":
+        from .synthetic import run_synthetic
+        run_synthetic()
+    if args.command == "demo-v4":
+        from .demo_v4 import run_demo_v4
+        run_demo_v4()
+    if args.command == "v4-report":
+        from . import v4_report
+        from .v4 import V4_DIR
+        v4_report.write_all(V4_DIR)
     if args.command in ("all", "demo"):
         from .demo import run_demo
         run_demo()

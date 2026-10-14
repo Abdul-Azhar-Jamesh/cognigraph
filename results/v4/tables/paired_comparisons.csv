@@ -1,0 +1,45 @@
+hypothesis,dataset,comparison,metric,mean_difference,ci_low,ci_high,sign_flip_p,holm_p,supported
+H1,Q2,iv - pcg_fused,ap,0.0826,0.0540,0.1113,0.00005,0.00050,True
+H1,Q2,iv - pcg_size,ap,0.0535,0.0205,0.0862,0.01230,0.07380,False
+H1,Q2,iv - muse,ap,0.0307,-0.0179,0.0781,0.32913,0.63377,False
+H1,Q2,iv - flitsr_star,ap,0.0581,0.0234,0.0924,0.01005,0.07035,False
+H1,Q2,iv - lr_fusion,ap,0.0400,0.0111,0.0723,0.02310,0.11549,False
+H1,E2,iv - pcg_fused,ap,0.0853,0.0660,0.1043,0.00005,0.00050,True
+H1,E2,iv - pcg_size,ap,0.0246,-0.0029,0.0503,0.31688,0.63377,False
+H1,E2,iv - muse,ap,0.0279,-0.0035,0.0585,0.11004,0.44018,False
+H1,E2,iv - flitsr_star,ap,0.0294,0.0017,0.0549,0.20109,0.60327,False
+H1,E2,iv - lr_fusion,ap,0.0360,0.0166,0.0547,0.00075,0.00600,True
+H1_development,D1-2,iv - pcg_fused,ap,0.1750,0.1440,0.2076,0.00005,nan,
+H1_development,D1-2,iv - pcg_size,ap,0.0493,0.0139,0.0859,0.04060,nan,
+H1_development,D1-2,iv - muse,ap,0.0360,-0.0228,0.0931,0.43658,nan,
+H1_development,D1-2,iv - flitsr_star,ap,0.0691,0.0290,0.1112,0.00520,nan,
+H1_development,D1-2,iv - lr_fusion,ap,0.1027,0.0692,0.1355,0.00005,nan,
+H2,D1-1,iv - pcg_fused,first_top1,-0.0168,-0.0333,0.0000,0.16879,nan,False
+H2,Q1,iv - pcg_fused,first_top1,0.0026,-0.0105,0.0163,0.76106,nan,True
+H2,E1,iv - pcg_fused,first_top1,0.0000,-0.0110,0.0112,0.74606,nan,True
+H3,EH,iv - pcg_size,first_rr,0.1708,0.1203,0.2232,0.00005,nan,True
+H3,EH,iv - pcg_fused,first_rr,0.0420,0.0133,0.0714,0.00350,nan,True
+H3,EH,iv - lr_fusion,first_rr,0.0372,0.0148,0.0621,0.00130,nan,True
+H3,EH,iv - ochiai,first_rr,0.1738,0.1227,0.2262,0.00005,nan,True
+H3,QH,iv - pcg_size,first_rr,0.1447,0.0295,0.2643,0.02310,nan,True
+H3,QH,iv - pcg_fused,first_rr,-0.0140,-0.0686,0.0407,0.60942,nan,False
+H3,QH,iv - lr_fusion,first_rr,-0.0539,-0.1551,0.0318,0.27374,nan,False
+H3,QH,iv - ochiai,first_rr,0.1394,0.0225,0.2623,0.03105,nan,True
+H5,D1-2,iv - pcg_fused,brier (lower is better),-0.06550,-0.08309,-0.05100,0.00005,,
+H5,D1-2,iv - lr_fusion,brier (lower is better),-0.09074,-0.10754,-0.07492,0.00005,,
+H5,Q2,iv - pcg_fused,brier (lower is better),-0.03690,-0.05021,-0.02501,0.00005,,
+H5,Q2,iv - lr_fusion,brier (lower is better),-0.05263,-0.06769,-0.04003,0.00005,,
+H5,E2,iv - pcg_fused,brier (lower is better),-0.03336,-0.04189,-0.02599,0.00005,,
+H5,E2,iv - lr_fusion,brier (lower is better),-0.05386,-0.06652,-0.04349,0.00005,,
+H5,Q3,iv - pcg_fused,brier (lower is better),-0.04823,-0.06473,-0.03394,0.00005,,
+H5,Q3,iv - lr_fusion,brier (lower is better),-0.08671,-0.11413,-0.06515,0.00005,,
+H5,E3,iv - pcg_fused,brier (lower is better),-0.03865,-0.04851,-0.02949,0.00005,,
+H5,E3,iv - lr_fusion,brier (lower is better),-0.08300,-0.10191,-0.06702,0.00005,,
+H5,Q1,iv - pcg_fused,brier (lower is better),0.00419,0.00025,0.00820,0.57132,,
+H5,Q1,iv - lr_fusion,brier (lower is better),-0.00460,-0.00967,0.00005,0.01500,,
+H5,E1,iv - pcg_fused,brier (lower is better),0.00374,0.00134,0.00637,0.02680,,
+H5,E1,iv - lr_fusion,brier (lower is better),-0.00801,-0.01292,-0.00362,0.00780,,
+H5,QH,iv - pcg_fused,brier (lower is better),0.01524,0.00359,0.02818,0.03960,,
+H5,QH,iv - lr_fusion,brier (lower is better),0.01067,-0.00911,0.02938,0.79381,,
+H5,EH,iv - pcg_fused,brier (lower is better),-0.01419,-0.02442,-0.00463,0.16509,,
+H5,EH,iv - lr_fusion,brier (lower is better),-0.05165,-0.07171,-0.03516,0.00005,,

@@ -25,11 +25,11 @@ is answered, with mixed results, by the out-of-sample experiments.
 
 | Phase | Criterion | Verdict | Evidence and remarks |
 |---|---|---|---|
-| 1 | Baseline verified and recoverable before any change | PASS | `research/BASELINE.md`; untouched copy; check 3 |
+| 1 | Baseline verified and recoverable before any change | PASS | `research/v3/BASELINE.md`; untouched copy; check 3 |
 | 2 | Review based on the papers themselves; stated, inferred and open gaps kept apart | PASS WITH LIMITATIONS | Nine papers read in full; seven cited from their records only and marked so in `REFERENCE_VERIFICATION.md`. Metallaxis and Xie et al. could not be downloaded |
 | 2 | No invented gap, no unverified novelty or venue claim | PASS WITH LIMITATIONS | The gap is a search-limited claim and is worded that way. Nobody can prove absence of prior work |
 | 3 | At least three candidates, ranked; one primary, at most two complementary | PASS | Five candidates; primary evidence fusion; one complementary (calibration and abstention) |
-| 4 | Mathematical design before implementation | PASS | `research/MATHEMATICAL_DESIGN.md`; three later amendments appended, original text kept |
+| 4 | Mathematical design before implementation | PASS | `research/v3/MATHEMATICAL_DESIGN.md`; three later amendments appended, original text kept |
 | 5 | Implementation is tested and does not disturb the baseline | PASS | Checks 2 and 3 |
 | 6 | Strong baselines | PASS WITH LIMITATIONS | Ochiai, Tarantula, Barinel, Metallaxis, MUSE, hybrid, two logistic regressions. No SmartFL, no LLM-based localiser |
 | 6 | Human-written bugs | PASS WITH LIMITATIONS | QuixBugs, 31 bugs. Small, single-line, algorithmic; not project bugs |

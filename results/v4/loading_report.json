@@ -1,0 +1,2825 @@
+{
+  "humanevalfix": {
+    "excluded_by_reason": {
+      "fewer than 3 literal test inputs": 7,
+      "same function name as a development program": 7,
+      "the canonical solution raises or exceeds the step limit on a test input": 3
+    },
+    "per_program": [
+      {
+        "bug_type": "missing logic",
+        "function": "has_close_elements",
+        "program": "has_close_elements",
+        "reason": "same function name as a development program",
+        "status": "excluded",
+        "task_id": "Python/0"
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          14
+        ],
+        "function": "separate_paren_groups",
+        "literal_test_inputs": 4,
+        "program": "separate_paren_groups",
+        "statements": 14,
+        "status": "used",
+        "task_id": "Python/1",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "truncate_number",
+        "literal_test_inputs": 3,
+        "program": "truncate_number",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/2",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "below_zero",
+        "literal_test_inputs": 6,
+        "program": "below_zero",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/3",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "mean_absolute_deviation",
+        "literal_test_inputs": 3,
+        "program": "mean_absolute_deviation",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/4",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "missing line",
+        "fault_lines": [
+          10
+        ],
+        "function": "intersperse",
+        "literal_test_inputs": 3,
+        "program": "intersperse",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/5",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          13
+        ],
+        "function": "parse_nested_parens",
+        "literal_test_inputs": 3,
+        "program": "parse_nested_parens",
+        "statements": 10,
+        "status": "used",
+        "task_id": "Python/6",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "filter_by_substring",
+        "literal_test_inputs": 4,
+        "program": "filter_by_substring",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/7",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "sum_product",
+        "literal_test_inputs": 5,
+        "program": "sum_product",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/8",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          10
+        ],
+        "function": "rolling_max",
+        "literal_test_inputs": 4,
+        "program": "rolling_max",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/9",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          9
+        ],
+        "function": "make_palindrome",
+        "literal_test_inputs": 5,
+        "program": "make_palindrome",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/10",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "missing line and modified line",
+        "fault_lines": [
+          7,
+          9
+        ],
+        "function": "string_xor",
+        "literal_test_inputs": 3,
+        "program": "string_xor",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/11",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          8
+        ],
+        "function": "longest",
+        "literal_test_inputs": 3,
+        "program": "longest",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/12",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "greatest_common_divisor",
+        "literal_test_inputs": 4,
+        "program": "greatest_common_divisor",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/13",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "all_prefixes",
+        "literal_test_inputs": 3,
+        "program": "all_prefixes",
+        "statements": 4,
+        "status": "used",
+        "task_id": "Python/14",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "string_sequence",
+        "literal_test_inputs": 3,
+        "program": "string_sequence",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/15",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "count_distinct_characters",
+        "literal_test_inputs": 4,
+        "program": "count_distinct_characters",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/16",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "parse_music",
+        "literal_test_inputs": 5,
+        "program": "parse_music",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/17",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "how_many_times",
+        "literal_test_inputs": 4,
+        "program": "how_many_times",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/18",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "sort_numbers",
+        "literal_test_inputs": 5,
+        "program": "sort_numbers",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/19",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          14
+        ],
+        "function": "find_closest_elements",
+        "literal_test_inputs": 5,
+        "program": "find_closest_elements",
+        "statements": 13,
+        "status": "used",
+        "task_id": "Python/20",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "rescale_to_unit",
+        "literal_test_inputs": 5,
+        "program": "rescale_to_unit",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/21",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4,
+          5
+        ],
+        "function": "filter_integers",
+        "literal_test_inputs": 3,
+        "program": "filter_integers",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/22",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "strlen",
+        "literal_test_inputs": 3,
+        "program": "strlen",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/23",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "largest_divisor",
+        "literal_test_inputs": 5,
+        "program": "largest_divisor",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/24",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "factorize",
+        "literal_test_inputs": 3,
+        "program": "factorize",
+        "statements": 11,
+        "status": "used",
+        "task_id": "Python/25",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "operator misuse",
+        "function": "remove_duplicates",
+        "program": "remove_duplicates",
+        "reason": "same function name as a development program",
+        "status": "excluded",
+        "task_id": "Python/26"
+      },
+      {
+        "bug_type": "function misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "flip_case",
+        "literal_test_inputs": 3,
+        "program": "flip_case",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/27",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "concatenate",
+        "literal_test_inputs": 3,
+        "program": "concatenate",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/28",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "function misuse",
+        "function": "filter_by_prefix",
+        "literal_test_inputs": 2,
+        "program": "filter_by_prefix",
+        "reason": "fewer than 3 literal test inputs",
+        "status": "excluded",
+        "task_id": "Python/29"
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "get_positive",
+        "literal_test_inputs": 4,
+        "program": "get_positive",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/30",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "value misuse",
+        "function": "is_prime",
+        "program": "is_prime",
+        "reason": "same function name as a development program",
+        "status": "excluded",
+        "task_id": "Python/31"
+      },
+      {
+        "bug_type": "variable misuse",
+        "function": "find_zero",
+        "literal_test_inputs": 0,
+        "program": "find_zero",
+        "reason": "fewer than 3 literal test inputs",
+        "status": "excluded",
+        "task_id": "Python/32"
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "missing line",
+        "fault_lines": [
+          3
+        ],
+        "function": "sort_third",
+        "literal_test_inputs": 7,
+        "program": "sort_third",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/33",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "missing logic",
+        "function": "unique",
+        "literal_test_inputs": 1,
+        "program": "unique",
+        "reason": "fewer than 3 literal test inputs",
+        "status": "excluded",
+        "task_id": "Python/34"
+      },
+      {
+        "bug_type": "operator misuse",
+        "function": "max_element",
+        "literal_test_inputs": 2,
+        "program": "max_element",
+        "reason": "fewer than 3 literal test inputs",
+        "status": "excluded",
+        "task_id": "Python/35"
+      },
+      {
+        "bug_type": "operator misuse",
+        "function": "fizz_buzz",
+        "literal_test_inputs": 8,
+        "program": "fizz_buzz",
+        "reason": "the canonical solution raises or exceeds the step limit on a test input",
+        "status": "excluded",
+        "task_id": "Python/36"
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "sort_even",
+        "literal_test_inputs": 3,
+        "program": "sort_even",
+        "statements": 9,
+        "status": "used",
+        "task_id": "Python/37",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "missing logic",
+        "function": "decode_cyclic",
+        "literal_test_inputs": 0,
+        "program": "decode_cyclic",
+        "reason": "fewer than 3 literal test inputs",
+        "status": "excluded",
+        "task_id": "Python/38"
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "prime_fib",
+        "literal_test_inputs": 10,
+        "program": "prime_fib",
+        "statements": 15,
+        "status": "used",
+        "task_id": "Python/39",
+        "tests_kept": 10
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "triples_sum_to_zero",
+        "literal_test_inputs": 9,
+        "program": "triples_sum_to_zero",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/40",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "car_race_collision",
+        "literal_test_inputs": 5,
+        "program": "car_race_collision",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/41",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "incr_list",
+        "literal_test_inputs": 3,
+        "program": "incr_list",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/42",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "pairs_sum_to_zero",
+        "literal_test_inputs": 9,
+        "program": "pairs_sum_to_zero",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/43",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "change_base",
+        "literal_test_inputs": 6,
+        "program": "change_base",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/44",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "triangle_area",
+        "literal_test_inputs": 3,
+        "program": "triangle_area_45",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/45",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          8
+        ],
+        "function": "fib4",
+        "literal_test_inputs": 4,
+        "program": "fib4",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/46",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "value misuse",
+        "function": "median",
+        "program": "median",
+        "reason": "same function name as a development program",
+        "status": "excluded",
+        "task_id": "Python/47"
+      },
+      {
+        "bug_type": "value misuse",
+        "function": "is_palindrome",
+        "program": "is_palindrome",
+        "reason": "same function name as a development program",
+        "status": "excluded",
+        "task_id": "Python/48"
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "modp",
+        "literal_test_inputs": 7,
+        "program": "modp",
+        "statements": 4,
+        "status": "used",
+        "task_id": "Python/49",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "variable misuse",
+        "function": "decode_shift",
+        "literal_test_inputs": 0,
+        "program": "decode_shift",
+        "reason": "fewer than 3 literal test inputs",
+        "status": "excluded",
+        "task_id": "Python/50"
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "remove_vowels",
+        "literal_test_inputs": 7,
+        "program": "remove_vowels",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/51",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4,
+          5
+        ],
+        "function": "below_threshold",
+        "literal_test_inputs": 6,
+        "program": "below_threshold",
+        "statements": 4,
+        "status": "used",
+        "task_id": "Python/52",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "add",
+        "literal_test_inputs": 5,
+        "program": "add_53",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/53",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "same_chars",
+        "literal_test_inputs": 7,
+        "program": "same_chars",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/54",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "excess logic",
+        "function": "fib",
+        "program": "fib",
+        "reason": "same function name as a development program",
+        "status": "excluded",
+        "task_id": "Python/55"
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "correct_bracketing",
+        "literal_test_inputs": 12,
+        "program": "correct_bracketing_56",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/56",
+        "tests_kept": 12
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3,
+          4
+        ],
+        "function": "monotonic",
+        "literal_test_inputs": 8,
+        "program": "monotonic",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/57",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "common",
+        "literal_test_inputs": 4,
+        "program": "common",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/58",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          12
+        ],
+        "function": "largest_prime_factor",
+        "literal_test_inputs": 5,
+        "program": "largest_prime_factor",
+        "statements": 12,
+        "status": "used",
+        "task_id": "Python/59",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "sum_to_n",
+        "literal_test_inputs": 5,
+        "program": "sum_to_n",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/60",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          9
+        ],
+        "function": "correct_bracketing",
+        "literal_test_inputs": 12,
+        "program": "correct_bracketing_61",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/61",
+        "tests_kept": 12
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "derivative",
+        "literal_test_inputs": 5,
+        "program": "derivative",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/62",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "missing line and modified line",
+        "fault_lines": [
+          5,
+          6,
+          7
+        ],
+        "function": "fibfib",
+        "literal_test_inputs": 7,
+        "program": "fibfib",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/63",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "missing line and modified line",
+        "fault_lines": [
+          4,
+          6
+        ],
+        "function": "vowels_count",
+        "literal_test_inputs": 7,
+        "program": "vowels_count",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/64",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "circular_shift",
+        "literal_test_inputs": 5,
+        "program": "circular_shift",
+        "statements": 4,
+        "status": "used",
+        "task_id": "Python/65",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "function misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "digitSum",
+        "literal_test_inputs": 8,
+        "program": "digitSum",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/66",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "fruit_distribution",
+        "literal_test_inputs": 7,
+        "program": "fruit_distribution",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/67",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "pluck",
+        "literal_test_inputs": 8,
+        "program": "pluck",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/68",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "search",
+        "literal_test_inputs": 25,
+        "program": "search",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/69",
+        "tests_kept": 25
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "strange_sort_list",
+        "literal_test_inputs": 9,
+        "program": "strange_sort_list",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/70",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "triangle_area",
+        "literal_test_inputs": 9,
+        "program": "triangle_area_71",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/71",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "will_it_fly",
+        "literal_test_inputs": 6,
+        "program": "will_it_fly",
+        "statements": 9,
+        "status": "used",
+        "task_id": "Python/72",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "smallest_change",
+        "literal_test_inputs": 8,
+        "program": "smallest_change",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/73",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "missing line and modified line",
+        "fault_lines": [
+          9,
+          11
+        ],
+        "function": "total_match",
+        "literal_test_inputs": 9,
+        "program": "total_match",
+        "statements": 9,
+        "status": "used",
+        "task_id": "Python/74",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "value misuse",
+        "function": "is_multiply_prime",
+        "literal_test_inputs": 5,
+        "program": "is_multiply_prime",
+        "reason": "the canonical solution raises or exceeds the step limit on a test input",
+        "status": "excluded",
+        "task_id": "Python/75"
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "is_simple_power",
+        "literal_test_inputs": 16,
+        "program": "is_simple_power",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/76",
+        "tests_kept": 16
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "iscube",
+        "literal_test_inputs": 9,
+        "program": "iscube",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/77",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "hex_key",
+        "literal_test_inputs": 7,
+        "program": "hex_key",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/78",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "decimal_to_binary",
+        "literal_test_inputs": 4,
+        "program": "decimal_to_binary",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/79",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "is_happy",
+        "literal_test_inputs": 8,
+        "program": "is_happy",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/80",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          29
+        ],
+        "function": "numerical_letter_grade",
+        "literal_test_inputs": 6,
+        "program": "numerical_letter_grade",
+        "statements": 28,
+        "status": "used",
+        "task_id": "Python/81",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "prime_length",
+        "literal_test_inputs": 16,
+        "program": "prime_length",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/82",
+        "tests_kept": 16
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "starts_one_ends",
+        "literal_test_inputs": 5,
+        "program": "starts_one_ends",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/83",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "solve",
+        "literal_test_inputs": 5,
+        "program": "solve_84",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/84",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "add",
+        "literal_test_inputs": 4,
+        "program": "add_85",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/85",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "anti_shuffle",
+        "literal_test_inputs": 7,
+        "program": "anti_shuffle",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/86",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "get_row",
+        "literal_test_inputs": 6,
+        "program": "get_row",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/87",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "sort_array",
+        "literal_test_inputs": 7,
+        "program": "sort_array_88",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/88",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "encrypt",
+        "literal_test_inputs": 8,
+        "program": "encrypt",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/89",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "next_smallest",
+        "literal_test_inputs": 6,
+        "program": "next_smallest",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/90",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "is_bored",
+        "literal_test_inputs": 6,
+        "program": "is_bored",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/91",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "any_int",
+        "literal_test_inputs": 10,
+        "program": "any_int",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/92",
+        "tests_kept": 10
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "encode",
+        "literal_test_inputs": 5,
+        "program": "encode",
+        "statements": 4,
+        "status": "used",
+        "task_id": "Python/93",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6,
+          7
+        ],
+        "function": "skjkasdkd",
+        "literal_test_inputs": 9,
+        "program": "skjkasdkd",
+        "statements": 13,
+        "status": "used",
+        "task_id": "Python/94",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          17
+        ],
+        "function": "check_dict_case",
+        "literal_test_inputs": 6,
+        "program": "check_dict_case",
+        "statements": 18,
+        "status": "used",
+        "task_id": "Python/95",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "count_up_to",
+        "literal_test_inputs": 10,
+        "program": "count_up_to",
+        "statements": 10,
+        "status": "used",
+        "task_id": "Python/96",
+        "tests_kept": 10
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "multiply",
+        "literal_test_inputs": 8,
+        "program": "multiply",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/97",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "count_upper",
+        "literal_test_inputs": 7,
+        "program": "count_upper",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/98",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "function misuse",
+        "fault_kind": "missing line and modified line",
+        "fault_lines": [
+          9,
+          11
+        ],
+        "function": "closest_integer",
+        "literal_test_inputs": 5,
+        "program": "closest_integer",
+        "statements": 13,
+        "status": "used",
+        "task_id": "Python/99",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "make_a_pile",
+        "literal_test_inputs": 5,
+        "program": "make_a_pile",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/100",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "words_string",
+        "literal_test_inputs": 6,
+        "program": "words_string",
+        "statements": 9,
+        "status": "used",
+        "task_id": "Python/101",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          8
+        ],
+        "function": "choose_num",
+        "literal_test_inputs": 8,
+        "program": "choose_num",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/102",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "rounded_avg",
+        "literal_test_inputs": 12,
+        "program": "rounded_avg",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/103",
+        "tests_kept": 12
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3,
+          6
+        ],
+        "function": "unique_digits",
+        "literal_test_inputs": 4,
+        "program": "unique_digits",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/104",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "by_length",
+        "literal_test_inputs": 5,
+        "program": "by_length",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/105",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "f",
+        "literal_test_inputs": 4,
+        "program": "f",
+        "statements": 12,
+        "status": "used",
+        "task_id": "Python/106",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "even_odd_palindrome",
+        "literal_test_inputs": 8,
+        "program": "even_odd_palindrome",
+        "statements": 10,
+        "status": "used",
+        "task_id": "Python/107",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          8
+        ],
+        "function": "count_nums",
+        "literal_test_inputs": 7,
+        "program": "count_nums",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/108",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "move_one_ball",
+        "literal_test_inputs": 5,
+        "program": "move_one_ball",
+        "statements": 11,
+        "status": "used",
+        "task_id": "Python/109",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6,
+          9
+        ],
+        "function": "exchange",
+        "literal_test_inputs": 7,
+        "program": "exchange",
+        "statements": 11,
+        "status": "used",
+        "task_id": "Python/110",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "histogram",
+        "literal_test_inputs": 7,
+        "program": "histogram",
+        "statements": 11,
+        "status": "used",
+        "task_id": "Python/111",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "reverse_delete",
+        "literal_test_inputs": 9,
+        "program": "reverse_delete",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/112",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "odd_count",
+        "literal_test_inputs": 3,
+        "program": "odd_count",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/113",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "function misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          11
+        ],
+        "function": "minSubArraySum",
+        "literal_test_inputs": 12,
+        "program": "minSubArraySum",
+        "statements": 11,
+        "status": "used",
+        "task_id": "Python/114",
+        "tests_kept": 12
+      },
+      {
+        "bug_type": "function misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "max_fill",
+        "literal_test_inputs": 5,
+        "program": "max_fill",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/115",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "sort_array",
+        "literal_test_inputs": 7,
+        "program": "sort_array_116",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/116",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "select_words",
+        "literal_test_inputs": 7,
+        "program": "select_words",
+        "statements": 9,
+        "status": "used",
+        "task_id": "Python/117",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3,
+          9
+        ],
+        "function": "get_closest_vowel",
+        "literal_test_inputs": 13,
+        "program": "get_closest_vowel",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/118",
+        "tests_kept": 13
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          15
+        ],
+        "function": "match_parens",
+        "literal_test_inputs": 12,
+        "program": "match_parens",
+        "statements": 12,
+        "status": "used",
+        "task_id": "Python/119",
+        "tests_kept": 12
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "maximum",
+        "literal_test_inputs": 11,
+        "program": "maximum",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/120",
+        "tests_kept": 11
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "solution",
+        "literal_test_inputs": 7,
+        "program": "solution",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/121",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "add_elements",
+        "literal_test_inputs": 5,
+        "program": "add_elements",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/122",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          10
+        ],
+        "function": "get_odd_collatz",
+        "literal_test_inputs": 4,
+        "program": "get_odd_collatz",
+        "statements": 10,
+        "status": "used",
+        "task_id": "Python/123",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "variable misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4,
+          5
+        ],
+        "function": "valid_date",
+        "literal_test_inputs": 16,
+        "program": "valid_date",
+        "statements": 14,
+        "status": "used",
+        "task_id": "Python/124",
+        "tests_kept": 16
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "split_words",
+        "literal_test_inputs": 8,
+        "program": "split_words",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/125",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "missing logic",
+        "function": "is_sorted",
+        "program": "is_sorted",
+        "reason": "same function name as a development program",
+        "status": "excluded",
+        "task_id": "Python/126"
+      },
+      {
+        "bug_type": "missing logic",
+        "function": "intersection",
+        "literal_test_inputs": 0,
+        "program": "intersection",
+        "reason": "fewer than 3 literal test inputs",
+        "status": "excluded",
+        "task_id": "Python/127"
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "prod_signs",
+        "literal_test_inputs": 8,
+        "program": "prod_signs",
+        "statements": 4,
+        "status": "used",
+        "task_id": "Python/128",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          9,
+          11,
+          13,
+          15
+        ],
+        "function": "minPath",
+        "literal_test_inputs": 11,
+        "program": "minPath",
+        "statements": 21,
+        "status": "used",
+        "task_id": "Python/129",
+        "tests_kept": 11
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          9
+        ],
+        "function": "tri",
+        "literal_test_inputs": 10,
+        "program": "tri",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/130",
+        "tests_kept": 10
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "digits",
+        "literal_test_inputs": 7,
+        "program": "digits",
+        "statements": 10,
+        "status": "used",
+        "task_id": "Python/131",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "is_nested",
+        "literal_test_inputs": 14,
+        "program": "is_nested",
+        "statements": 15,
+        "status": "used",
+        "task_id": "Python/132",
+        "tests_kept": 14
+      },
+      {
+        "bug_type": "operator misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "sum_squares",
+        "literal_test_inputs": 12,
+        "program": "sum_squares_133",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/133",
+        "tests_kept": 12
+      },
+      {
+        "bug_type": "function misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "check_if_last_char_is_a_letter",
+        "literal_test_inputs": 10,
+        "program": "check_if_last_char_is_a_letter",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/134",
+        "tests_kept": 10
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          8
+        ],
+        "function": "can_arrange",
+        "literal_test_inputs": 5,
+        "program": "can_arrange",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/135",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4,
+          5
+        ],
+        "function": "largest_smallest_integers",
+        "literal_test_inputs": 11,
+        "program": "largest_smallest_integers",
+        "statements": 5,
+        "status": "used",
+        "task_id": "Python/136",
+        "tests_kept": 11
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "compare_one",
+        "literal_test_inputs": 8,
+        "program": "compare_one",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/137",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "is_equal_to_sum_even",
+        "literal_test_inputs": 8,
+        "program": "is_equal_to_sum_even",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/138",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "special_factorial",
+        "literal_test_inputs": 4,
+        "program": "special_factorial",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/139",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          20
+        ],
+        "function": "fix_spaces",
+        "literal_test_inputs": 5,
+        "program": "fix_spaces",
+        "statements": 18,
+        "status": "used",
+        "task_id": "Python/140",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "missing line",
+        "fault_lines": [
+          5
+        ],
+        "function": "file_name_check",
+        "literal_test_inputs": 26,
+        "program": "file_name_check",
+        "statements": 12,
+        "status": "used",
+        "task_id": "Python/141",
+        "tests_kept": 26
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "sum_squares",
+        "literal_test_inputs": 11,
+        "program": "sum_squares_142",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/142",
+        "tests_kept": 11
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "missing line",
+        "fault_lines": [
+          5
+        ],
+        "function": "words_in_sentence",
+        "literal_test_inputs": 7,
+        "program": "words_in_sentence",
+        "statements": 9,
+        "status": "used",
+        "task_id": "Python/143",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4,
+          5
+        ],
+        "function": "simplify",
+        "literal_test_inputs": 12,
+        "program": "simplify",
+        "statements": 9,
+        "status": "used",
+        "task_id": "Python/144",
+        "tests_kept": 12
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "function": "order_by_points",
+        "literal_test_inputs": 6,
+        "program": "order_by_points",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/145",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "specialFilter",
+        "literal_test_inputs": 7,
+        "program": "specialFilter",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/146",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "missing logic",
+        "function": "get_max_triples",
+        "literal_test_inputs": 4,
+        "program": "get_max_triples",
+        "reason": "the canonical solution raises or exceeds the step limit on a test input",
+        "status": "excluded",
+        "task_id": "Python/147"
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "bf",
+        "literal_test_inputs": 7,
+        "program": "bf",
+        "statements": 8,
+        "status": "used",
+        "task_id": "Python/148",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "sorted_list_sum",
+        "literal_test_inputs": 7,
+        "program": "sorted_list_sum",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/149",
+        "tests_kept": 7
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "x_or_y",
+        "literal_test_inputs": 10,
+        "program": "x_or_y",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/150",
+        "tests_kept": 10
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "double_the_difference",
+        "literal_test_inputs": 6,
+        "program": "double_the_difference",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/151",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "compare",
+        "literal_test_inputs": 5,
+        "program": "compare",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/152",
+        "tests_kept": 5
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          9
+        ],
+        "function": "Strongest_Extension",
+        "literal_test_inputs": 9,
+        "program": "Strongest_Extension",
+        "statements": 9,
+        "status": "used",
+        "task_id": "Python/153",
+        "tests_kept": 9
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "function": "cycpattern_check",
+        "literal_test_inputs": 6,
+        "program": "cycpattern_check",
+        "statements": 7,
+        "status": "used",
+        "task_id": "Python/154",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "missing line",
+        "fault_lines": [
+          7
+        ],
+        "function": "even_odd_count",
+        "literal_test_inputs": 8,
+        "program": "even_odd_count",
+        "statements": 6,
+        "status": "used",
+        "task_id": "Python/155",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "missing line",
+        "fault_lines": [
+          11
+        ],
+        "function": "int_to_mini_roman",
+        "literal_test_inputs": 14,
+        "program": "int_to_mini_roman",
+        "statements": 11,
+        "status": "used",
+        "task_id": "Python/156",
+        "tests_kept": 14
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "right_angle_triangle",
+        "literal_test_inputs": 11,
+        "program": "right_angle_triangle",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/157",
+        "tests_kept": 11
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          2
+        ],
+        "function": "find_max",
+        "literal_test_inputs": 10,
+        "program": "find_max",
+        "statements": 1,
+        "status": "used",
+        "task_id": "Python/158",
+        "tests_kept": 10
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3,
+          5
+        ],
+        "function": "eat",
+        "literal_test_inputs": 6,
+        "program": "eat",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/159",
+        "tests_kept": 6
+      },
+      {
+        "bug_type": "excess logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "do_algebra",
+        "literal_test_inputs": 3,
+        "program": "do_algebra",
+        "statements": 4,
+        "status": "used",
+        "task_id": "Python/160",
+        "tests_kept": 3
+      },
+      {
+        "bug_type": "missing logic",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "function": "solve",
+        "literal_test_inputs": 8,
+        "program": "solve_161",
+        "statements": 14,
+        "status": "used",
+        "task_id": "Python/161",
+        "tests_kept": 8
+      },
+      {
+        "bug_type": "function misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "function": "string_to_md5",
+        "literal_test_inputs": 4,
+        "program": "string_to_md5",
+        "statements": 2,
+        "status": "used",
+        "task_id": "Python/162",
+        "tests_kept": 4
+      },
+      {
+        "bug_type": "value misuse",
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "function": "generate_integers",
+        "literal_test_inputs": 4,
+        "program": "generate_integers",
+        "statements": 3,
+        "status": "used",
+        "task_id": "Python/163",
+        "tests_kept": 4
+      }
+    ],
+    "problems": 164,
+    "programs_used": 147,
+    "sets": {
+      "E1": {
+        "cases": 943,
+        "detected": 870,
+        "programs": 139
+      },
+      "E2": {
+        "cases": 798,
+        "detected": 787,
+        "programs": 109
+      },
+      "E3": {
+        "cases": 377,
+        "detected": 376,
+        "programs": 96
+      },
+      "EH": {
+        "cases": 146,
+        "detected": 146,
+        "programs": 146
+      },
+      "EHM": {
+        "cases": 406,
+        "detected": 401,
+        "programs": 110
+      }
+    },
+    "unusable_runs": 5
+  },
+  "quixbugs": {
+    "per_program": [
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "program": "bitcount",
+        "statements": 5,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 9,
+        "tests_kept": 9
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "program": "bucketsort",
+        "statements": 7,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 7,
+        "tests_kept": 7
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "program": "find_first_in_sorted",
+        "statements": 10,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 7,
+        "tests_kept": 7
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          10
+        ],
+        "program": "find_in_sorted",
+        "statements": 10,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 7,
+        "tests_kept": 7
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "program": "flatten",
+        "statements": 5,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 7,
+        "tests_kept": 7
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "program": "gcd",
+        "statements": 3,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 6,
+        "tests_kept": 6
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "program": "get_factors",
+        "statements": 6,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 11,
+        "tests_kept": 11
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "program": "hanoi",
+        "statements": 7,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 8,
+        "tests_kept": 8
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          10
+        ],
+        "program": "is_valid_parenthesization",
+        "statements": 8,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 3,
+        "tests_kept": 3
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "program": "kheapsort",
+        "statements": 7,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 4,
+        "tests_kept": 4
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          8
+        ],
+        "program": "knapsack",
+        "statements": 9,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 1,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 10,
+        "tests_kept": 9
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          10
+        ],
+        "program": "kth",
+        "statements": 10,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 7,
+        "tests_kept": 7
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          7
+        ],
+        "program": "lcs_length",
+        "statements": 7,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 9,
+        "tests_kept": 9
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "program": "levenshtein",
+        "statements": 5,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 2,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 7,
+        "tests_kept": 5
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          9
+        ],
+        "program": "lis",
+        "statements": 9,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 12,
+        "tests_kept": 12
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "program": "longest_common_subsequence",
+        "statements": 5,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 2,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 10,
+        "tests_kept": 8
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "program": "max_sublist_sum",
+        "statements": 6,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 6,
+        "tests_kept": 6
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          16
+        ],
+        "program": "mergesort",
+        "statements": 18,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 14,
+        "tests_kept": 14
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          15
+        ],
+        "program": "next_palindrome",
+        "statements": 13,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 5,
+        "tests_kept": 5
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "program": "next_permutation",
+        "statements": 8,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 8,
+        "tests_kept": 8
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "program": "pascal",
+        "statements": 9,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 5,
+        "tests_kept": 5
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "program": "possible_change",
+        "statements": 6,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 4,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 10,
+        "tests_kept": 6
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          5
+        ],
+        "program": "powerset",
+        "statements": 5,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 5,
+        "tests_kept": 5
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          6
+        ],
+        "program": "quicksort",
+        "statements": 6,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 13,
+        "tests_kept": 13
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          12
+        ],
+        "program": "rpn_eval",
+        "statements": 10,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 6,
+        "tests_kept": 6
+      },
+      {
+        "fault_kind": "missing line",
+        "fault_lines": [
+          11
+        ],
+        "program": "shunting_yard",
+        "statements": 11,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 6,
+        "tests_kept": 6
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          4
+        ],
+        "program": "sieve",
+        "statements": 5,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 6,
+        "tests_kept": 6
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "program": "sqrt",
+        "statements": 4,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 2,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 7,
+        "tests_kept": 5
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          3
+        ],
+        "program": "subsequences",
+        "statements": 6,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 12,
+        "tests_kept": 12
+      },
+      {
+        "fault_kind": "modified line",
+        "fault_lines": [
+          9
+        ],
+        "program": "to_base",
+        "statements": 7,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 10,
+        "tests_kept": 10
+      },
+      {
+        "fault_kind": "missing line",
+        "fault_lines": [
+          9
+        ],
+        "program": "wrap",
+        "statements": 8,
+        "status": "used",
+        "tests_dropped": {
+          "duplicate_input": 0,
+          "reference_disagrees_with_expected_output": 0,
+          "reference_exceeded_step_limit": 0,
+          "reference_raised": 0
+        },
+        "tests_in_benchmark": 5,
+        "tests_kept": 5
+      }
+    ],
+    "programs_used": 31,
+    "sets": {
+      "Q1": {
+        "cases": 402,
+        "detected": 382,
+        "programs": 31
+      },
+      "Q2": {
+        "cases": 282,
+        "detected": 282,
+        "programs": 31
+      },
+      "Q3": {
+        "cases": 173,
+        "detected": 173,
+        "programs": 30
+      },
+      "QH": {
+        "cases": 31,
+        "detected": 31,
+        "programs": 31
+      },
+      "QHM": {
+        "cases": 175,
+        "detected": 174,
+        "programs": 31
+      }
+    },
+    "unusable_runs": 2
+  }
+}

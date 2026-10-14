@@ -1,7 +1,7 @@
 # Baseline: what the original project produced
 
 All commands were run on 2026-10-13 in an isolated copy of the original project, never in the
-project folder itself. To repeat them, copy `../pcg-project-original-backup/` somewhere and run
+project folder itself. To repeat them, copy `archive/original-third-party-backup/` somewhere and run
 them there.
 
 ## Environment

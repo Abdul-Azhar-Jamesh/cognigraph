@@ -1,0 +1,50 @@
+{
+  "counts": {
+    "cases_scored": 4626,
+    "humanevalfix_programs": 147,
+    "quixbugs_programs": 31,
+    "secondary_cases_scored": 2726
+  },
+  "environment": {
+    "matplotlib": "3.10.5",
+    "networkx": "3.5",
+    "numpy": "2.2.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pylint": "4.1.3",
+    "python": "3.12.3",
+    "seed": 20261013,
+    "step_limit": 20000
+  },
+  "files": {
+    "SUMMARY.md": "dde1c1ea61c8cecb8a12ee5810c50df13874e297dde12cbe590ef0beae28737c",
+    "cost.json": "ea92bd24265a03304c9dbf36ebc3bc226597f3db75b0dea3f57a69468d03978c",
+    "figures/fig1_two_fault_map.pdf": "05777612e21d25782fbb705ea7d239575d6bfd62a317d6b027bdea2b84e9c594",
+    "figures/fig1_two_fault_map.png": "b1b0dddbeebb86f98ae2bcb84523e81704e58701d92109a6869d28fab5dfe431",
+    "figures/fig2_single_vs_two_fault.pdf": "a1619c9d16ba903f4433cd7ae7f6e12e0cd0f87992014136c9804fb536968113",
+    "figures/fig2_single_vs_two_fault.png": "5f113207f6ee7c644e576b69af16eb7b0f5a35ce169b4d0293ebcee5e22300e0",
+    "figures/fig3_map_by_fault_count.pdf": "db757cc34e779346cb7d4d97118f6761cec7f93088076ade6c08d3775a7f26e7",
+    "figures/fig3_map_by_fault_count.png": "e882947d5c7bf532adaed821854942ba25a797dd60b24de9ce7c301defa5d771",
+    "figures/fig4_reliability.pdf": "58d56fd179672e1975e3505e8a78df56202a70d3bf3cb8dcee889ed3cb460eb7",
+    "figures/fig4_reliability.png": "77e2a9dc350214285bfe8d1f45b214d3e65d2fcc30e7309ece85a1ee81b9364b",
+    "figures/fig5_risk_coverage.pdf": "a4bea4029b91a936eb33df081faae0699ed0711d05f916a8e8e0113de57e79da",
+    "figures/fig5_risk_coverage.png": "d51e5430ad8b32b1d38507212a359ca84e1ceb5a091dca89fe99e8654140b051",
+    "figures/fig6_ablations.pdf": "fe9ed0157f9890cf593de2f3c581936d76274da1421ee26bd4a059094b53124d",
+    "figures/fig6_ablations.png": "46d34c355d0767b1fdc02eac17498eb346fd7dbde74849c46f96354fbfb8c4e9",
+    "figures/fig7_inferred_fault_count.pdf": "a9908906f2d9a162bac442fa4382af1e2fcacdb5ac220cb7e052770e07c4d4be",
+    "figures/fig7_inferred_fault_count.png": "f6aa47833b8348582736d217ba155104d6565f6fe110347ed5644718b9fa512e",
+    "figures/fig8_human_bugs.pdf": "d17f30895b202f7a6ef5d327b642cc021b1433ed35c0683b3811897752d2df8b",
+    "figures/fig8_human_bugs.png": "8649d19cddb7aa852925e72af7a95a86529fa68b6e5d69fb0348fb056d967ab9",
+    "fitted_on_d1.json": "8610c4b5da5ae3de52330e18a46fae21aade6c410994b0b76e482dd5a7736368",
+    "fitted_secondary.json": "7e730ed2f4b7e5a9169d46a6b0455b680cb2f251d734fcf8b173a6e5356bdf9e",
+    "loading_report.json": "c9315d27113b0bd8696df55f7f4668baca3fc8bfca80a0f9ea7e192f7356eb15",
+    "per_case.csv": "6855d8689341ee301166e034012c954d0c7d8e125a3da98c772ba296a4118727",
+    "per_case_secondary.csv": "ffdd87b0807cc83f09f6be9d2572d3ab0d889e12ca86fe1c2f3a78f8aaddb0e9",
+    "probabilities.jsonl": "c2f204dc7a1cb67746640dc9c75596d95055b4be5973796113bfb5eec003af93",
+    "summary.json": "3aee179327abf386970de3392a415faec00267367cc24859dab1f18b70d8229c",
+    "tables/calibration_all.csv": "24751f469bbe0973b7e794b92fb719e2336de3d32b287861e903c73d40943258",
+    "tables/paired_comparisons.csv": "f78137db0f176ff7dd4e210adcb230c5b0629ef2e3f13786e3cfff5277404f13",
+    "tables/ranking_all.csv": "fccae21945c007ccaf8108d273234156bed98e69707e71e5dee6f61c86b4cd13",
+    "truncation_check.json": "3e554c9ba702761354379318333acf05693b63c9c528e46a3f92551fa393a29f"
+  },
+  "status": "complete"
+}

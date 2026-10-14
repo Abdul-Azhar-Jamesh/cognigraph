@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "simulated_programs": 5500,
+    "training_programs": 400
+  },
+  "environment": {
+    "matplotlib": "3.10.5",
+    "networkx": "3.5",
+    "numpy": "2.2.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pylint": "4.1.3",
+    "python": "3.12.3",
+    "seed": 20261013,
+    "step_limit": 20000
+  },
+  "files": {
+    "SUMMARY.md": "6feb561e149a5c7ea7f446c25b0fe8c17e5375aea43790a33779d97ac8425a2e",
+    "figures/fig_synthetic.pdf": "d94e9c345d1aff02cebf7d7b1a2e384244be47d243ea61142b7c668bdaaea176",
+    "figures/fig_synthetic.png": "7498f49dc80ac762db0c3bef0d04578ee24d191883229ac91a5c429bb93202b9",
+    "parameters.json": "b06c135f4029f0b858cf356d582d01eed602caf527545caccb15eb8f8b185f9f",
+    "per_case.csv": "ae4dce6cbb42d80d4febdeded1acd5d0bd3c67206737d3cde09a203a96e97b4e",
+    "summary.json": "4172ca6fcf0cdbd982e8803e8d99ea5e206682db12daf755630b2cccf86c459f"
+  },
+  "status": "complete"
+}

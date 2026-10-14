@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "d1_detected": 594,
+    "d1_valid": 624,
+    "d2_detected": 31,
+    "d3_detected": 382,
+    "d3_valid": 402,
+    "quixbugs_programs": 31
+  },
+  "environment": {
+    "matplotlib": "3.10.5",
+    "networkx": "3.5",
+    "numpy": "2.2.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pylint": "4.1.3",
+    "python": "3.12.3",
+    "seed": 20261013,
+    "step_limit": 20000
+  },
+  "files": {
+    "SUMMARY.md": "56190a992bbea00097e74a07ffad432dc5e0b26f179bebeab6e0786b824eac58",
+    "cost.json": "eb65daa7aa0067ccd0bf3579e8feb78d058686aed24c01559a8686e03e31bf71",
+    "d1_mutation_evidence.jsonl": "235ee2abf501dc0167320ff7728b5dd889eeafa97ecdfaca93335c49dac18d30",
+    "d1_per_case.csv": "cedeeb15f6a39abafb46f588edc3adc96a21f32924ada878926f0eb0deff59e6",
+    "d1_probabilistic.json": "2b444db5ad6016a3e0be9bbdc5d960a86f32057308cc103d1027b1471147c0c7",
+    "d1_ranking.json": "990ac87201ff23dbe6cd334cdfa54c6c9ee67e69efa85b26a6f0669e05cb653e",
+    "d1_selective.json": "e6de0c9420099146d01921f3fbb4031fbd7cc181f54b2363d96ed9418add7fe1",
+    "d1_size_prior.json": "b4009395c6680f0274af570c23aba95e7790f6f3aff7ef4612c3307ac8e35232",
+    "d1_stress_no_inverse.json": "349f181f7aafadc73f65386b63b4eb615cffae459205267cd1f50d83a6999233",
+    "d1_two_fault_post_hoc.json": "c8c8becab039f878afddef1b1fe5684df713e70896b9e490585be71ce61bd7c5",
+    "d2_in_suite_per_case.csv": "e95299a7574659fe50fdabf6d303633de139d7a7eb626d177032bda1a7b6b258",
+    "d2_in_suite_summary.json": "0b1e30746b87e3677e8277f3a21c45218541e267a34e86679004fea8bb4ee916",
+    "d2_transfer_per_case.csv": "79a2ff5e29d389ff241132a0f7fe56dcb138b534db4190e19dbf492c17eb0998",
+    "d2_transfer_summary.json": "287e8c5f74a18b3d3806e462c950f08fdf50f198e7d16f3fccaba0736b6e17f2",
+    "d3_transfer_per_case.csv": "ce28afdcefbc00173fbb1f4db7695177c605c9ec5f39c4c5305704c21736949c",
+    "d3_transfer_summary.json": "6f9bb6b0a06addf897c4970e3af435c3980fa51bc641e947c42d2cb5ef50130c",
+    "external_cases.jsonl": "2e7721e32c6048d929fdc347060d79c54e5d8f0bd50dd8c4cd5658430d31da85",
+    "external_loading_report.json": "e23ac3e2bd3be3f381447bd345f30fd208e7f36d24c77f19c0cafcae55ceca46",
+    "fig_fusion_ranking.png": "76131d13c938882c65dd8ae792753991e9ff8f8362432ceb78580de23d18a55c",
+    "fig_fusion_reliability.png": "fd372a102fd5c85ee66129d9c43e699525e0cac720c2d49cc8772aaa30f21b99",
+    "fig_risk_coverage.png": "e79a3d28fddaecedd5944e085556129c52ae7367799709cfc5937207a8d82c1e",
+    "fusion_params_lopo.json": "564587cbb6476b74fe47bc5469edaf79022c4c69e3767a278fe6531a720eb881",
+    "fusion_params_pooled.json": "3d70b47ebbf6bb7fe77f07341ad7acf45e9d842b0bfcd172e75d2af00ebd402d",
+    "symptoms.json": "d9128b399a877246869e8476c7707cec6e06c62b94ef2f9c9593d04dde5c653e"
+  },
+  "status": "complete"
+}

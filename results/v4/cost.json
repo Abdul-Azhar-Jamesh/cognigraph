@@ -1,0 +1,27 @@
+{
+  "D1-1": {
+    "cases": 594,
+    "seconds": 63.65391516685486,
+    "variant_texts_run": 6969,
+    "variants_generated": 13430
+  },
+  "D1-2": {
+    "cases": 410,
+    "seconds": 44.77656698226929,
+    "variant_texts_run": 7559,
+    "variants_generated": 8111
+  },
+  "HumanEvalFix": {
+    "cases": 2580,
+    "seconds": 451.803973197937,
+    "variant_texts_run": 42165,
+    "variants_generated": 48239
+  },
+  "QuixBugs": {
+    "cases": 1042,
+    "seconds": 493.92136096954346,
+    "variant_texts_run": 16976,
+    "variants_generated": 20925
+  },
+  "total_seconds": 6695.521614789963
+}

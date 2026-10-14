@@ -1,345 +1,301 @@
-# Mathematical design of the extension (version 3)
+# Mathematical design: interventional multi-fault diagnosis (version 4)
 
-Written before implementation. Section 2 examines the existing model; sections 3 to 7 specify the
-changes; section 8 lists the properties that must be tested; section 9 gives a worked example whose
-numbers the tests must reproduce.
+Written before any code of the new model existed. The version 3 design is kept unchanged in
+[v3/MATHEMATICAL_DESIGN.md](v3/MATHEMATICAL_DESIGN.md). Amendments made after implementation are
+appended in section 12 and never edited into the text above them.
 
-Notation: `n` statements, `m` tests, `F_i` in {0,1} the fault indicator of statement `i`,
-`T_j` the outcome of test `j`, `S_j` the set of statements test `j` executed, `Theta` the exposure
-rate, `lambda` the leak.
+## 1. Why the version 3 model fails with two faults
 
-## 1. Two different questions
+Version 3 summarises the mutation analysis of statement `i` by one level `M_i` and multiplies the
+prior odds of `F_i` by a ratio learned from single-fault programs. In single-fault data, "a variant
+makes some but not all failing tests pass" is 20 times more frequent for fault-free statements
+(learned ratio 0.048) and "no variant makes a failing test pass" 40 times more (ratio 0.023).
 
-1. **Is the inference correct for the specified model?** Yes, to numerical precision: exact
-   enumeration agrees with naive brute force, with closed forms, with pgmpy, and with an independent
-   recomputation from raw records ([BASELINE.md](BASELINE.md), section 3).
-2. **Is the specified model a good description of faults?** Only partly. Section 2 lists where it
-   is known to be wrong. Agreement with brute force says nothing about this question; it is
-   answered empirically by calibration on data the parameters did not see.
+With two faults `i` and `g`, the exact repair of `i` leaves every test that `g` breaks failing. So
+the correct statement shows precisely the pattern that the single-fault table reads as innocence.
+The table is not wrong; it answers a question about a different population. A table cannot fix
+this, because what a variant of `i` does depends on **which other statements are faulty**. That
+dependence has to be in the model.
 
-## 2. Examination of the existing model (version 2.0.0)
+## 2. Variables and notation
 
-| Aspect | Definition | Assessment |
+| Symbol | Meaning | Status |
 |---|---|---|
-| `F_i` | 1 if the text of statement `i` differs from the reference program | Operational. A statement that should exist but does not (omission) has no variable |
-| `T_j` | fail if the observable behaviour (return value or exception type) differs from the oracle | Sound for deterministic code |
-| `S_j` | statements executed by test `j` in the faulty program | Treated as fixed although a fault can change it |
-| Prior | `F_i` independent Bernoulli(`pi`), one `pi` for all programs | **Mis-specified**, see 2.1 |
-| Likelihood | `P(T_j = pass | F, Theta) = (1 - lambda)(1 - Theta)^{k_j}`, `k_j` = number of faulty statements in `S_j` | Noisy-OR. Cannot express masking or faults that need each other |
-| `lambda` | `P(fail)` when no modelled fault was executed | Covers flaky tests and unmodelled faults. Estimated as 0.0006 because the benchmark is deterministic; on other code it would be larger |
-| `Theta` | probability that an executed fault breaks a test; latent, shared by all faults of a program version | Fault-specific in reality. Exact for one fault; an approximation for several |
-| Test independence | Outcomes independent given `F` and `Theta` | Violated by near-duplicate tests; a known source of over-confidence |
-| Per-statement evidence | `A_i` depends on `F_i` only | **Questionable** for evidence derived from the same executions, see section 4 |
-| Passing tests | Lower the fault probability of what they execute by `(1 - Theta)` each | Correct in direction; too strong if tests are dependent |
-| Unexecuted statements | Posterior = prior | Honest; means incomplete coverage caps what can be concluded |
-| Normalisation, stability | Log-space enumeration with log-sum-exp; impossible evidence raises an error | Verified |
-| Complexity | `O(G 2^a (a + m))` | Exponential; adequate up to 22 executed statements |
+| `n`, `m` | statements, tests | given |
+| `C[j,i]` | test `j` executes statement `i` in the analysed program | observed |
+| `y_j` | test `j` fails on the analysed program | observed |
+| `F_i` | statement `i` is faulty | latent |
+| `Theta` | exposure rate, on a grid with weights `w` | latent |
+| `k_j(F)` | `sum_i C[j,i] F_i`, faulty statements test `j` executes | derived |
+| `v`, `s(v)` | a variant (single edit) and the statement it edits | given |
+| `z[v,j]` | for a failing test `j` that executes `s(v)`: the variant makes it pass | observed |
+| `b[v,j]` | for a passing test `j` that executes `s(v)`: the variant makes it fail | observed |
+| `A_i` | some variant of `i` is a repair of the fault at `i` | latent |
+| `R_v` | type of variant `v`: repair, masker or inert | latent |
 
-### 2.1 The constant prior is wrong for the task
+A test that does not execute `s(v)` cannot be changed by `v`: the programs are deterministic and the
+edit is never reached. Those pairs carry no information and are not modelled.
 
-The model is applied to programs that are known to be faulty. In the benchmark each analysed
-program has exactly one faulty statement, placed in a program of `n` statements. The marginal
-probability that a given statement is the faulty one is then `1/n`, not a constant.
-Version 2.0.0 pools: `pi = (number of faults + 1) / (number of statements + 2) = 0.1236`. For a
-program with 4 statements the true rate is 0.25; for one with 16 it is 0.0625. Consequences:
+## 3. Generative model
 
-* statements whose posterior stays near the prior (unexecuted ones, and weakly implicated ones) are
-  miscalibrated in a way that depends on program size;
-* probabilities are not comparable across programs of different sizes;
-* the prior probability of "no fault", `(1 - pi)^n`, shrinks with program size for no reason.
+**Faults.** `F_i ~ Bernoulli(pi_n)` independently, `pi_n = min(mu / n, 0.5)`.
 
-### 2.2 Identifiability
-
-* With labelled single-fault data, `lambda` and `q = 1 - (1 - lambda)(1 - theta)` are binomial
-  proportions and are identified; so is `theta`.
-* The mixing weights of `Theta` are identified only up to the information in the per-fault counts:
-  a mixture of binomials with `n_f` trials determines at most the first `n_f` moments of the mixing
-  distribution. With 7 to 16 tests per program the fit is coarse; the EM solution concentrates on
-  three or four grid points, which is typical of such estimators and should not be over-read.
-* Without labels, the parameters cannot be estimated from the spectrum of one program. They must be
-  transferred from other programs, which is why behaviour under distribution shift is a central
-  question of this proposal.
-
-### 2.3 Duplication between evidence sources
-
-* An `undefined-variable` warning and a `NameError` in a test are two observations of one defect.
-  The static factor and the test factors both count it. The flag is rare (1.2% of fault-free
-  statements) so the effect is small; it is left as documented in LIMITATIONS.
-* Mutation evidence is derived from the *same test executions* as the coverage evidence. This
-  dependence is strong and is treated explicitly in section 4.
-
-## 3. Size-aware prior
-
-**Assumption.** A program submitted for localisation contains on average `mu` faulty statements,
-and a priori every statement is equally likely to be one of them.
-
-**Prior.** `pi_n = min(mu / n, 1/2)`.
-
-**Estimation.** `mu_hat` = mean number of faulty statements per training case. For single-fault
-training data `mu_hat = 1`. The cap at 1/2 only matters for `n < 2 mu`.
-
-**Justification.** Under the assumption, `E[sum_i F_i] = n * pi_n = mu` for every program size, and
-the marginal fault rate of a statement in a program of size `n` is exactly `mu / n`. The constant
-prior of version 2.0.0 is the special case in which all programs have the same size.
-
-**What it does not fix.** `mu = 1` is a property of benchmarks with one fault per program. It is
-appropriate for "the tests fail, find the fault" and is not a claim about fault density in software.
-The prior of "no fault" becomes `(1 - mu/n)^n`, about `e^{-mu} = 0.37` for all sizes, which is
-arbitrary for programs whose tests all pass; the fault-free experiment reports its effect.
-
-## 4. Mutation-analysis evidence
-
-### 4.1 Observation
-
-Let `P` be the program under analysis, with failing tests `T_F` (non-empty) and passing tests
-`T_P`. For statement `i`, let `Mut(i)` be its single-edit variants (the operators of
-`pcg/mutation.py`). Each variant `u` is run on all tests. Define
+**Mechanism of a test.** For every test `j` and every faulty statement `i` it executes there is a
+latent exposure `X[j,i] ~ Bernoulli(Theta)`, and a leak `L_j ~ Bernoulli(lambda)`:
 
 ```
-f2p(u) = number of tests in T_F that pass under u
-p2f(u) = number of tests in T_P that fail under u
+y_j = L_j  OR  OR_i X[j,i]            so   P(y_j = 1 | F, Theta) = 1 - (1 - lambda)(1 - Theta)^k_j
 ```
 
-The evidence variable `M_i` takes one of five levels:
+This is exactly the version 2 model; nothing changes when no variants are observed.
 
-| Level | Meaning |
+**A variant is an intervention.** Variant `v` replaces statement `s = s(v)` by other code.
+
+* *Repair* (possible only if `F_s = 1`). The fault at `s` is removed, so the exposures `X[j,s]`
+  disappear. A failing test `j` becomes passing exactly when nothing else made it fail:
+
+  ```
+  P(z[v,j] = 1 | y_j = 1, F, Theta, repair)
+      = gamma * P(L_j = 0, X[j,i] = 0 for all faulty i != s | y_j = 1)
+      = gamma * (1 - lambda) * Theta * (1 - Theta)^(k_j - 1) / (1 - (1 - lambda)(1 - Theta)^k_j)
+      =: gamma * q(k_j, Theta)
+  ```
+
+  `gamma <= 1` allows a repair that is only partial. A passing test stays passing except with
+  probability `beta`.
+* *Masker*: a change that makes tests pass or fail for reasons unrelated to repair (for example an
+  early return). Flips each failing test it reaches with probability `psi`, breaks each passing
+  test with probability `eta_m`.
+* *Inert*: flips with probability `epsilon`, breaks with probability `eta_0`.
+
+Type probabilities: a variant of a fault-free statement, or of a faulty statement that has no
+repair among its variants (`A_s = 0`), is a masker with probability `kappa`, else inert. If
+`F_s = 1` and `A_s = 1` (probability `alpha`), each variant is a repair with probability `rho`, and
+otherwise a masker or inert as above.
+
+**The key quantity.** `q(k, Theta)` is the probability that a failing test fails *only* because of
+the statement under repair:
+
+| | `q(1, Theta)` | `q(2, Theta)` | `q(3, Theta)` |
+|---|---|---|---|
+| `lambda -> 0` | 1 | `(1 - Theta) / (2 - Theta)` | `(1 - Theta)^2 / (3 - 3 Theta + Theta^2)` |
+| `Theta = 0.5` | 1 | 0.333 | 0.143 |
+| `Theta = 0.9` | 1 | 0.091 | 0.009 |
+
+With one fault a repair flips every failing test (up to `gamma`). With a second fault in the same
+test it usually does not. The version 3 table had no way to express this.
+
+## 4. Likelihood of the variant evidence
+
+Write `N_v` for the likelihood of the observations of `v` when `v` is not a repair:
+
+```
+N_v = kappa * prod_j psi^z (1-psi)^(1-z) * prod_j eta_m^b (1-eta_m)^(1-b)
+    + (1-kappa) * prod_j epsilon^z (1-epsilon)^(1-z) * prod_j eta_0^b (1-eta_0)^(1-b)
+```
+
+and `Rep_v(F, Theta)` when it is:
+
+```
+Rep_v = prod_{j failing, C[j,s]=1} (gamma q(k_j,Theta))^z (1 - gamma q(k_j,Theta))^(1-z)
+      * prod_{j passing, C[j,s]=1} beta^b (1-beta)^(1-b)
+```
+
+`N_v` does not depend on `F`. For the variants `V_s` of one statement:
+
+```
+P(obs of V_s | F_s = 0)         = prod_v N_v
+P(obs of V_s | F_s = 1, F, Th.) = (1-alpha) prod_v N_v + alpha prod_v [rho Rep_v + (1-rho) N_v]
+```
+
+Dividing by `prod_v N_v`, the whole variant evidence enters the posterior as one factor per
+*faulty* statement:
+
+```
+Lambda_s(F, Theta) = (1 - alpha) + alpha * prod_{v in V_s} [ 1 + rho (Rep_v(F,Theta) / N_v - 1) ]
+```
+
+and `Lambda_s = 1` for statements without variants. `Lambda_s >= 1 - alpha` always: failing to find
+a repair can lower the odds of a statement by at most the factor `1 - alpha`, however many variants
+were tried.
+
+**Posterior.**
+
+```
+P(F | data) ∝ sum_Theta w(Theta) * prod_i pi_n^F_i (1-pi_n)^(1-F_i)
+              * prod_j P(y_j | k_j(F), Theta)
+              * prod_{s: F_s = 1} Lambda_s(F, Theta)^tau
+```
+
+`tau` in (0, 1] is a temperature for the variant layer (section 7). `tau = 1` is the model as
+written.
+
+## 5. Relation to existing methods
+
+| Method | Recovered as |
 |---|---|
-| 0 | `Mut(i)` is empty: no operator applies to the statement |
-| 1 | no variant makes any failing test pass |
-| 2 | some variant makes some, but not all, failing tests pass |
-| 3 | some variant makes all failing tests pass, and every such variant breaks a passing test |
-| 4 | some variant makes all tests pass |
+| PCG version 2 | no variants: all `Lambda_s = 1` |
+| PCG version 3 fusion | restrict to `|F| = 1`: then `k_j = 1`, `q = q(1,Theta)`, and `Lambda_s` is a number per statement, a likelihood ratio like the version 3 table but computed from the variant outcomes instead of five levels |
+| Barinel | no variants, per-candidate health instead of a shared `Theta`, candidates from minimal hitting sets |
+| Kang, Choi and Yoo (2023), appendix | single fault, `lambda = 0`: a MUSE-like score from the Bayesian formula. Their stated limitation, the single-fault assumption, is what `q(k, Theta)` removes |
+| MUSE | counts failing-to-passing and passing-to-failing changes per variant; the same observations, as a score |
+| QMR-DT / Quickscore (Heckerman 1989) | the same bipartite noisy-OR structure for diseases and findings; here extended by interventions on the causes |
 
-Variants that do not compile or produce no result within the limits are ignored.
+What is new relative to these is the intervention layer with a flip probability that depends on the
+other faults in the test's scope. I found no earlier model with this property (search record in
+RELATED_WORK_AND_NOVELTY.md). That is a search-limited statement.
 
-### 4.2 Why a naive factor would double count
+## 6. Inference
 
-**Fact.** If no failing test executes statement `i`, then no variant of `i` changes the outcome of
-any failing test. (The variant differs from `P` only in statement `i`; a run that never reaches `i`
-is identical in both.) Hence `M_i` is at most 1, whatever `F_i` is.
+**Bounded cardinality.** Enumerate every `F` with `|F| <= c` (default `c = 3`), compute the
+unnormalised log posterior for every grid value of `Theta`, normalise over the enumerated set.
+Number of configurations `sum_{r<=c} C(n, r)`: 1,351 for `n = 20`, 20,876 for `n = 50`, 166,751 for
+`n = 100`. Cost `O(N_c * G * (m + c * Vbar * m_f))` with `G` grid points, `Vbar` variants per
+statement, `m_f` failing tests.
 
-So for such statements `M_i` carries **no information about `F_i` beyond what coverage already
-gave**. A single table `P(M_i | F_i)` estimated over all statements would nevertheless assign them
-a likelihood ratio below 1, because "level 1" is more common among fault-free statements overall.
-The same coverage fact would be counted twice: once by the noisy-OR factors and once by the
-mutation factor.
+**What the truncation does.** It is exact inference in the model whose prior is conditioned on
+`|F| <= c`. It is *not* a bound on the error relative to the unrestricted model: evidence can in
+principle demand more than `c` faults. Therefore:
 
-The same argument applies in a weaker form to statements executed by only some failing tests: they
-cannot reach levels 3 or 4.
+* for programs with at most 16 executed statements the unrestricted posterior (all `2^a`
+  configurations) is also computed and the largest difference of any marginal is reported;
+* the posterior mass on `|F| = c` is reported as a warning signal (mass at the boundary).
 
-### 4.3 Coverage-conditioned likelihood
+**Checks.** (i) With no variants the result must equal version 2 exact inference restricted to
+`|F| <= c`. (ii) Against brute-force enumeration written independently in the tests, with random
+variant outcomes. (iii) With `|F| <= 1` and `alpha = 0` the marginals must equal the single-fault
+closed form.
 
-Define the coverage context of a statement, a deterministic function of the observed spectrum:
+## 7. The variant layer is a composite likelihood
 
-```
-K_i = all   if every failing test executed statement i
-K_i = part  if some but not all failing tests executed it
-K_i = none  if no failing test executed it
-```
+The product over variants treats them as independent given `F` and `Theta`. They are not:
 
-The factor is `P(M_i | F_i, K_i)`:
+1. variants of the same statement see the same exposures `X[j,s]`;
+2. for a test with two faults, "repair of `i` flips it" and "repair of `g` flips it" are mutually
+   exclusive events (only one fault can be the sole cause), but the product treats them as
+   independent;
+3. `Theta` is shared by all faults, although faults differ in exposure.
 
-| Context | Likelihood ratio used | Reason |
-|---|---|---|
-| `none` | exactly 1 | Section 4.2: the evidence is determined by coverage |
-| `part` | exactly 1 | In single-fault training data a faulty statement always has context `all`, so `P(M | F=1, part)` cannot be estimated. Using 1 means "no evidence", which is safe |
-| `all` | `P(M_i = v | F_i = 1, all) / P(M_i = v | F_i = 0, all)` from learned tables | Both tables are estimated only among statements that all failing tests executed, so the comparison is between like and like |
+Multiplying dependent terms as if independent gives correct point estimates in many settings but
+over-states the amount of evidence (Varin, Reid and Firth 2011). The expected symptom is
+over-confident posteriors. Two remedies are specified in advance:
 
-**Estimation.** For level `v` and `f` in {0, 1}:
+* **Temperature `tau`**, chosen on training programs only by minimising the log loss of the
+  marginals (grid 0.25, 0.5, 0.75, 1.0).
+* **Reporting calibration** (Brier, log loss, ECE) for `tau = 1` and for the selected `tau`.
 
-```
-P(M = v | F = f, all) = (count of training statements with context all, fault state f, level v  + 1)
-                        / (count of training statements with context all and fault state f  + 5)
-```
+## 8. Parameter estimation and identifiability
 
-Training statements come from detected mutants of other programs only.
+All parameters are estimated on single-fault programs other than the one analysed.
 
-**Joint distribution of version 3.**
+* `kappa, psi, epsilon, eta_m, eta_0`: two-component mixture fitted by EM on the variants of
+  fault-free statements.
+* `alpha, rho, gamma, beta`: EM on the variants of the faulty statements, with `N_v` fixed from the
+  previous step and `q = q(1, Theta) ≈ 1` (leak is of order 0.001).
+* `lambda`, the grid weights `w`, `mu`: as in versions 2 and 3.
 
-```
-P(F, Theta, T, A, M | K) = P(Theta) · Π_i [ P(F_i) P(A_i | F_i) P(M_i | F_i, K_i) ] · Π_j P(T_j | F_{S_j}, Theta)
-```
+Identifiability. `alpha` is the share of faulty statements that have at least one repair-like
+variant; `rho` the share of repair-like variants among the variants of such statements; `gamma` the
+share of failing tests a repair flips; all three are identified from single-fault data whenever
+some statements have several variants and several failing tests. **`q(k, Theta)` for `k >= 2` has
+no free parameter**: it is implied by the noisy-OR mechanism. The multi-fault behaviour of the
+model is therefore a *prediction* from single-fault data, not something fitted to multi-fault data.
+That is what makes the experiment in section 10 a real test.
 
-with `P(F_i = 1) = pi_n`. As before, the per-statement factors fold into an effective prior by Bayes'
-rule in odds form, and the test factors are handled by exact enumeration. Complexity is unchanged.
+Known weak point: `alpha` is a property of the fault population. Injected faults are produced by
+the same operators as the variants, so `alpha` learned there is high (about 0.83 of faulty
+statements have a restoring variant); for human-written bugs it is low (5 of 31 in QuixBugs). The
+bound `Lambda_s >= 1 - alpha` limits the damage but does not remove it. Reported both ways:
+parameters transferred from injected faults, and parameters estimated on human-written bugs of
+other programs.
 
-**Remaining assumption, stated plainly.** Given `F_i` and the context, `M_i` is treated as
-independent of the test outcomes and of the other `M_k`. This is not exactly true: for instance two
-statements can both admit a variant that makes all tests pass. The discriminative baseline makes no
-such assumption, so comparing the two (P2) measures what the assumption costs.
+## 9. Calibration and uncertainty
 
-**Graph.** Each statement with a non-trivial factor gets an evidence node `m:<line>` carrying the
-level and the context, with an edge to its statement. `fault_model_from_graph` reads the level and
-context from that node; removing the node removes the factor.
+The marginals `P(F_i = 1 | data)` are evaluated as probabilities exactly as in version 3. Under
+multiple faults the base rate changes (two faulty statements among `n`), and the prior still
+expects `mu = 1`; a shift in the number of faults is part of what is tested.
 
-## 5. Recalibration
+## 10. Predicted behaviour in controlled scenarios
 
-For a posterior `p` define `z = log(p / (1 - p))` and
+These were written down before running anything.
 
-```
-p' = sigmoid(a z + b)
-```
+| Scenario | Prediction |
+|---|---|
+| S1 One fault, a repair variant exists, 4 failing tests | Same ranking as version 3; `Lambda` large for the faulty statement |
+| S2 Two faults `i`, `g`; all failing tests execute both; repair variants exist for both | Each repair flips only part of the failing tests. Version 3 reads both as "partial" (ratio 0.048) and demotes them. New model: `{i, g}` explains all flips and non-flips; both marginals high |
+| S3 Two faults, repair exists only for `i` | `i` high. `g` identified only as well as coverage allows; the non-flipped tests raise every statement they execute |
+| S4 One fault, no repair variant (the human-bug case) | Evidence against the faulty statement bounded by `1 - alpha`; ranking falls back towards the coverage-only model |
+| S5 A masker on a fault-free statement flips all failing tests and breaks passing ones | `N_v` explains it (`psi`, `eta_m` high); `Rep_v / N_v` small because repairs rarely break passing tests |
+| S6 Data generated from the model itself with coupled exposures | Marginals over-confident at `tau = 1`, better calibrated at `tau < 1` (section 7) |
+| S7 Three faults, `c = 3` | Still exact; with four faults and `c = 3` the truncation is wrong by construction and the boundary mass should be large |
 
-with `a > 0` and `b` chosen to minimise the log loss on statements of other programs (Platt scaling
-on the log-odds; with `b = 0` this is temperature scaling with temperature `1/a`).
+## 11. Counterexamples and edge cases
 
-**Leakage control.** When program `X` is evaluated, `(a, b)` are fitted on posteriors of programs
-`Y != X` that were themselves computed with parameters from programs other than `X` and `Y` (nested
-leave-one-program-out). For the external benchmark, `(a, b)` are fitted on the out-of-fold
-posteriors of the project's benchmark only.
+* **Fault interaction.** If fault `g` is only reachable because of fault `i` (or masks it), the
+  independent exposures are wrong. Repairing `i` may then flip tests "belonging" to `g`. The model
+  will read this as strong evidence for `i` alone and miss `g`.
+* **Coverage changes under a variant.** `k_j` is computed from the coverage of the analysed
+  program. A repair can change which statements a test executes.
+* **Omission faults.** A deleted statement has no variants and no coverage of its own.
+* **No failing test executes `s`.** Then no `z` exists for its variants; only breaks of passing
+  tests are observed, and `Rep_v / N_v` is close to 1.
+* **Equivalent variants** behave as inert and are harmless.
+* **All tests fail.** `q` is still defined; passing-test evidence is absent.
 
-**Property.** For `a > 0` the map is strictly increasing, so it cannot change the order of
-statements. Recalibration can improve probabilities and cannot improve or harm any ranking metric.
+## 12. Amendments after implementation
 
-## 6. Selective localisation
+The text above is the design as written before coding. These changes were made on development data
+(D1) before the protocol was frozen and before any held-out data were used.
 
-Confidence of a localisation result: `c = max_i p_i`, the largest posterior. Decision rule: answer
-with the top-ranked statement if `c >= tau`, otherwise abstain.
+**A1. More than two kinds of non-repair variant.** The design had two kinds, masker and inert. On
+D1 the two components were absorbed by differences in how often variants *break passing tests*
+(94% against 21%), not by flipping. The mixture now has `K` kinds, each with a flip rate `psi_c`
+and a break rate `eta_c`: `N_v = sum_c kappa_c * Bin(flips; psi_c) * Bin(breaks; eta_c)`. `K = 5` by
+BIC on D1 (58,683; 54,258; 53,522; 53,131; 53,068; 53,051 for `K` = 2 to 7; smallest `K` within 100
+of the minimum).
 
-For a set of cases sorted by decreasing confidence, at coverage `k/N` (the `k` most confident
-cases are answered):
+**A2. The exclusive layer replaces the composite layer as the model of record.** Section 7 listed,
+before any data, the approximation that two repairs of different statements could both be credited
+with fixing the same test. On D1 this is what happened: single-fault log loss 0.143 against 0.074
+for version 3, and an inferred number of faults near 2 for single-fault programs. The replacement
+is exact under two restrictions:
 
-```
-selective accuracy(k) = mean Top-1 of the k most confident cases
-risk(k)               = 1 - selective accuracy(k)
-AURC                  = mean over k = 1..N of risk(k)
-```
+* at most one variant of a faulty statement is its repair (choice `a_s`: "none" with probability
+  `1 - alpha`, or one of its `V_s` variants with probability `alpha / V_s` each);
+* every failing test has at most one sole cause.
 
-Top-1 is the tie-aware expected value used throughout. Lower AURC is better. Two reference values
-are reported with it: the AURC of a confidence that carries no information (equal to the overall
-error rate in expectation) and of an oracle confidence that answers the correct cases first.
-
-Confidences compared: largest posterior (`pcg`, `pcg_size`, `pcg_fused`), largest predicted
-probability (`lr_spectrum`, `lr_fusion`), the largest Ochiai score, and the gap between the largest
-and second-largest Ochiai score.
-
-## 7. Baselines, specified
-
-**Barinel.** Candidates `d`: all minimal hitting sets of the failing tests' coverage with at most 3
-statements. `Pr(d) = p^{|d|} (1 - p)^{n - |d|}` with `p` the same prior the PCG model uses.
-`Pr(e | d) = max over h in [0,1]^{|d|} of Π_pass Π_{j in d, executed} h_j · Π_fail (1 - Π_{j in d, executed} h_j)`.
-For `|d| = 1` the maximiser is `h = n_pass / (n_pass + n_fail)` over the tests executing the
-statement. For larger `d` the maximum is found numerically. A statement's score is the largest
-posterior of a candidate that contains it, which reproduces the order in which statements appear in
-Barinel's ranked diagnosis; statements in no candidate score 0. Check: the paper's example
-(`Pr(e | {1,2}) = 0.185`, `Pr(e | {1,3}) = 0.036`, posteriors 0.839 and 0.161).
-
-**Metallaxis.** A variant `u` *kills* a test if the test's behaviour signature under `u` differs
-from its signature under `P`. With `kf(u)`, `kp(u)` the numbers of failing and passing tests
-killed: `score(u) = kf(u) / sqrt(|T_F| (kf(u) + kp(u)))`, 0 if undefined; statement score = maximum
-over its variants; 0 for a statement without variants.
-
-**MUSE.** `score(u) = f2p(u) - alpha * p2f(u)` with `alpha = (sum_u f2p(u)) / (sum_u p2f(u))` over
-all variants of the program (`alpha = 0` if the denominator is 0); statement score = mean over its
-variants; a statement without variants is ranked below all others.
-
-**Hybrid average.** Mean of the Ochiai score and the Metallaxis score, both in [0, 1].
-
-**Logistic regression.** `P(F_i = 1 | x_i) = sigmoid(w · x_i + w_0)`, fitted on the statements of
-the detected training mutants by Newton's method with an L2 penalty of 1.0 on the weights of
-standardised features. Spectrum features: `ef/F`, `ep/P`, Ochiai, Tarantula, indicator of context
-`all`. Fusion adds: Metallaxis, MUSE, five indicators for the level `M_i`, the static flag.
-Because it minimises log loss, it is calibrated on its training distribution by construction, which
-makes it the right competitor for the probabilistic metrics.
-
-## 8. Properties that the tests must establish
-
-| # | Property | How it is checked |
-|---|---|---|
-| T1 | With all likelihood ratios equal to 1 the fused model equals the spectrum-only model | Direct comparison |
-| T2 | For contexts `none` and `part` the factor is exactly 1 whatever the level | Unit test |
-| T3 | A statement that no failing test executes has level at most 1 | Checked on every benchmark case |
-| T4 | Raising a statement's likelihood ratio raises its posterior | Monotonicity test |
-| T5 | Learned tables are probability distributions and recover the generating tables on simulated data | Simulation |
-| T6 | Size-aware prior: expected number of faults equals `mu` for every `n >= 2 mu` | Arithmetic test |
-| T7 | Recalibration with `a > 0` leaves every ranking metric unchanged | Before/after comparison |
-| T8 | Barinel reproduces the worked example of its paper | Numerical test |
-| T9 | Metallaxis and MUSE reproduce hand-computed values on a small example | Numerical test |
-| T10 | Logistic regression recovers known coefficients on simulated data and its gradient is zero at the solution | Numerical test |
-| T11 | AURC equals the hand-computed value on a small example; an oracle confidence gives the minimum | Numerical test |
-| T12 | The worked example of section 9 | Numerical test |
-| T13 | No inference function receives ground truth; training folds exclude the evaluated program for every learned quantity (model parameters, mutation tables, regression weights, recalibration map) | Signature and fold tests |
-| T14 | All result files of version 2.0.0 are reproduced bit for bit after the extension | Hash comparison with the stored manifest |
-
-## 9. Worked example
-
-Three statements, three tests, fixed `theta = 0.8`, `lambda = 0.01`.
+For a configuration `F` and choices `a`:
 
 ```
-test 1: FAIL  executed {s1, s2}
-test 2: pass  executed {s2, s3}
-test 3: pass  executed {s3}
+P(flips on test j | F, a, theta) =
+      sum_{c in F, C[j,c]=1}  q(k_j, theta) * g_c * prod_{s != c} h_s
+    + (1 - k_j q(k_j, theta)) * prod_s h_s
+
+g_c = gamma^z (1-gamma)^(1-z)   if statement c has a chosen repair with flip z on test j, else 1
+h_s = delta^z (1-delta)^(1-z)   likewise for the other statements with a chosen repair
 ```
 
-**Step 1, size-aware prior.** `mu = 1`, `n = 3`, so `pi = 1/3` for every statement. With spectrum
-evidence only, exact enumeration gives
+and the variant factor of `F` is the sum over all choices `a` of
+`prod_s P(a_s) * [beta-term / N_v of the chosen variant] * prod_j P(flips on test j | F, a, theta)`.
+The events "c is the sole cause" are disjoint, which is why their probabilities add and why
+`k q(k, theta) <= 1`. Cost: `prod_s (V_s + 1)` choices per configuration, at most three statements.
 
-```
-P(F1) = 0.8327   P(F2) = 0.2378   P(F3) = 0.0196   P(no fault) = 0.0182
-```
+Consequence for section 4: the bound becomes `factor >= 1 - alpha` for the weight of a
+configuration (not for the posterior odds of a marginal, which also depend on the other
+configurations). The composite layer is kept as an ablation.
 
-(With the constant prior 0.1 of the earlier example the values were 0.7668, 0.1693, 0.0044.)
+**A3. `delta` is not a free parameter.** The probability that a repair makes a test pass although
+its statement is not the sole cause is set to the smallest flip rate among the non-repair kinds: in
+that situation the repair acts like an inert change.
 
-**Step 2, contexts.** The only failing test executed `s1` and `s2`: `K1 = K2 = all`. It did not
-execute `s3`: `K3 = none`.
+**A4. `tau = 1`.** With the exclusive layer the calibration problem that motivated the temperature
+disappeared on D1; `tau = 0.5` gave no consistent gain. The temperature stays in the code and is
+fixed at 1.
 
-**Step 3, mutation evidence.** Suppose a variant of `s1` makes all tests pass (level 4), no variant
-of `s2` makes test 1 pass (level 1), and `s3` has level 1. Take these illustrative tables for
-context `all` (they are not estimates):
+**A5. One kind of repair.** A second kind (partial repair) lowered BIC but changed no development
+metric by more than 0.005; one kind is used.
 
-| Level | 0 | 1 | 2 | 3 | 4 |
-|---|---|---|---|---|---|
-| `P(M | F=1, all)` | 0.05 | 0.15 | 0.05 | 0.15 | 0.60 |
-| `P(M | F=0, all)` | 0.10 | 0.60 | 0.10 | 0.10 | 0.10 |
-
-Likelihood ratios: `s1`: 0.60 / 0.10 = 6. `s2`: 0.15 / 0.60 = 0.25. `s3`: 1, because its context
-is `none`.
-
-**Step 4, effective priors.** Prior odds are `(1/3)/(2/3) = 0.5`.
-
-```
-s1: odds 0.5 * 6    = 3      ->  0.7500
-s2: odds 0.5 * 0.25 = 0.125  ->  0.1111
-s3: odds 0.5 * 1    = 0.5    ->  0.3333
-```
-
-**Step 5, posterior.** Enumeration with these priors and the same test factors:
-
-```
-P(F1) = 0.9880   P(F2) = 0.0367   P(F3) = 0.0196   P(no fault) = 0.0039
-```
-
-**What the example shows.**
-
-* The mutation evidence moved `s1` from 0.83 to 0.99 and `s2` from 0.24 to 0.04: the two
-  statements that coverage could not separate well are now clearly separated.
-* `s3` is unchanged at 0.0196: its mutation evidence is ignored because coverage already explains
-  it.
-* **Without context conditioning** `s3` would also receive the ratio 0.25, its effective prior would
-  drop to 0.1111 and its posterior to 0.0050: a fourfold reduction produced by counting the fact
-  "no failing test runs `s3`" twice.
-
-**Recalibration example.** With `a = 0.7`, `b = -0.3`: 0.90 becomes 0.7752, 0.50 becomes 0.4256,
-0.10 becomes 0.1373. The order is preserved.
-
-## 10. Amendments made during implementation
-
-The text above is unchanged from the version written before implementation. Three things were
-learned while implementing it; they are recorded here instead of being edited in.
-
-**A1. The worked example in the Barinel paper is not an exact maximum (affects T8).** For the
-candidate `{1, 2}` the paper reports `Pr(e | d) = 0.185` at `h = (0.47, 0.19)`. The likelihood is
-`(1 - h1 h2)(1 - h2)(1 - h1) h1`, which decreases in `h2` for every `h1`, so its maximum is on the
-boundary: `h2 = 0`, `h1 = 1/2`, value `1/4`. For `{1, 3}` the exact maximum is `1/27 = 0.0370` at
-`h = (1/3, 1/2)`, against the reported 0.036. The paper's numbers are what an unconverged gradient
-ascent returns. The test therefore checks two things: the likelihood *function* reproduces the
-paper's values at the paper's `h`, and the optimiser finds the exact maxima. The ranking of the two
-candidates is the same either way; the posteriors are 0.871 and 0.129 instead of 0.839 and 0.161.
-
-**A2. A statement whose only applicable edit was already applied has no variants.** The deletion
-operator turns a statement into `pass`, and no operator applies to `pass`. Such a statement gets
-level 0 ("no variant"). Level 0 is therefore informative on injected faults for a reason that has
-nothing to do with real bugs; see LIMITATIONS.
-
-**A3. Property T3 was confirmed on every case.** In all 594 + 410 + 413 analysed programs, every
-statement that no failing test executed had level 0 or 1 (an assertion in `collect_evidence`).
+**A6. Section 6, check (i) was restated.** The unrestricted posterior is computed for the model
+without variants (where it must equal version 2 exact inference; tested) but not for the exclusive
+layer, whose cost grows with the product of the numbers of variants of all faulty statements.
+Truncation is instead checked by allowing a fourth fault (hypothesis H6).

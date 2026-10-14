@@ -49,7 +49,7 @@ match a learned black-box combination in fault-localisation accuracy; are its pr
 calibrated and useful for deciding when to trust the result; and do accuracy and calibration
 survive the move from injected faults to human-written bugs?
 
-**Why the question is open.** The literature review (`research/LITERATURE_REVIEW.md`) found that:
+**Why the question is open.** The literature review (`research/v3/LITERATURE_REVIEW.md`) found that:
 
 * combining evidence families clearly helps, and is done by averaging scores or by learning to
   rank; Zou et al. (2021) list the limits of such black-box combination and ask for alternatives;
@@ -83,7 +83,7 @@ search-limited statement.
 ## 3. Mathematical formulation
 
 Full derivations and two worked examples: `docs/MATHEMATICAL_MODEL.md` and
-`research/MATHEMATICAL_DESIGN.md`.
+`research/v3/MATHEMATICAL_DESIGN.md`.
 
 **Variables.** `F_i in {0,1}`: statement `i` is faulty (latent). `Theta`: probability that an
 executed fault makes a test fail (latent, ten-point grid). `T_j`: test `j` passes or fails
@@ -149,7 +149,7 @@ Every learned quantity (model parameters, mutation tables, regression weights, r
 is fitted without the program under analysis. For QuixBugs, a test is kept only if the benchmark's
 correct program reproduces the benchmark's expected output (231 of 242 tests). Nine QuixBugs
 programs that need object-graph inputs are excluded. BugsInPy and Defects4J were examined and not
-used (`research/REFERENCE_VERIFICATION.md`).
+used (`research/v3/REFERENCE_VERIFICATION.md`).
 
 ## 6. Baselines and metrics
 
@@ -329,7 +329,7 @@ instead of by conditioning rules.
 ## References
 
 † = bibliographic record checked during this project; ‡ = also read in full. Details and sources:
-`research/REFERENCE_VERIFICATION.md`.
+`research/v3/REFERENCE_VERIFICATION.md`.
 
 1. ‡ Abreu, R., Zoeteweij, P., van Gemund, A. J. C. (2009). Spectrum-based multiple fault
    localization. *ASE 2009*, pp. 88-99.

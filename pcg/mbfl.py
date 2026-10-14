@@ -5,7 +5,7 @@ run against the test suite. What the variants do to the test outcomes is
 summarised per statement in three ways:
 
 * the evidence variable ``M_i`` (five levels) with its coverage context, used
-  by the Bayesian model (research/MATHEMATICAL_DESIGN.md, section 4);
+  by the Bayesian model (research/v3/MATHEMATICAL_DESIGN.md, section 4);
 * the Metallaxis score and the MUSE score, two published mutation-based
   suspiciousness measures, defined as in Pearson et al. (ICSE 2017, sec. III-A).
 

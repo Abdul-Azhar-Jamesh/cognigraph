@@ -1,8 +1,19 @@
 # Changelog and design decisions
 
+## 4.0.0 (2026-10-14): interventional multi-fault model (research branch, uncommitted)
+
+Version 3.0.0 is tagged locally (`v3.0.0`) and its results are unchanged (`results/benchmark` fingerprint
+`141c0a38...`; `results/research` identical except timing). Added: `pcg/interventional.py` (model),
+`flitsr.py`, `humanevalfix.py`, `v4.py`, `v4_report.py`, `v4_sensitivity.py`, `synthetic.py`, `demo_v4.py`,
+`tests/test_v4.py` (16 test functions, 31 collected cases), new commands `v4`, `v4-report`, `v4-synthetic`, `demo-v4`. Research documents
+of version 3 moved to `research/v3/`. Bugs found and fixed during the run: static-analysis command line too
+long (D5), duplicate HumanEval function names (D6), demonstration selection rules that could not match.
+Known, not fixed: the pre-registered average precision can exceed 1 with tied faults (sensitivity analysis in
+`results/v4_sensitivity`).
+
 ## 3.0.0 (2026-10-13): research extension
 
-Version 2.0.0 is preserved in `../pcg-project-v2.0.0-baseline/`. The experiments of version 2.0.0
+Version 2.0.0 is preserved in `archive/v2.0.0-baseline/`. The experiments of version 2.0.0
 are unchanged and still reproduce bit for bit (`results/benchmark`). The research work, its
 literature basis and its pre-registered protocol are in `research/`.
 
@@ -24,10 +35,10 @@ No new dependency was added.
 
 **R1. No claim of a new algorithm.** The literature review found Bayesian spectrum-based
 localisation (Barinel, 2009) and much richer probabilistic localisers (SmartFL). The contribution
-is an evaluated, model-based fusion and a calibration study; see `research/RESEARCH_PROPOSAL.md`.
+is an evaluated, model-based fusion and a calibration study; see `research/v3/RESEARCH_PROPOSAL.md`.
 
 **R2. Hypotheses and comparisons fixed before the code existed.** They are in
-`research/RESEARCH_PROPOSAL.md`, section 5. Two hypotheses were refuted (context conditioning, the
+`research/v3/RESEARCH_PROPOSAL.md`, section 5. Two hypotheses were refuted (context conditioning, the
 size-aware prior); both are reported.
 
 **R3. The pre-registered model stays the "proposed" model although an ablation beat it.** Changing
@@ -63,7 +74,7 @@ the old behaviour, and the old result files are checked to be identical.
 ## 2.0.0 (2026-10-13): complete rebuild
 
 The original thirteen scripts were replaced by the `pcg` package. The original project is
-preserved unchanged in `../pcg-project-original-backup/`.
+preserved unchanged in `archive/original-third-party-backup/`.
 
 **R11. Behaviour signatures no longer contain memory addresses.** The QuixBugs program `flatten`
 returns generator objects whose printed form includes an address, so signatures differed between

@@ -9,12 +9,12 @@ research phase, how that state was verified, and how it can be restored.
 |---|---|
 | Version | 2.0.0 (`pcg/__init__.py`) |
 | Version control | None. The folder is not a git repository |
-| Recoverable copy | `../pcg-project-v2.0.0-baseline/` (90 files, everything except `.venv` and caches); verified identical with `diff -r` |
+| Recoverable copy | `archive/v2.0.0-baseline/` (90 files, everything except `.venv` and caches); verified identical with `diff -r` |
 | Fingerprint of source, tests and dependency files | SHA-256 of the sorted per-file SHA-256 list: `6751ebe89511019fb1c3473b4ef46f2505cb3c8b8e633cd34d89e03cec3dcb83` |
 | Results fingerprint | SHA-256 of `results/benchmark/MANIFEST.json`: `141c0a38e97d13e38b098c0bf5e3d610900a7190c1c3645f0c00011ff81f4d83`; the manifest lists a SHA-256 for each of the 22 result files |
-| Original third-party project | `../pcg-project-original-backup/` (untouched) |
+| Original third-party project | `archive/original-third-party-backup/` (untouched) |
 
-To restore version 2.0.0, copy `../pcg-project-v2.0.0-baseline/` over the project folder.
+To restore version 2.0.0, copy `archive/v2.0.0-baseline/` over the project folder.
 
 ## 2. Environment
 

@@ -16,7 +16,7 @@ Design decisions and their trade-offs are recorded in [../CHANGELOG.md](../CHANG
 
 ## Stage 1: audit and baseline
 
-* Backed up the original project to `../pcg-project-original-backup/` and verified the copy.
+* Backed up the original project to `archive/original-third-party-backup/` and verified the copy.
 * Re-ran the original scripts in an isolated copy; confirmed all eleven audit findings.
 * Outputs: [AUDIT_BEFORE_REBUILD.md](AUDIT_BEFORE_REBUILD.md), [BASELINE_RESULTS.md](BASELINE_RESULTS.md).
 
@@ -97,10 +97,10 @@ its own. Each one ended with a document or a verified result before the next beg
 
 | Phase | Goal | Output | Status |
 |---|---|---|---|
-| 1 | Verify and snapshot the baseline | `research/BASELINE.md`; recoverable copy; independent recomputation | Done |
-| 2 | Review the base paper and eight further papers | `research/LITERATURE_REVIEW.md`, `REFERENCE_VERIFICATION.md`, `RESEARCH_GAP_MATRIX.md` | Done |
-| 3 | Compare candidate directions and select | `research/RESEARCH_PROPOSAL.md` (five candidates, one primary, one complementary) | Done |
-| 4 | Design the model change before coding | `research/MATHEMATICAL_DESIGN.md` | Done |
+| 1 | Verify and snapshot the baseline | `research/v3/BASELINE.md`; recoverable copy; independent recomputation | Done |
+| 2 | Review the base paper and eight further papers | `research/v3/LITERATURE_REVIEW.md`, `REFERENCE_VERIFICATION.md`, `RESEARCH_GAP_MATRIX.md` | Done |
+| 3 | Compare candidate directions and select | `research/v3/RESEARCH_PROPOSAL.md` (five candidates, one primary, one complementary) | Done |
+| 4 | Design the model change before coding | `research/v3/MATHEMATICAL_DESIGN.md` | Done |
 | 5 | Implement | `pcg/mbfl.py`, `fusion.py`, `barinel.py`, `discriminative.py`, `quixbugs.py`, `research.py`, `research_report.py`; 27 tests | Done |
 | 6 | Evaluate | `results/research`; `docs/EXPERIMENTS.md` Part B | Done |
 | 7 | Verify and reproduce | `docs/FINAL_AUDIT.md` | Done |

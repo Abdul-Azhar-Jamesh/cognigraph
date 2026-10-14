@@ -220,3 +220,26 @@ def aurc_reference_values(correctness: np.ndarray) -> dict[str, float]:
         "uninformative": aurc(np.zeros(correctness.size), correctness),
         "oracle": aurc(correctness, correctness),
     }
+
+
+# --- several faults ------------------------------------------------------------
+
+def average_precision(scores: np.ndarray, fault_indices: Sequence[int]) -> float:
+    """Average precision over the faulty statements, with mid-ranks for ties.
+
+    ``AP = mean over faults t of |{faults u : r(u) <= r(t)}| / r(t)`` where
+    ``r`` is the mid-rank. With one fault this is its reciprocal mid-rank.
+    """
+    mid = [sum(tie_interval(scores, i)) / 2.0 for i in fault_indices]
+    return float(np.mean([sum(1 for u in mid if u <= r) / r for r in mid]))
+
+
+def roc_auc(scores: np.ndarray, labels: np.ndarray) -> float:
+    """Probability that a positive has a higher score than a negative (ties count one half)."""
+    scores, labels = np.asarray(scores, dtype=float), np.asarray(labels, dtype=bool)
+    positives, negatives = scores[labels], scores[~labels]
+    if len(positives) == 0 or len(negatives) == 0:
+        return float("nan")
+    greater = (positives[:, None] > negatives[None, :]).sum()
+    ties = (positives[:, None] == negatives[None, :]).sum()
+    return float((greater + 0.5 * ties) / (len(positives) * len(negatives)))

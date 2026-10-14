@@ -109,7 +109,7 @@ Open `results/research/SUMMARY.md`.
    known.
 
 Worked examples with all numbers: `docs/MATHEMATICAL_MODEL.md` section 8 and
-`research/MATHEMATICAL_DESIGN.md` section 9.
+`research/v3/MATHEMATICAL_DESIGN.md` section 9.
 
 ## Part 3. Comparison with the base paper
 
@@ -146,7 +146,7 @@ learned one, in distribution and on human-written bugs.
 **Why it is defensible.**
 
 * It rests on statements in the papers themselves (Zou et al. §6.5; Pearson et al.; Spiess et al.)
-  and on searches recorded in `research/LITERATURE_REVIEW.md`, section 12.
+  and on searches recorded in `research/v3/LITERATURE_REVIEW.md`, section 12.
 * I do **not** claim a new algorithm. Barinel (2009) is the same family of model, and SmartFL is a
   far richer probabilistic localiser.
 * The claim is empirical and comes with its refutations.
@@ -258,7 +258,7 @@ finding that the model-based probabilities are more robust on unseen programs, a
 documented negative results.
 
 **Q22. What is pre-registration and did you keep to it?** I wrote hypotheses, datasets, methods and
-comparisons in `research/RESEARCH_PROPOSAL.md` before the code existed. I added one analysis
+comparisons in `research/v3/RESEARCH_PROPOSAL.md` before the code existed. I added one analysis
 afterwards, on two faults, and labelled it post hoc. I did not rename the better ablation as my
 method.
 
