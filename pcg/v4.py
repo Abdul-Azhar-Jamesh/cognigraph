@@ -119,15 +119,16 @@ def make_cases(prog: ExternalProgram, items: Sequence[tuple[str, str, ex.GroundT
 
 
 def build_sets(programs: Sequence[ExternalProgram], prefix: str, per_program: dict[str, int],
-               seed_offset: int, timeout: float) -> tuple[dict[str, list[ex.Case]], dict]:
+               seed_offset: int, timeout: float, with_human: bool = True) -> tuple[dict[str, list[ex.Case]], dict]:
     """Held-out sets of one benchmark. Keys of ``per_program``: ``1``, ``2``, ``3`` (injected faults), ``HM``."""
-    sets: dict[str, list[ex.Case]] = {f"{prefix}H": []} | {f"{prefix}{k}": [] for k in per_program}
+    sets: dict[str, list[ex.Case]] = ({f"{prefix}H": []} if with_human else {}) | {f"{prefix}{k}": [] for k in per_program}
     unusable = 0
     for index, prog in enumerate(programs):
-        human_truth = ex.GroundTruth(prog.fault_lines, ("human",), (prog.fault_kind,), ("human-written bug",))
-        cases, bad = make_cases(prog, [(f"{prefix}H:{prog.name}", prog.buggy.source, human_truth)], timeout)
-        sets[f"{prefix}H"] += cases
-        unusable += bad
+        if with_human:
+            human_truth = ex.GroundTruth(prog.fault_lines, ("human",), (prog.fault_kind,), ("human-written bug",))
+            cases, bad = make_cases(prog, [(f"{prefix}H:{prog.name}", prog.buggy.source, human_truth)], timeout)
+            sets[f"{prefix}H"] += cases
+            unusable += bad
         for key, limit in per_program.items():
             rng = np.random.default_rng([config.SEED, seed_offset, index, {"1": 1, "2": 2, "3": 3, "HM": 9}[key]])
             if key == "HM":

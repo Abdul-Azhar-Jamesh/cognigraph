@@ -1,11 +1,11 @@
 ........................................................................ [ 32%]
-........................................................................ [ 65%]
-........................................................................ [ 97%]
-.....                                                                    [100%]
+........................................................................ [ 64%]
+........................................................................ [ 96%]
+........                                                                 [100%]
 ============================== warnings summary ===============================
 tests/test_model.py::test_exact_inference_matches_pgmpy_variable_elimination
   <python>\Lib\site-packages\pgmpy\estimators\__init__.py:4: FutureWarning: `pgmpy.estimators.StructureScore` is deprecated and will be removed in v1.3.0. Use `pgmpy.structure_score` instead.
     from .StructureScore import (
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-221 passed, 1 warning in 126.63s (0:02:06)
+224 passed, 1 warning in 124.28s (0:02:04)

@@ -175,3 +175,17 @@ HUMANEVAL_TIMEOUT_S = 20.0
 #: Cases compared with one more allowed fault (hypothesis H6), and their size limit.
 TRUNCATION_CHECK_CASES = 100
 TRUNCATION_CHECK_MAX_ACTIVE = 14
+
+# ----------------------------------------------------------------------------
+# Version 5 (confirmatory study on MBPP); see research/RESEARCH_PROTOCOL_V5.md
+# ----------------------------------------------------------------------------
+
+MBPP_FILE = PROJECT_ROOT / "data" / "external" / "MBPP" / "mbpp_full.jsonl"
+MBPP_MIN_STATEMENTS = 5
+#: Exact inference with variants grows quickly with the size of the function (52 s for 28 statements and 49 variants, results/reproducibility/scoring_time.json).
+MBPP_MAX_STATEMENTS = 30
+MBPP_TIMEOUT_S = 60.0
+#: Versions per program with 1, 2 and 3 injected faults.
+MBPP_PER_PROGRAM = (4, 4, 2)
+#: Draws of the random tie-breaking in the expected average precision.
+EXPECTED_AP_DRAWS = 300

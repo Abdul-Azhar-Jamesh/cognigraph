@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{MBPP confirmatory study: expected average precision of IV minus each baseline (95\% cluster bootstrap interval, Holm-adjusted $p$).}
+\label{tab:c1}
+\begin{tabular}{llccc}
+\toprule
+Faults & Baseline & Difference [95\% CI] & Holm $p$ & Supported \\
+\midrule
+2 faults & MUSE & +0.030 [+0.012, +0.046] & 0.0037 & yes \\
+2 faults & FLITSR$^{*}$ & +0.093 [+0.079, +0.106] & 0.0005 & yes \\
+2 faults & PCG spectrum only & +0.090 [+0.076, +0.104] & 0.0005 & yes \\
+2 faults & PCG v3 fused & +0.065 [+0.054, +0.075] & 0.0005 & yes \\
+2 faults & Logistic fusion & +0.023 [+0.012, +0.034] & 0.0018 & yes \\
+3 faults & MUSE & -0.015 [-0.035, +0.006] & 0.3397 & no \\
+3 faults & FLITSR$^{*}$ & +0.021 [+0.007, +0.034] & 0.0114 & yes \\
+3 faults & PCG spectrum only & +0.015 [+0.002, +0.028] & 0.0741 & no \\
+3 faults & PCG v3 fused & +0.041 [+0.029, +0.053] & 0.0005 & yes \\
+3 faults & Logistic fusion & +0.003 [-0.009, +0.016] & 0.5646 & no \\
+\bottomrule
+\end{tabular}
+\end{table}

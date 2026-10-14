@@ -27,6 +27,7 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass
 from itertools import combinations
+from math import lgamma
 from typing import Optional, Sequence
 
 import numpy as np
@@ -467,12 +468,30 @@ def enumerate_configurations(
     return Enumeration(configs, member, member.sum(axis=1), log_weight, prior, active, max_faults)
 
 
-def summarise(enumeration: Enumeration, max_faults: Optional[int] = None, odds_scale: float = 1.0) -> InterventionalPosterior:
+def cardinality_log_prior(sizes: np.ndarray, n: int, mean: float, kappa: float) -> np.ndarray:
+    """``log P(one configuration with r faults)`` when the per-statement fault rate is integrated out.
+
+    The rate has a Beta(a, b) prior with mean ``mean`` and concentration ``kappa = a + b``; for a
+    configuration of ``r`` faults among ``n`` statements the marginal prior is ``B(a + r, b + n - r) / B(a, b)``
+    (only the part that depends on ``r`` is returned). ``kappa -> infinity`` gives back independent faults
+    with probability ``mean``.
+    """
+    a, b = mean * kappa, (1.0 - mean) * kappa
+    return np.array([lgamma(a + r) + lgamma(b + n - r) for r in sizes])
+
+
+def summarise(enumeration: Enumeration, max_faults: Optional[int] = None, odds_scale: float = 1.0,
+              kappa: Optional[float] = None) -> InterventionalPosterior:
     """Posterior from an enumeration, optionally with fewer faults allowed or rescaled prior odds.
 
     ``odds_scale`` multiplies the prior odds of every statement; because a
     failing test rules out the empty configuration, this is in effect the
     prior odds of each *additional* fault.
+
+    ``kappa`` replaces the independent per-statement prior by a hierarchical one (the fault rate
+    is integrated out under a Beta prior of concentration ``kappa``, see :func:`cardinality_log_prior`),
+    so that the number of faults is learned from the evidence instead of being fixed by the prior.
+    The prior of the enumeration must be the same for every statement.
     """
     e = enumeration
     limit = e.max_faults if max_faults is None else max_faults
@@ -481,6 +500,12 @@ def summarise(enumeration: Enumeration, max_faults: Optional[int] = None, odds_s
     keep = e.sizes <= limit
     log_weight = e.log_weight[keep] + e.sizes[keep] * np.log(odds_scale)
     member, sizes = e.member[keep], e.sizes[keep]
+    if kappa is not None:
+        if not np.allclose(e.prior, e.prior[0]):
+            raise ValueError("the hierarchical prior needs the same prior for every statement")
+        mean = float(e.prior[0])
+        # remove the independent prior (r * log odds) and put the Beta-binomial one in its place
+        log_weight = log_weight - sizes * np.log(mean / (1.0 - mean)) + cardinality_log_prior(sizes, len(e.prior), mean, kappa)
     weight = np.exp(log_weight - log_weight.max())
     weight /= weight.sum()
     marginals = e.prior.copy()

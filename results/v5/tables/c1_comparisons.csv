@@ -1,0 +1,11 @@
+dataset,comparison,mean_difference,ci_low,ci_high,sign_flip_p,holm_p,supported
+M2,iv - muse,0.0295,0.0125,0.0465,0.00075,0.00375,True
+M2,iv - flitsr_star,0.0927,0.0786,0.1061,0.00005,0.00050,True
+M2,iv - pcg_size,0.0905,0.0764,0.1042,0.00005,0.00050,True
+M2,iv - pcg_fused,0.0645,0.0538,0.0751,0.00005,0.00050,True
+M2,iv - lr_fusion,0.0227,0.0117,0.0342,0.00030,0.00180,True
+M3,iv - muse,-0.0145,-0.0353,0.0060,0.16984,0.33968,False
+M3,iv - flitsr_star,0.0210,0.0073,0.0345,0.00285,0.01140,True
+M3,iv - pcg_size,0.0149,0.0022,0.0275,0.02470,0.07410,False
+M3,iv - pcg_fused,0.0409,0.0288,0.0533,0.00005,0.00050,True
+M3,iv - lr_fusion,0.0034,-0.0093,0.0157,0.56457,0.56457,False

@@ -1,0 +1,7242 @@
+{
+  "excluded_by_reason": {
+    "fewer than 2 literal test inputs": 28,
+    "fewer than 5 statements": 574,
+    "fewer than 6 usable tests": 4,
+    "more than 30 statements": 1,
+    "same function name as a development program": 3,
+    "test setup code": 2
+  },
+  "minimum_statements": 5,
+  "per_problem": [
+    {
+      "function": "min_cost",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 1,
+      "tests_kept": 8
+    },
+    {
+      "function": "similar_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 2
+    },
+    {
+      "function": "is_not_prime",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 3,
+      "tests_kept": 12
+    },
+    {
+      "function": "heap_queue_largest",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 4
+    },
+    {
+      "function": "count_ways",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 5,
+      "tests_kept": 12
+    },
+    {
+      "function": "differ_At_One_Bit_Pos",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 6
+    },
+    {
+      "function": "find_char_long",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 7
+    },
+    {
+      "function": "square_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 8
+    },
+    {
+      "function": "find_Rotations",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 9,
+      "tests_kept": 11
+    },
+    {
+      "function": "small_nnum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 10
+    },
+    {
+      "function": "remove_Occ",
+      "original_inputs": 5,
+      "statements": 9,
+      "status": "used",
+      "task_id": 11,
+      "tests_kept": 17
+    },
+    {
+      "function": "sort_matrix",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 12
+    },
+    {
+      "function": "count_common",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 13
+    },
+    {
+      "function": "find_Volume",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 14
+    },
+    {
+      "function": "split_lowerstring",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 15
+    },
+    {
+      "function": "text_lowercase_underscore",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 16
+    },
+    {
+      "function": "square_perimeter",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 17
+    },
+    {
+      "function": "remove_dirty_chars",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 18,
+      "tests_kept": 15
+    },
+    {
+      "function": "test_duplicate",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 19
+    },
+    {
+      "function": "is_woodall",
+      "original_inputs": 6,
+      "statements": 12,
+      "status": "used",
+      "task_id": 20,
+      "tests_kept": 18
+    },
+    {
+      "function": "multiples_of_num",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 21
+    },
+    {
+      "function": "find_first_duplicate",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 22,
+      "tests_kept": 15
+    },
+    {
+      "function": "maximum_Sum",
+      "original_inputs": 4,
+      "statements": 7,
+      "status": "used",
+      "task_id": 23,
+      "tests_kept": 16
+    },
+    {
+      "function": "binary_to_decimal",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 24,
+      "tests_kept": 12
+    },
+    {
+      "function": "find_Product",
+      "original_inputs": 4,
+      "statements": 6,
+      "status": "used",
+      "task_id": 25,
+      "tests_kept": 11
+    },
+    {
+      "function": "check_k_elements",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 26
+    },
+    {
+      "function": "remove",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 27
+    },
+    {
+      "function": "binomial_Coeff",
+      "original_inputs": 4,
+      "statements": 5,
+      "status": "used",
+      "task_id": 28,
+      "tests_kept": 16
+    },
+    {
+      "function": "get_Odd_Occurrence",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 29,
+      "tests_kept": 9
+    },
+    {
+      "function": "count_Substring_With_Equal_Ends",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 30,
+      "tests_kept": 13
+    },
+    {
+      "function": "func",
+      "original_inputs": 3,
+      "statements": 20,
+      "status": "used",
+      "task_id": 31,
+      "tests_kept": 14
+    },
+    {
+      "function": "max_Prime_Factors",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 32,
+      "tests_kept": 12
+    },
+    {
+      "function": "decimal_To_Binary",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 33,
+      "tests_kept": 10
+    },
+    {
+      "function": "find_missing",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 34,
+      "tests_kept": 14
+    },
+    {
+      "function": "find_rect_num",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 35
+    },
+    {
+      "function": "find_Nth_Digit",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 36,
+      "tests_kept": 14
+    },
+    {
+      "function": "sort_mixed_list",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 37
+    },
+    {
+      "function": "div_even_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 38
+    },
+    {
+      "function": "rearange_string",
+      "original_inputs": 3,
+      "statements": 15,
+      "status": "used",
+      "task_id": 39,
+      "tests_kept": 12
+    },
+    {
+      "function": "freq_element",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 40
+    },
+    {
+      "function": "filter_evennumbers",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 41
+    },
+    {
+      "function": "find_Sum",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 42
+    },
+    {
+      "function": "text_match",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 43
+    },
+    {
+      "function": "text_match_string",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 44
+    },
+    {
+      "function": "get_gcd",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 45,
+      "tests_kept": 15
+    },
+    {
+      "function": "test_distinct",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 46
+    },
+    {
+      "function": "compute_Last_Digit",
+      "original_inputs": 6,
+      "statements": 8,
+      "status": "used",
+      "task_id": 47,
+      "tests_kept": 18
+    },
+    {
+      "function": "odd_bit_set_number",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 48,
+      "tests_kept": 11
+    },
+    {
+      "function": "specified_element",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 49
+    },
+    {
+      "function": "min_length_list",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 50
+    },
+    {
+      "function": "check_equilateral",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 51
+    },
+    {
+      "function": "parallelogram_area",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 52
+    },
+    {
+      "function": "check_Equality",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 53
+    },
+    {
+      "function": "counting_sort",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 54,
+      "tests_kept": 15
+    },
+    {
+      "function": "tn_gp",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 55
+    },
+    {
+      "function": "check",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 56
+    },
+    {
+      "function": "find_Max_Num",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 57,
+      "tests_kept": 10
+    },
+    {
+      "function": "opposite_Signs",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 58
+    },
+    {
+      "function": "is_octagonal",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 59
+    },
+    {
+      "function": "max_len_sub",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 60,
+      "tests_kept": 9
+    },
+    {
+      "function": "count_Substrings",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 61,
+      "tests_kept": 9
+    },
+    {
+      "function": "smallest_num",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 62
+    },
+    {
+      "function": "max_difference",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 63
+    },
+    {
+      "function": "subject_marks",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 64
+    },
+    {
+      "function": "recursive_list_sum",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 65,
+      "tests_kept": 15
+    },
+    {
+      "function": "pos_count",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 66,
+      "tests_kept": 15
+    },
+    {
+      "function": "bell_number",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 67,
+      "tests_kept": 12
+    },
+    {
+      "function": "is_Monotonic",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 68
+    },
+    {
+      "function": "is_sublist",
+      "original_inputs": 3,
+      "statements": 15,
+      "status": "used",
+      "task_id": 69,
+      "tests_kept": 15
+    },
+    {
+      "function": "get_equal",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 70
+    },
+    {
+      "function": "comb_sort",
+      "original_inputs": 3,
+      "statements": 14,
+      "status": "used",
+      "task_id": 71,
+      "tests_kept": 15
+    },
+    {
+      "function": "dif_Square",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 72
+    },
+    {
+      "function": "multiple_split",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 73
+    },
+    {
+      "function": "is_samepatterns",
+      "original_inputs": 3,
+      "statements": 20,
+      "status": "used",
+      "task_id": 74,
+      "tests_kept": 15
+    },
+    {
+      "function": "find_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 75
+    },
+    {
+      "function": "count_Squares",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 76,
+      "tests_kept": 13
+    },
+    {
+      "function": "is_Diff",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 77
+    },
+    {
+      "function": "count_With_Odd_SetBits",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 78,
+      "tests_kept": 11
+    },
+    {
+      "function": "word_len",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 79,
+      "tests_kept": 15
+    },
+    {
+      "function": "tetrahedral_number",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 80
+    },
+    {
+      "function": "zip_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 81
+    },
+    {
+      "function": "volume_sphere",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 82
+    },
+    {
+      "function": "get_Char",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 83,
+      "tests_kept": 13
+    },
+    {
+      "function": "sequence",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 84
+    },
+    {
+      "function": "surfacearea_sphere",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 85
+    },
+    {
+      "function": "centered_hexagonal_number",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 86
+    },
+    {
+      "function": "merge_dictionaries_three",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 87
+    },
+    {
+      "function": "freq_count",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 88
+    },
+    {
+      "function": "closest_num",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 89
+    },
+    {
+      "function": "len_log",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 90,
+      "tests_kept": 15
+    },
+    {
+      "function": "find_substring",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 91
+    },
+    {
+      "function": "is_undulating",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 92,
+      "tests_kept": 15
+    },
+    {
+      "function": "power",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 93,
+      "tests_kept": 15
+    },
+    {
+      "function": "index_minimum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 94
+    },
+    {
+      "function": "Find_Min_Length",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 95
+    },
+    {
+      "function": "divisor",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 96
+    },
+    {
+      "function": "frequency_lists",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 97,
+      "tests_kept": 15
+    },
+    {
+      "function": "multiply_num",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 98
+    },
+    {
+      "function": "decimal_to_binary",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 99
+    },
+    {
+      "function": "next_smallest_palindrome",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 100
+    },
+    {
+      "function": "kth_element",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 101,
+      "tests_kept": 11
+    },
+    {
+      "function": "snake_to_camel",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 102
+    },
+    {
+      "function": "eulerian_num",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 103,
+      "tests_kept": 14
+    },
+    {
+      "function": "sort_sublists",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 104
+    },
+    {
+      "function": "count",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 105
+    },
+    {
+      "function": "add_lists",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 106
+    },
+    {
+      "function": "count_Hexadecimal",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 107,
+      "tests_kept": 15
+    },
+    {
+      "function": "merge_sorted_list",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 108,
+      "tests_kept": 15
+    },
+    {
+      "function": "odd_Equivalent",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 109,
+      "tests_kept": 7
+    },
+    {
+      "function": "extract_missing",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 8,
+      "status": "excluded",
+      "task_id": 110
+    },
+    {
+      "function": "common_in_nested_lists",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 111
+    },
+    {
+      "function": "perimeter",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 112
+    },
+    {
+      "function": "check_integer",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 113,
+      "tests_kept": 11
+    },
+    {
+      "function": "assign_freq",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 114
+    },
+    {
+      "function": "empty_dit",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 115
+    },
+    {
+      "function": "tuple_to_int",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 116
+    },
+    {
+      "function": "list_to_float",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 9,
+      "status": "excluded",
+      "task_id": 117
+    },
+    {
+      "function": "string_to_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 118
+    },
+    {
+      "function": "search",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 119
+    },
+    {
+      "function": "max_product_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 120
+    },
+    {
+      "function": "check_triplet",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 121,
+      "tests_kept": 12
+    },
+    {
+      "function": "smartNumber",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 122,
+      "tests_kept": 10
+    },
+    {
+      "function": "amicable_numbers_sum",
+      "original_inputs": 3,
+      "reason": "fewer than 6 usable tests",
+      "statements": 14,
+      "status": "excluded",
+      "task_id": 123,
+      "tests_kept": 4
+    },
+    {
+      "function": "angle_complex",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 124
+    },
+    {
+      "function": "find_length",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 125,
+      "tests_kept": 8
+    },
+    {
+      "function": "sum",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 126,
+      "tests_kept": 15
+    },
+    {
+      "function": "multiply_int",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 127,
+      "tests_kept": 15
+    },
+    {
+      "function": "long_words",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 128,
+      "tests_kept": 15
+    },
+    {
+      "function": "magic_square_test",
+      "original_inputs": 3,
+      "statements": 16,
+      "status": "used",
+      "task_id": 129,
+      "tests_kept": 10
+    },
+    {
+      "function": "max_occurrences",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 130,
+      "tests_kept": 15
+    },
+    {
+      "function": "reverse_vowels",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 131,
+      "tests_kept": 13
+    },
+    {
+      "function": "tup_string",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 132
+    },
+    {
+      "function": "sum_negativenum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 133
+    },
+    {
+      "function": "check_last",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 134,
+      "tests_kept": 11
+    },
+    {
+      "function": "hexagonal_num",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 135
+    },
+    {
+      "function": "cal_electbill",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 136,
+      "tests_kept": 12
+    },
+    {
+      "function": "zero_count",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 137,
+      "tests_kept": 15
+    },
+    {
+      "function": "is_Sum_Of_Powers_Of_Two",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 138
+    },
+    {
+      "function": "circle_circumference",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 139
+    },
+    {
+      "function": "extract_singly",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 8,
+      "status": "excluded",
+      "task_id": 140
+    },
+    {
+      "function": "pancake_sort",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 141,
+      "tests_kept": 15
+    },
+    {
+      "function": "count_samepair",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 142
+    },
+    {
+      "function": "find_lists",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 143
+    },
+    {
+      "function": "sum_Pairs",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 144
+    },
+    {
+      "function": "max_Abs_Diff",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 145
+    },
+    {
+      "function": "ascii_value_string",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 146
+    },
+    {
+      "function": "max_path_sum",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 147,
+      "tests_kept": 10
+    },
+    {
+      "function": "sum_digits_twoparts",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 148
+    },
+    {
+      "function": "longest_subseq_with_diff_one",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 149,
+      "tests_kept": 9
+    },
+    {
+      "function": "does_Contain_B",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 150,
+      "tests_kept": 15
+    },
+    {
+      "function": "is_coprime",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 151
+    },
+    {
+      "function": "merge_sort",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 152,
+      "tests_kept": 15
+    },
+    {
+      "function": "parabola_vertex",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 153
+    },
+    {
+      "function": "specified_element",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 154
+    },
+    {
+      "function": "even_bit_toggle_number",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 155,
+      "tests_kept": 11
+    },
+    {
+      "function": "tuple_int_str",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 156
+    },
+    {
+      "function": "encode_list",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 157
+    },
+    {
+      "function": "min_Ops",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 158,
+      "tests_kept": 12
+    },
+    {
+      "function": "month_season",
+      "original_inputs": 3,
+      "statements": 20,
+      "status": "used",
+      "task_id": 159,
+      "tests_kept": 15
+    },
+    {
+      "function": "solution",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 160,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 161
+    },
+    {
+      "function": "sum_series",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 162
+    },
+    {
+      "function": "area_polygon",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 163
+    },
+    {
+      "function": "areEquivalent",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 164
+    },
+    {
+      "function": "count_char_position",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 165,
+      "tests_kept": 15
+    },
+    {
+      "function": "find_even_Pair",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 166,
+      "tests_kept": 7
+    },
+    {
+      "function": "next_Power_Of_2",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 167,
+      "tests_kept": 10
+    },
+    {
+      "function": "frequency",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 168,
+      "tests_kept": 15
+    },
+    {
+      "function": "get_pell",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 169,
+      "tests_kept": 9
+    },
+    {
+      "function": "sum_range_list",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 170
+    },
+    {
+      "function": "perimeter_pentagon",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 171
+    },
+    {
+      "function": "count_occurance",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 172,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_splchar",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 173
+    },
+    {
+      "function": "group_keyvalue",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 174
+    },
+    {
+      "function": "is_valid_parenthese",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 175,
+      "tests_kept": 14
+    },
+    {
+      "function": "perimeter_triangle",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 176
+    },
+    {
+      "function": "answer",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 177
+    },
+    {
+      "function": "string_literals",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 178
+    },
+    {
+      "function": "is_num_keith",
+      "original_inputs": 3,
+      "statements": 17,
+      "status": "used",
+      "task_id": 179,
+      "tests_kept": 11
+    },
+    {
+      "function": "distance_lat_long",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 180
+    },
+    {
+      "function": "common_prefix",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 181
+    },
+    {
+      "function": "find_character",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 182,
+      "tests_kept": 15
+    },
+    {
+      "function": "count_pairs",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 183,
+      "tests_kept": 11
+    },
+    {
+      "function": "greater_specificnum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 184
+    },
+    {
+      "function": "parabola_focus",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 185
+    },
+    {
+      "function": "check_literals",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 186
+    },
+    {
+      "function": "longest_common_subsequence",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 187,
+      "tests_kept": 9
+    },
+    {
+      "function": "prod_Square",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 188,
+      "tests_kept": 12
+    },
+    {
+      "function": "first_Missing_Positive",
+      "original_inputs": 3,
+      "statements": 16,
+      "status": "used",
+      "task_id": 189,
+      "tests_kept": 11
+    },
+    {
+      "function": "count_Intgral_Points",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 190
+    },
+    {
+      "function": "check_monthnumber",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 191
+    },
+    {
+      "function": "check_String",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 192,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 193
+    },
+    {
+      "function": "octal_To_Decimal",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 194,
+      "tests_kept": 12
+    },
+    {
+      "function": "first",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 195,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 196
+    },
+    {
+      "function": "find_exponentio",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 197
+    },
+    {
+      "function": "largest_triangle",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 198
+    },
+    {
+      "function": "highest_Power_of_2",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 199,
+      "tests_kept": 11
+    },
+    {
+      "function": "position_max",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 200
+    },
+    {
+      "function": "chkList",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 201
+    },
+    {
+      "function": "remove_even",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 202,
+      "tests_kept": 15
+    },
+    {
+      "function": "hamming_Distance",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 203,
+      "tests_kept": 15
+    },
+    {
+      "function": "count",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 204,
+      "tests_kept": 14
+    },
+    {
+      "function": "inversion_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 205
+    },
+    {
+      "function": "concatenate_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 206
+    },
+    {
+      "function": "find_longest_repeating_subseq",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 207,
+      "tests_kept": 12
+    },
+    {
+      "function": "is_decimal",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 208
+    },
+    {
+      "function": "heap_replace",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 209
+    },
+    {
+      "function": "is_allowed_specific_char",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 210
+    },
+    {
+      "function": "count_Num",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 211
+    },
+    {
+      "function": "fourth_Power_Sum",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 212
+    },
+    {
+      "function": "concatenate_strings",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 213
+    },
+    {
+      "function": "degree_radian",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 214
+    },
+    {
+      "function": "decode_list",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 215,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_subset_list",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 216,
+      "tests_kept": 15
+    },
+    {
+      "function": "first_Repeated_Char",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 217,
+      "tests_kept": 15
+    },
+    {
+      "function": "min_Operations",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 218
+    },
+    {
+      "function": "extract_min_max",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 8,
+      "status": "excluded",
+      "task_id": 219
+    },
+    {
+      "function": "replace_max_specialchar",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 220
+    },
+    {
+      "function": "first_even",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 221
+    },
+    {
+      "function": "check_type",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 222
+    },
+    {
+      "function": "is_majority",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 223,
+      "tests_kept": 14
+    },
+    {
+      "function": "count_Set_Bits",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 224,
+      "tests_kept": 9
+    },
+    {
+      "function": "find_Min",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 225,
+      "tests_kept": 12
+    },
+    {
+      "function": "odd_values_string",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 226,
+      "tests_kept": 15
+    },
+    {
+      "function": "min_of_three",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 227,
+      "tests_kept": 15
+    },
+    {
+      "function": "all_Bits_Set_In_The_Given_Range",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 228,
+      "tests_kept": 15
+    },
+    {
+      "function": "re_arrange_array",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 229,
+      "tests_kept": 10
+    },
+    {
+      "function": "replace_blank",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 230
+    },
+    {
+      "function": "max_sum",
+      "original_inputs": 3,
+      "reason": "fewer than 6 usable tests",
+      "statements": 11,
+      "status": "excluded",
+      "task_id": 231,
+      "tests_kept": 5
+    },
+    {
+      "function": "larg_nnum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 232
+    },
+    {
+      "function": "lateralsuface_cylinder",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 233
+    },
+    {
+      "function": "volume_cube",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 234
+    },
+    {
+      "function": "even_bit_set_number",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 235,
+      "tests_kept": 11
+    },
+    {
+      "function": "No_of_Triangle",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 236,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_occurences",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 237
+    },
+    {
+      "function": "number_of_substrings",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 238
+    },
+    {
+      "function": "get_total_number_of_sequences",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 239,
+      "tests_kept": 15
+    },
+    {
+      "function": "replace_list",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 240
+    },
+    {
+      "function": "array_3d",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 241
+    },
+    {
+      "function": "count_charac",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 242
+    },
+    {
+      "function": "sort_on_occurence",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 243
+    },
+    {
+      "function": "next_Perfect_Square",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 244
+    },
+    {
+      "function": "max_sum",
+      "original_inputs": 3,
+      "statements": 14,
+      "status": "used",
+      "task_id": 245,
+      "tests_kept": 10
+    },
+    {
+      "function": "babylonian_squareroot",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 246,
+      "tests_kept": 10
+    },
+    {
+      "function": "lps",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 247,
+      "tests_kept": 15
+    },
+    {
+      "function": "harmonic_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 248
+    },
+    {
+      "function": "intersection_array",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 249
+    },
+    {
+      "function": "count_X",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 5,
+      "status": "excluded",
+      "task_id": 250
+    },
+    {
+      "function": "insert_element",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 251
+    },
+    {
+      "function": "convert",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 252
+    },
+    {
+      "function": "count_integer",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 253,
+      "tests_kept": 15
+    },
+    {
+      "function": "words_ae",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 254
+    },
+    {
+      "function": "combinations_colors",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 255
+    },
+    {
+      "function": "count_Primes_nums",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 256,
+      "tests_kept": 11
+    },
+    {
+      "function": "swap_numbers",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 257
+    },
+    {
+      "function": "count_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 258
+    },
+    {
+      "function": "maximize_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 259
+    },
+    {
+      "function": "newman_prime",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 260
+    },
+    {
+      "function": "division_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 261
+    },
+    {
+      "function": "split_two_parts",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 262
+    },
+    {
+      "function": "merge_dict",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 263
+    },
+    {
+      "function": "dog_age",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 264,
+      "tests_kept": 11
+    },
+    {
+      "function": "list_split",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 265
+    },
+    {
+      "function": "lateralsurface_cube",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 266
+    },
+    {
+      "function": "square_Sum",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 267
+    },
+    {
+      "function": "find_star_num",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 268
+    },
+    {
+      "function": "ascii_value",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 269
+    },
+    {
+      "function": "sum_even_and_even_index",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 270,
+      "tests_kept": 11
+    },
+    {
+      "function": "even_Power_Sum",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 271,
+      "tests_kept": 6
+    },
+    {
+      "function": "rear_extract",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 272
+    },
+    {
+      "function": "substract_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 273
+    },
+    {
+      "function": "even_binomial_Coeff_Sum",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 274
+    },
+    {
+      "function": "get_Position",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 275,
+      "tests_kept": 12
+    },
+    {
+      "function": "volume_cylinder",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 276
+    },
+    {
+      "function": "dict_filter",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 277
+    },
+    {
+      "function": "count_first_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 278
+    },
+    {
+      "function": "is_num_decagonal",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 279
+    },
+    {
+      "function": "sequential_search",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 280,
+      "tests_kept": 15
+    },
+    {
+      "function": "all_unique",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 281
+    },
+    {
+      "function": "sub_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 282
+    },
+    {
+      "function": "validate",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 283,
+      "tests_kept": 12
+    },
+    {
+      "function": "check_element",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 284
+    },
+    {
+      "function": "text_match_two_three",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 285
+    },
+    {
+      "function": "max_sub_array_sum_repeated",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 286,
+      "tests_kept": 13
+    },
+    {
+      "function": "square_Sum",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 287
+    },
+    {
+      "function": "modular_inverse",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 288,
+      "tests_kept": 14
+    },
+    {
+      "function": "odd_Days",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 289,
+      "tests_kept": 11
+    },
+    {
+      "function": "max_length",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 290
+    },
+    {
+      "function": "count_no_of_ways",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 291,
+      "tests_kept": 15
+    },
+    {
+      "function": "find",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 292
+    },
+    {
+      "function": "otherside_rightangle",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 293
+    },
+    {
+      "function": "max_val",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 294
+    },
+    {
+      "function": "sum_div",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 295,
+      "tests_kept": 10
+    },
+    {
+      "function": "get_Inv_Count",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 296,
+      "tests_kept": 10
+    },
+    {
+      "function": "flatten_list",
+      "original_inputs": 3,
+      "statements": 15,
+      "status": "used",
+      "task_id": 297,
+      "tests_kept": 15
+    },
+    {
+      "function": "intersection_nested_lists",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 298
+    },
+    {
+      "function": "max_aggregate",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 299
+    },
+    {
+      "function": "count_binary_seq",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 300,
+      "tests_kept": 6
+    },
+    {
+      "function": "dict_depth",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 301
+    },
+    {
+      "function": "set_Bit_Number",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 302,
+      "tests_kept": 12
+    },
+    {
+      "function": "solve",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 303,
+      "tests_kept": 11
+    },
+    {
+      "function": "find_Element",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 304,
+      "tests_kept": 14
+    },
+    {
+      "function": "start_withp",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 305
+    },
+    {
+      "function": "max_sum_increasing_subseq",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 306,
+      "tests_kept": 8
+    },
+    {
+      "function": "colon_tuplex",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 307
+    },
+    {
+      "function": "large_product",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 308
+    },
+    {
+      "function": "maximum",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 309
+    },
+    {
+      "function": "string_to_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 310
+    },
+    {
+      "function": "set_left_most_unset_bit",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 311,
+      "tests_kept": 11
+    },
+    {
+      "function": "volume_cone",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 312
+    },
+    {
+      "function": "pos_nos",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 313
+    },
+    {
+      "function": "max_sum_rectangular_grid",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 314,
+      "tests_kept": 7
+    },
+    {
+      "function": "find_Max_Len_Even",
+      "original_inputs": 3,
+      "statements": 21,
+      "status": "used",
+      "task_id": 315,
+      "tests_kept": 15
+    },
+    {
+      "function": "find_last_occurrence",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 316,
+      "tests_kept": 15
+    },
+    {
+      "function": "modified_encode",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 317,
+      "tests_kept": 15
+    },
+    {
+      "function": "max_volume",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 318,
+      "tests_kept": 10
+    },
+    {
+      "function": "find_long_word",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 319
+    },
+    {
+      "function": "sum_difference",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 320,
+      "tests_kept": 12
+    },
+    {
+      "function": "find_demlo",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 321,
+      "tests_kept": 11
+    },
+    {
+      "function": "position_min",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 322
+    },
+    {
+      "function": "re_arrange",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 323,
+      "tests_kept": 10
+    },
+    {
+      "function": "sum_of_alternates",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 7,
+      "status": "excluded",
+      "task_id": 324
+    },
+    {
+      "function": "get_Min_Squares",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 325,
+      "tests_kept": 9
+    },
+    {
+      "function": "most_occurrences",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 326,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_isosceles",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 327
+    },
+    {
+      "function": "rotate_left",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 328
+    },
+    {
+      "function": "neg_count",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 329,
+      "tests_kept": 15
+    },
+    {
+      "function": "find_char",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 330
+    },
+    {
+      "function": "count_unset_bits",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 331,
+      "tests_kept": 9
+    },
+    {
+      "function": "char_frequency",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 332,
+      "tests_kept": 15
+    },
+    {
+      "function": "Sort",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 333
+    },
+    {
+      "function": "check_Validity",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 334
+    },
+    {
+      "function": "ap_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 335
+    },
+    {
+      "function": "check_monthnum",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 336
+    },
+    {
+      "function": "text_match_word",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 337
+    },
+    {
+      "function": "count_Substring_With_Equal_Ends",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 338,
+      "tests_kept": 14
+    },
+    {
+      "function": "find_Divisor",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 339
+    },
+    {
+      "function": "sum_three_smallest_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 340
+    },
+    {
+      "function": "set_to_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 341
+    },
+    {
+      "function": "find_minimum_range",
+      "original_inputs": 3,
+      "statements": 17,
+      "status": "used",
+      "task_id": 342,
+      "tests_kept": 15
+    },
+    {
+      "function": "dig_let",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 343,
+      "tests_kept": 15
+    },
+    {
+      "function": "count_Odd_Squares",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 344
+    },
+    {
+      "function": "diff_consecutivenums",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 345
+    },
+    {
+      "function": "zigzag",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 346,
+      "tests_kept": 13
+    },
+    {
+      "function": "count_Squares",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 347,
+      "tests_kept": 14
+    },
+    {
+      "function": "find_ways",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 348
+    },
+    {
+      "function": "check",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 349,
+      "tests_kept": 15
+    },
+    {
+      "function": "minimum_Length",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 350,
+      "tests_kept": 14
+    },
+    {
+      "function": "first_Element",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 351,
+      "tests_kept": 12
+    },
+    {
+      "function": "unique_Characters",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 352,
+      "tests_kept": 14
+    },
+    {
+      "function": "remove_column",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 353
+    },
+    {
+      "function": "tn_ap",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 354
+    },
+    {
+      "function": "count_Rectangles",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 355,
+      "tests_kept": 6
+    },
+    {
+      "function": "find_angle",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 356
+    },
+    {
+      "function": "find_max",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 357
+    },
+    {
+      "function": "moddiv_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 358
+    },
+    {
+      "function": "Check_Solution",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 359
+    },
+    {
+      "function": "get_carol",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 360
+    },
+    {
+      "function": "remove_empty",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 361
+    },
+    {
+      "function": "max_occurrences",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 362,
+      "tests_kept": 15
+    },
+    {
+      "function": "add_K_element",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 363
+    },
+    {
+      "function": "min_flip_to_make_string_alternate",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 364
+    },
+    {
+      "function": "count_Digit",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 365,
+      "tests_kept": 12
+    },
+    {
+      "function": "adjacent_num_product",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 366
+    },
+    {
+      "reason": "test setup code",
+      "status": "excluded",
+      "task_id": 367
+    },
+    {
+      "function": "repeat_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 368
+    },
+    {
+      "function": "lateralsurface_cuboid",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 369
+    },
+    {
+      "function": "float_sort",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 370
+    },
+    {
+      "function": "smallest_missing",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 371,
+      "tests_kept": 14
+    },
+    {
+      "function": "heap_assending",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 372
+    },
+    {
+      "function": "volume_cuboid",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 373
+    },
+    {
+      "function": "permute_string",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 374,
+      "tests_kept": 13
+    },
+    {
+      "function": "round_num",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 375
+    },
+    {
+      "function": "remove_replica",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 376
+    },
+    {
+      "function": "remove_Char",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 377,
+      "tests_kept": 14
+    },
+    {
+      "function": "move_first",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 378
+    },
+    {
+      "function": "surfacearea_cuboid",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 379
+    },
+    {
+      "function": "multi_list",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 380,
+      "tests_kept": 15
+    },
+    {
+      "function": "index_on_inner_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 381
+    },
+    {
+      "function": "find_rotation_count",
+      "original_inputs": 3,
+      "statements": 14,
+      "status": "used",
+      "task_id": 382,
+      "tests_kept": 15
+    },
+    {
+      "function": "even_bit_toggle_number",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 383,
+      "tests_kept": 11
+    },
+    {
+      "function": "frequency_Of_Smallest",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 384,
+      "tests_kept": 8
+    },
+    {
+      "function": "get_perrin",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 385,
+      "tests_kept": 10
+    },
+    {
+      "function": "swap_count",
+      "original_inputs": 3,
+      "statements": 15,
+      "status": "used",
+      "task_id": 386,
+      "tests_kept": 15
+    },
+    {
+      "function": "even_or_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 387
+    },
+    {
+      "function": "highest_Power_of_2",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 388,
+      "tests_kept": 11
+    },
+    {
+      "function": "find_lucas",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 389,
+      "tests_kept": 9
+    },
+    {
+      "function": "add_string",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 390
+    },
+    {
+      "function": "convert_list_dictionary",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 391
+    },
+    {
+      "function": "get_max_sum",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 392,
+      "tests_kept": 12
+    },
+    {
+      "function": "max_length_list",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 393
+    },
+    {
+      "function": "check_distinct",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 8,
+      "status": "excluded",
+      "task_id": 394
+    },
+    {
+      "function": "first_non_repeating_character",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 395,
+      "tests_kept": 14
+    },
+    {
+      "function": "check_char",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 396
+    },
+    {
+      "function": "median_numbers",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 397,
+      "tests_kept": 15
+    },
+    {
+      "function": "sum_of_digits",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 398
+    },
+    {
+      "function": "bitwise_xor",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 399
+    },
+    {
+      "function": "extract_freq",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 400
+    },
+    {
+      "function": "add_nested_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 401
+    },
+    {
+      "function": "ncr_modp",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 402,
+      "tests_kept": 15
+    },
+    {
+      "function": "is_valid_URL",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 403,
+      "tests_kept": 15
+    },
+    {
+      "function": "minimum",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 404
+    },
+    {
+      "function": "check_tuplex",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 405
+    },
+    {
+      "function": "find_Parity",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 406,
+      "tests_kept": 11
+    },
+    {
+      "function": "rearrange_bigger",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 407,
+      "tests_kept": 11
+    },
+    {
+      "function": "k_smallest_pairs",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 408,
+      "tests_kept": 15
+    },
+    {
+      "function": "min_product_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 409
+    },
+    {
+      "function": "min_val",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 410
+    },
+    {
+      "function": "snake_to_camel",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 411
+    },
+    {
+      "function": "remove_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 412
+    },
+    {
+      "function": "extract_nth_element",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 413
+    },
+    {
+      "function": "overlapping",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 414,
+      "tests_kept": 15
+    },
+    {
+      "function": "max_Product",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 415,
+      "tests_kept": 15
+    },
+    {
+      "function": "breakSum",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 416,
+      "tests_kept": 9
+    },
+    {
+      "function": "group_tuples",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 417
+    },
+    {
+      "function": "Find_Max",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 418
+    },
+    {
+      "function": "round_and_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 419
+    },
+    {
+      "function": "cube_Sum",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 420
+    },
+    {
+      "function": "concatenate_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 421
+    },
+    {
+      "function": "find_Average_Of_Cube",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 422
+    },
+    {
+      "function": "get_maxgold",
+      "original_inputs": 3,
+      "statements": 17,
+      "status": "used",
+      "task_id": 423,
+      "tests_kept": 9
+    },
+    {
+      "function": "extract_rear",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 424
+    },
+    {
+      "function": "count_element_in_list",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 425,
+      "tests_kept": 15
+    },
+    {
+      "function": "filter_oddnumbers",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 426
+    },
+    {
+      "function": "change_date_format",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 427
+    },
+    {
+      "function": "shell_sort",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 428,
+      "tests_kept": 15
+    },
+    {
+      "function": "and_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 429
+    },
+    {
+      "function": "parabola_directrix",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 430
+    },
+    {
+      "function": "common_element",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 431,
+      "tests_kept": 15
+    },
+    {
+      "function": "median_trapezium",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 432
+    },
+    {
+      "function": "check_greater",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 433
+    },
+    {
+      "function": "text_match_one",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 434
+    },
+    {
+      "function": "last_Digit",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 435
+    },
+    {
+      "function": "neg_nos",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 436
+    },
+    {
+      "function": "remove_odd",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 437,
+      "tests_kept": 15
+    },
+    {
+      "function": "count_bidirectional",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 438
+    },
+    {
+      "function": "multiple_to_single",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 439
+    },
+    {
+      "function": "find_adverb_position",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 440
+    },
+    {
+      "function": "surfacearea_cube",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 441
+    },
+    {
+      "function": "positive_count",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 442,
+      "tests_kept": 15
+    },
+    {
+      "function": "largest_neg",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 443,
+      "tests_kept": 15
+    },
+    {
+      "function": "trim_tuple",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 5,
+      "status": "excluded",
+      "task_id": 444
+    },
+    {
+      "function": "index_multiplication",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 445
+    },
+    {
+      "function": "count_Occurrence",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 5,
+      "status": "excluded",
+      "task_id": 446
+    },
+    {
+      "function": "cube_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 447
+    },
+    {
+      "function": "cal_sum",
+      "original_inputs": 3,
+      "statements": 18,
+      "status": "used",
+      "task_id": 448,
+      "tests_kept": 8
+    },
+    {
+      "function": "check_Triangle",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 449
+    },
+    {
+      "function": "extract_string",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 450
+    },
+    {
+      "function": "remove_whitespaces",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 451
+    },
+    {
+      "function": "loss_amount",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 452
+    },
+    {
+      "function": "sumofFactors",
+      "original_inputs": 3,
+      "statements": 18,
+      "status": "used",
+      "task_id": 453,
+      "tests_kept": 12
+    },
+    {
+      "function": "text_match_wordz",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 454
+    },
+    {
+      "function": "check_monthnumb_number",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 455
+    },
+    {
+      "function": "reverse_string_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 456
+    },
+    {
+      "function": "Find_Min",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 457
+    },
+    {
+      "function": "rectangle_area",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 458
+    },
+    {
+      "function": "remove_uppercase",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 459
+    },
+    {
+      "function": "Extract",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 460
+    },
+    {
+      "function": "upper_ctr",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 461,
+      "tests_kept": 15
+    },
+    {
+      "function": "combinations_list",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 462,
+      "tests_kept": 15
+    },
+    {
+      "function": "max_subarray_product",
+      "original_inputs": 3,
+      "statements": 21,
+      "status": "used",
+      "task_id": 463,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_value",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 464
+    },
+    {
+      "function": "drop_empty",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 465
+    },
+    {
+      "function": "find_peak",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 466
+    },
+    {
+      "function": "decimal_to_Octal",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 467,
+      "tests_kept": 12
+    },
+    {
+      "function": "max_product",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 468,
+      "tests_kept": 9
+    },
+    {
+      "function": "max_profit",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 469,
+      "tests_kept": 15
+    },
+    {
+      "function": "add_pairwise",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 470
+    },
+    {
+      "function": "find_remainder",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 471
+    },
+    {
+      "function": "check_Consecutive",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 472
+    },
+    {
+      "function": "tuple_intersection",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 473
+    },
+    {
+      "function": "replace_char",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 474
+    },
+    {
+      "function": "sort_counter",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 475
+    },
+    {
+      "function": "big_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 476
+    },
+    {
+      "function": "is_lower",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 477
+    },
+    {
+      "function": "remove_lowercase",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 478
+    },
+    {
+      "function": "first_Digit",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 479
+    },
+    {
+      "function": "get_max_occuring_char",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 480,
+      "tests_kept": 15
+    },
+    {
+      "function": "is_subset_sum",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 481,
+      "tests_kept": 12
+    },
+    {
+      "function": "match",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 482
+    },
+    {
+      "function": "first_Factorial_Divisible_Number",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 483,
+      "tests_kept": 11
+    },
+    {
+      "function": "remove_matching_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 484
+    },
+    {
+      "function": "largest_palindrome",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 485,
+      "tests_kept": 8
+    },
+    {
+      "function": "binomial_probability",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 486
+    },
+    {
+      "function": "sort_tuple",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 8,
+      "status": "excluded",
+      "task_id": 487
+    },
+    {
+      "function": "area_pentagon",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 488
+    },
+    {
+      "function": "frequency_Of_Largest",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 489,
+      "tests_kept": 9
+    },
+    {
+      "function": "extract_symmetric",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 490
+    },
+    {
+      "function": "sum_gp",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 491
+    },
+    {
+      "function": "binary_search",
+      "reason": "same function name as a development program",
+      "status": "excluded",
+      "task_id": 492
+    },
+    {
+      "function": "calculate_polygons",
+      "reason": "more than 30 statements",
+      "statements": 40,
+      "status": "excluded",
+      "task_id": 493
+    },
+    {
+      "function": "binary_to_integer",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 494
+    },
+    {
+      "function": "remove_lowercase",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 495
+    },
+    {
+      "function": "heap_queue_smallest",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 496
+    },
+    {
+      "function": "surfacearea_cone",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 497
+    },
+    {
+      "function": "gcd",
+      "reason": "same function name as a development program",
+      "status": "excluded",
+      "task_id": 498
+    },
+    {
+      "function": "diameter_circle",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 499
+    },
+    {
+      "function": "concatenate_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 500
+    },
+    {
+      "function": "num_comm_div",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 501,
+      "tests_kept": 15
+    },
+    {
+      "function": "find",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 502
+    },
+    {
+      "function": "add_consecutive_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 503
+    },
+    {
+      "function": "sum_Of_Series",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 504
+    },
+    {
+      "function": "re_order",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 505,
+      "tests_kept": 15
+    },
+    {
+      "function": "permutation_coefficient",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 506,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_words",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 507
+    },
+    {
+      "function": "same_order",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 508
+    },
+    {
+      "function": "average_Odd",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 509,
+      "tests_kept": 10
+    },
+    {
+      "function": "no_of_subsequences",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 510,
+      "tests_kept": 15
+    },
+    {
+      "function": "find_Min_Sum",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 511,
+      "tests_kept": 12
+    },
+    {
+      "function": "count_element_freq",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 512
+    },
+    {
+      "function": "add_str",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 513
+    },
+    {
+      "function": "sum_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 514
+    },
+    {
+      "function": "modular_sum",
+      "original_inputs": 3,
+      "statements": 16,
+      "status": "used",
+      "task_id": 515,
+      "tests_kept": 12
+    },
+    {
+      "function": "radix_sort",
+      "original_inputs": 3,
+      "statements": 16,
+      "status": "used",
+      "task_id": 516,
+      "tests_kept": 15
+    },
+    {
+      "function": "largest_pos",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 517,
+      "tests_kept": 15
+    },
+    {
+      "function": "sqrt_root",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 518
+    },
+    {
+      "function": "volume_tetrahedron",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 519
+    },
+    {
+      "function": "get_lcm",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 520,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_isosceles",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 521
+    },
+    {
+      "function": "lbs",
+      "original_inputs": 3,
+      "statements": 15,
+      "status": "used",
+      "task_id": 522,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_string",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 523,
+      "tests_kept": 15
+    },
+    {
+      "function": "max_sum_increasing_subsequence",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 524,
+      "tests_kept": 9
+    },
+    {
+      "function": "parallel_lines",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 525
+    },
+    {
+      "function": "capitalize_first_last_letters",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 526,
+      "tests_kept": 15
+    },
+    {
+      "function": "get_pairs_count",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 527,
+      "tests_kept": 13
+    },
+    {
+      "function": "min_length",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 528
+    },
+    {
+      "function": "jacobsthal_lucas",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 529,
+      "tests_kept": 8
+    },
+    {
+      "function": "negative_count",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 530,
+      "tests_kept": 15
+    },
+    {
+      "function": "min_coins",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 531,
+      "tests_kept": 10
+    },
+    {
+      "function": "check_permutation",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 532,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_datatype",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 5,
+      "status": "excluded",
+      "task_id": 533
+    },
+    {
+      "function": "search_literal",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 534
+    },
+    {
+      "function": "topbottom_surfacearea",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 535
+    },
+    {
+      "function": "nth_items",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 536
+    },
+    {
+      "function": "first_repeated_word",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 537,
+      "tests_kept": 15
+    },
+    {
+      "function": "string_list_to_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 538
+    },
+    {
+      "function": "basesnum_coresspondingnum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 539
+    },
+    {
+      "function": "find_Diff",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 540,
+      "tests_kept": 10
+    },
+    {
+      "function": "check_abundant",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 541
+    },
+    {
+      "function": "fill_spaces",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 542
+    },
+    {
+      "function": "count_digits",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 543,
+      "tests_kept": 15
+    },
+    {
+      "function": "flatten_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 544
+    },
+    {
+      "function": "toggle_F_and_L_bits",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 545
+    },
+    {
+      "function": "last_occurence_char",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 546,
+      "tests_kept": 15
+    },
+    {
+      "function": "Total_Hamming_Distance",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 547,
+      "tests_kept": 8
+    },
+    {
+      "function": "longest_increasing_subsequence",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 548,
+      "tests_kept": 15
+    },
+    {
+      "function": "odd_Num_Sum",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 549,
+      "tests_kept": 6
+    },
+    {
+      "function": "find_Max",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 550,
+      "tests_kept": 12
+    },
+    {
+      "function": "extract_column",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 551
+    },
+    {
+      "function": "Seq_Linear",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 552
+    },
+    {
+      "function": "tuple_to_float",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 553
+    },
+    {
+      "function": "Split",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 554,
+      "tests_kept": 15
+    },
+    {
+      "function": "difference",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 555
+    },
+    {
+      "function": "find_Odd_Pair",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 556,
+      "tests_kept": 8
+    },
+    {
+      "function": "toggle_string",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 557
+    },
+    {
+      "function": "digit_distance_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 558
+    },
+    {
+      "function": "max_sub_array_sum",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 559,
+      "tests_kept": 9
+    },
+    {
+      "function": "union_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 560
+    },
+    {
+      "function": "assign_elements",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 5,
+      "status": "excluded",
+      "task_id": 561
+    },
+    {
+      "function": "Find_Max_Length",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 562
+    },
+    {
+      "function": "extract_values",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 563
+    },
+    {
+      "function": "count_Pairs",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 564,
+      "tests_kept": 8
+    },
+    {
+      "function": "split",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 565
+    },
+    {
+      "function": "sum_digits",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 566
+    },
+    {
+      "function": "issort_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 567
+    },
+    {
+      "function": "empty_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 568
+    },
+    {
+      "function": "sort_sublists",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 569
+    },
+    {
+      "function": "remove_words",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 570,
+      "tests_kept": 15
+    },
+    {
+      "function": "max_sum_pair_diff_lessthan_K",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 571,
+      "tests_kept": 9
+    },
+    {
+      "function": "two_unique_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 572
+    },
+    {
+      "function": "unique_product",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 573,
+      "tests_kept": 15
+    },
+    {
+      "function": "surfacearea_cylinder",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 574
+    },
+    {
+      "function": "count_no",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 575,
+      "tests_kept": 15
+    },
+    {
+      "function": "is_Sub_Array",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 576,
+      "tests_kept": 13
+    },
+    {
+      "function": "last_Digit_Factorial",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 577,
+      "tests_kept": 12
+    },
+    {
+      "function": "interleave_lists",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 578
+    },
+    {
+      "function": "find_dissimilar",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 579
+    },
+    {
+      "function": "extract_even",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 580
+    },
+    {
+      "function": "surface_Area",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 581
+    },
+    {
+      "function": "my_dict",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 582
+    },
+    {
+      "function": "catalan_number",
+      "original_inputs": 3,
+      "reason": "fewer than 6 usable tests",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 583,
+      "tests_kept": 4
+    },
+    {
+      "function": "find_adverbs",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 584
+    },
+    {
+      "function": "expensive_items",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 585
+    },
+    {
+      "function": "split_Arr",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 586
+    },
+    {
+      "function": "list_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 587
+    },
+    {
+      "function": "big_diff",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 588
+    },
+    {
+      "function": "perfect_squares",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 589,
+      "tests_kept": 15
+    },
+    {
+      "function": "polar_rect",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 590
+    },
+    {
+      "function": "swap_List",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 591,
+      "tests_kept": 15
+    },
+    {
+      "function": "sum_Of_product",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 592
+    },
+    {
+      "function": "removezero_ip",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 593
+    },
+    {
+      "function": "diff_even_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 594
+    },
+    {
+      "function": "min_Swaps",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 595,
+      "tests_kept": 8
+    },
+    {
+      "function": "tuple_size",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 596
+    },
+    {
+      "function": "find_kth",
+      "original_inputs": 3,
+      "statements": 20,
+      "status": "used",
+      "task_id": 597,
+      "tests_kept": 8
+    },
+    {
+      "function": "armstrong_number",
+      "original_inputs": 3,
+      "statements": 14,
+      "status": "used",
+      "task_id": 598,
+      "tests_kept": 12
+    },
+    {
+      "function": "sum_average",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 599,
+      "tests_kept": 11
+    },
+    {
+      "function": "is_Even",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 600
+    },
+    {
+      "function": "max_chain_length",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 10,
+      "status": "excluded",
+      "task_id": 601
+    },
+    {
+      "function": "first_repeated_char",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 602
+    },
+    {
+      "function": "get_ludic",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 603,
+      "tests_kept": 12
+    },
+    {
+      "function": "reverse_words",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 604
+    },
+    {
+      "function": "prime_num",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 605,
+      "tests_kept": 11
+    },
+    {
+      "function": "radian_degree",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 606
+    },
+    {
+      "function": "find_literals",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 607
+    },
+    {
+      "function": "bell_Number",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 608,
+      "tests_kept": 7
+    },
+    {
+      "function": "floor_Min",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 609
+    },
+    {
+      "function": "remove_kth_element",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 610
+    },
+    {
+      "function": "max_of_nth",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 611
+    },
+    {
+      "function": "merge",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 612
+    },
+    {
+      "function": "maximum_value",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 613
+    },
+    {
+      "function": "cummulative_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 614
+    },
+    {
+      "function": "average_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 615
+    },
+    {
+      "function": "tuple_modulo",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 616
+    },
+    {
+      "function": "min_Jumps",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 617,
+      "tests_kept": 15
+    },
+    {
+      "function": "div_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 618
+    },
+    {
+      "function": "move_num",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 619,
+      "tests_kept": 15
+    },
+    {
+      "function": "largest_subset",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 620,
+      "tests_kept": 10
+    },
+    {
+      "function": "increment_numerics",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 621
+    },
+    {
+      "function": "get_median",
+      "original_inputs": 3,
+      "statements": 23,
+      "status": "used",
+      "task_id": 622,
+      "tests_kept": 14
+    },
+    {
+      "function": "nth_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 623
+    },
+    {
+      "function": "is_upper",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 624
+    },
+    {
+      "function": "swap_List",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 625,
+      "tests_kept": 15
+    },
+    {
+      "function": "triangle_area",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 626
+    },
+    {
+      "function": "find_First_Missing",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 627,
+      "tests_kept": 14
+    },
+    {
+      "function": "replace_spaces",
+      "original_inputs": 3,
+      "statements": 19,
+      "status": "used",
+      "task_id": 628,
+      "tests_kept": 15
+    },
+    {
+      "function": "Split",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 629,
+      "tests_kept": 15
+    },
+    {
+      "function": "get_coordinates",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 630
+    },
+    {
+      "function": "replace_spaces",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 631
+    },
+    {
+      "function": "move_zero",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 632
+    },
+    {
+      "function": "pair_OR_Sum",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 633,
+      "tests_kept": 9
+    },
+    {
+      "function": "even_Power_Sum",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 634,
+      "tests_kept": 7
+    },
+    {
+      "function": "heap_sort",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 635
+    },
+    {
+      "function": "Check_Solution",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 636
+    },
+    {
+      "function": "noprofit_noloss",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 637
+    },
+    {
+      "function": "wind_chill",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 638
+    },
+    {
+      "function": "sample_nam",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 639
+    },
+    {
+      "function": "remove_parenthesis",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 640
+    },
+    {
+      "function": "is_nonagonal",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 641
+    },
+    {
+      "function": "remove_similar_row",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 642
+    },
+    {
+      "function": "text_match_wordz_middle",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 643
+    },
+    {
+      "function": "reverse_Array_Upto_K",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 644
+    },
+    {
+      "function": "find_k_product",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 645
+    },
+    {
+      "function": "No_of_cubes",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 646
+    },
+    {
+      "function": "split_upperstring",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 647
+    },
+    {
+      "function": "exchange_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 648
+    },
+    {
+      "function": "sum_Range_list",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 649
+    },
+    {
+      "function": "are_Equal",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 650,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_subset",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 651
+    },
+    {
+      "function": "matrix_to_list",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 652
+    },
+    {
+      "function": "grouping_dictionary",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 653
+    },
+    {
+      "function": "rectangle_perimeter",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 654
+    },
+    {
+      "function": "fifth_Power_Sum",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 655
+    },
+    {
+      "function": "find_Min_Sum",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 656,
+      "tests_kept": 9
+    },
+    {
+      "function": "first_Digit",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 657,
+      "tests_kept": 10
+    },
+    {
+      "function": "max_occurrences",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 658,
+      "tests_kept": 15
+    },
+    {
+      "function": "Repeat",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 659,
+      "tests_kept": 15
+    },
+    {
+      "function": "find_Points",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 660
+    },
+    {
+      "function": "max_sum_of_three_consecutive",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 661,
+      "tests_kept": 9
+    },
+    {
+      "function": "sorted_dict",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 662
+    },
+    {
+      "function": "find_max_val",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 663,
+      "tests_kept": 15
+    },
+    {
+      "function": "average_Even",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 664,
+      "tests_kept": 10
+    },
+    {
+      "function": "move_last",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 665
+    },
+    {
+      "function": "count_char",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 666,
+      "tests_kept": 15
+    },
+    {
+      "function": "Check_Vow",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 667
+    },
+    {
+      "function": "replace",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 668
+    },
+    {
+      "function": "check_IP",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 669
+    },
+    {
+      "function": "decreasing_trend",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 670
+    },
+    {
+      "function": "set_Right_most_Unset_Bit",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 671,
+      "tests_kept": 11
+    },
+    {
+      "function": "max_of_three",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 672,
+      "tests_kept": 15
+    },
+    {
+      "function": "convert",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 673
+    },
+    {
+      "function": "remove_duplicate",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 674
+    },
+    {
+      "function": "sum_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 675
+    },
+    {
+      "function": "remove_extra_char",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 676
+    },
+    {
+      "function": "validity_triangle",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 677
+    },
+    {
+      "function": "remove_spaces",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 678
+    },
+    {
+      "function": "access_key",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 679
+    },
+    {
+      "function": "increasing_trend",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 680
+    },
+    {
+      "function": "smallest_Divisor",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 681,
+      "tests_kept": 12
+    },
+    {
+      "function": "mul_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 682
+    },
+    {
+      "function": "sum_Square",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 683,
+      "tests_kept": 10
+    },
+    {
+      "function": "count_Char",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 684,
+      "tests_kept": 15
+    },
+    {
+      "function": "sum_Of_Primes",
+      "original_inputs": 3,
+      "statements": 14,
+      "status": "used",
+      "task_id": 685,
+      "tests_kept": 10
+    },
+    {
+      "function": "freq_element",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 686
+    },
+    {
+      "function": "recur_gcd",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 687,
+      "tests_kept": 15
+    },
+    {
+      "function": "len_complex",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 688
+    },
+    {
+      "function": "min_jumps",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 689,
+      "tests_kept": 14
+    },
+    {
+      "function": "mul_consecutive_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 690
+    },
+    {
+      "function": "group_element",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 691
+    },
+    {
+      "function": "last_Two_Digits",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 692,
+      "tests_kept": 10
+    },
+    {
+      "function": "remove_multiple_spaces",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 693
+    },
+    {
+      "function": "extract_unique",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 694
+    },
+    {
+      "function": "check_greater",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 695
+    },
+    {
+      "function": "zip_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 696
+    },
+    {
+      "function": "count_even",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 697
+    },
+    {
+      "function": "sort_dict_item",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 698
+    },
+    {
+      "function": "min_Swaps",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 699,
+      "tests_kept": 9
+    },
+    {
+      "function": "count_range_in_list",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 700,
+      "tests_kept": 15
+    },
+    {
+      "function": "equilibrium_index",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 701,
+      "tests_kept": 15
+    },
+    {
+      "function": "removals",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 702,
+      "tests_kept": 11
+    },
+    {
+      "function": "is_key_present",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 703
+    },
+    {
+      "function": "harmonic_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 704
+    },
+    {
+      "function": "sort_sublists",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 705
+    },
+    {
+      "function": "is_subset",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 706,
+      "tests_kept": 13
+    },
+    {
+      "function": "count_Set_Bits",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 707,
+      "tests_kept": 11
+    },
+    {
+      "function": "Convert",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 708
+    },
+    {
+      "function": "get_unique",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 8,
+      "status": "excluded",
+      "task_id": 709
+    },
+    {
+      "function": "front_and_rear",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 710
+    },
+    {
+      "function": "product_Equal",
+      "original_inputs": 3,
+      "statements": 16,
+      "status": "used",
+      "task_id": 711,
+      "tests_kept": 12
+    },
+    {
+      "function": "remove_duplicate",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 712
+    },
+    {
+      "function": "check_valid",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 713
+    },
+    {
+      "function": "count_Fac",
+      "original_inputs": 3,
+      "statements": 18,
+      "status": "used",
+      "task_id": 714,
+      "tests_kept": 11
+    },
+    {
+      "function": "str_to_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 715
+    },
+    {
+      "function": "rombus_perimeter",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 716
+    },
+    {
+      "function": "sd_calc",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 717,
+      "tests_kept": 15
+    },
+    {
+      "function": "alternate_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 718
+    },
+    {
+      "function": "text_match",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 719
+    },
+    {
+      "function": "add_dict_to_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 720
+    },
+    {
+      "function": "maxAverageOfPath",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 721,
+      "tests_kept": 8
+    },
+    {
+      "function": "filter_data",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 722
+    },
+    {
+      "function": "count_same_pair",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 723
+    },
+    {
+      "function": "power_base_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 724
+    },
+    {
+      "function": "extract_quotation",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 725
+    },
+    {
+      "function": "multiply_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 726
+    },
+    {
+      "function": "remove_char",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 727
+    },
+    {
+      "function": "sum_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 728
+    },
+    {
+      "function": "add_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 729
+    },
+    {
+      "function": "consecutive_duplicates",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 730
+    },
+    {
+      "function": "lateralsurface_cone",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 731
+    },
+    {
+      "function": "replace_specialchar",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 732
+    },
+    {
+      "function": "find_first_occurrence",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 733,
+      "tests_kept": 15
+    },
+    {
+      "function": "sum_Of_Subarray_Prod",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 734,
+      "tests_kept": 8
+    },
+    {
+      "function": "toggle_middle_bits",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 735
+    },
+    {
+      "function": "left_insertion",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 736
+    },
+    {
+      "function": "check_str",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 737
+    },
+    {
+      "function": "geometric_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 738
+    },
+    {
+      "function": "find_Index",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 739
+    },
+    {
+      "function": "tuple_to_dict",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 740
+    },
+    {
+      "function": "all_Characters_Same",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 741,
+      "tests_kept": 13
+    },
+    {
+      "function": "area_tetrahedron",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 742
+    },
+    {
+      "function": "rotate_right",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 743
+    },
+    {
+      "function": "check_none",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 744
+    },
+    {
+      "function": "divisible_by_digits",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 745
+    },
+    {
+      "function": "sector_area",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 746,
+      "tests_kept": 15
+    },
+    {
+      "function": "lcs_of_three",
+      "original_inputs": 3,
+      "reason": "fewer than 6 usable tests",
+      "statements": 10,
+      "status": "excluded",
+      "task_id": 747,
+      "tests_kept": 4
+    },
+    {
+      "function": "capital_words_spaces",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 748
+    },
+    {
+      "function": "sort_numeric_strings",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 749
+    },
+    {
+      "function": "add_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 750
+    },
+    {
+      "function": "check_min_heap",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 751,
+      "tests_kept": 13
+    },
+    {
+      "function": "jacobsthal_num",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 752,
+      "tests_kept": 8
+    },
+    {
+      "function": "min_k",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 753
+    },
+    {
+      "function": "extract_index_list",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 754,
+      "tests_kept": 15
+    },
+    {
+      "function": "second_smallest",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 755,
+      "tests_kept": 14
+    },
+    {
+      "function": "text_match_zero_one",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 756
+    },
+    {
+      "function": "count_reverse_pairs",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 757
+    },
+    {
+      "function": "unique_sublists",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 758,
+      "tests_kept": 15
+    },
+    {
+      "function": "is_decimal",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 759
+    },
+    {
+      "function": "unique_Element",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 760
+    },
+    {
+      "function": "arc_length",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 761,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_monthnumber_number",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 762
+    },
+    {
+      "function": "find_Min_Diff",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 763
+    },
+    {
+      "function": "number_ctr",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 764,
+      "tests_kept": 15
+    },
+    {
+      "function": "is_polite",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 765
+    },
+    {
+      "function": "pair_wise",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 766,
+      "tests_kept": 15
+    },
+    {
+      "function": "get_Pairs_Count",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 767,
+      "tests_kept": 10
+    },
+    {
+      "function": "check_Odd_Parity",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 768,
+      "tests_kept": 12
+    },
+    {
+      "function": "Diff",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 769
+    },
+    {
+      "function": "odd_Num_Sum",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 770,
+      "tests_kept": 7
+    },
+    {
+      "function": "check_expression",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 771,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_length",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 772
+    },
+    {
+      "function": "occurance_substring",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 773
+    },
+    {
+      "function": "check_email",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 774
+    },
+    {
+      "function": "odd_position",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 775
+    },
+    {
+      "function": "count_vowels",
+      "reason": "same function name as a development program",
+      "status": "excluded",
+      "task_id": 776
+    },
+    {
+      "function": "find_Sum",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 777,
+      "tests_kept": 11
+    },
+    {
+      "function": "pack_consecutive_duplicates",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 778
+    },
+    {
+      "function": "unique_sublists",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 779,
+      "tests_kept": 15
+    },
+    {
+      "function": "find_combinations",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 780
+    },
+    {
+      "function": "count_Divisors",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 781,
+      "tests_kept": 12
+    },
+    {
+      "function": "Odd_Length_Sum",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 782,
+      "tests_kept": 15
+    },
+    {
+      "function": "rgb_to_hsv",
+      "original_inputs": 3,
+      "statements": 17,
+      "status": "used",
+      "task_id": 783,
+      "tests_kept": 15
+    },
+    {
+      "function": "mul_even_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 784
+    },
+    {
+      "function": "tuple_str_int",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 785
+    },
+    {
+      "function": "right_insertion",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 786
+    },
+    {
+      "function": "text_match_three",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 787
+    },
+    {
+      "function": "new_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 788
+    },
+    {
+      "function": "perimeter_polygon",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 789
+    },
+    {
+      "function": "even_position",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 790
+    },
+    {
+      "function": "remove_nested",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 5,
+      "status": "excluded",
+      "task_id": 791
+    },
+    {
+      "function": "count_list",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 792
+    },
+    {
+      "function": "last",
+      "original_inputs": 3,
+      "statements": 12,
+      "status": "used",
+      "task_id": 793,
+      "tests_kept": 15
+    },
+    {
+      "function": "text_starta_endb",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 794
+    },
+    {
+      "function": "cheap_items",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 795
+    },
+    {
+      "function": "return_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 796
+    },
+    {
+      "function": "sum_in_Range",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 797
+    },
+    {
+      "function": "_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 798
+    },
+    {
+      "function": "left_Rotate",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 799
+    },
+    {
+      "function": "remove_all_spaces",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 800
+    },
+    {
+      "function": "test_three_equal",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 801
+    },
+    {
+      "function": "count_Rotation",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 802
+    },
+    {
+      "function": "is_Perfect_Square",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 803,
+      "tests_kept": 12
+    },
+    {
+      "function": "is_Product_Even",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 804
+    },
+    {
+      "function": "max_sum_list",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 805
+    },
+    {
+      "function": "max_run_uppercase",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 806,
+      "tests_kept": 15
+    },
+    {
+      "function": "first_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 807
+    },
+    {
+      "function": "check_K",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 808
+    },
+    {
+      "function": "check_smaller",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 809
+    },
+    {
+      "function": "count_variable",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 810
+    },
+    {
+      "function": "check_identical",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 811
+    },
+    {
+      "function": "road_rd",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 812
+    },
+    {
+      "function": "string_length",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 813
+    },
+    {
+      "function": "rombus_area",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 814
+    },
+    {
+      "function": "sort_by_dnf",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 815,
+      "tests_kept": 8
+    },
+    {
+      "function": "clear_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 816
+    },
+    {
+      "function": "div_of_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 817
+    },
+    {
+      "function": "lower_ctr",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 818,
+      "tests_kept": 15
+    },
+    {
+      "function": "count_duplic",
+      "original_inputs": 3,
+      "statements": 14,
+      "status": "used",
+      "task_id": 819,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_monthnum_number",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 820
+    },
+    {
+      "function": "merge_dictionaries",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 821
+    },
+    {
+      "function": "pass_validity",
+      "original_inputs": 3,
+      "statements": 19,
+      "status": "used",
+      "task_id": 822,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_substring",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 823,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_even",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 824
+    },
+    {
+      "function": "access_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 825
+    },
+    {
+      "function": "check_Type_Of_Triangle",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 826,
+      "tests_kept": 15
+    },
+    {
+      "function": "sum_column",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 827
+    },
+    {
+      "function": "count_alpha_dig_spl",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 828,
+      "tests_kept": 15
+    },
+    {
+      "function": "second_frequent",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 829,
+      "tests_kept": 15
+    },
+    {
+      "function": "round_up",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 830
+    },
+    {
+      "function": "count_Pairs",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 831,
+      "tests_kept": 9
+    },
+    {
+      "function": "extract_max",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 832
+    },
+    {
+      "function": "get_key",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 833
+    },
+    {
+      "function": "generate_matrix",
+      "original_inputs": 3,
+      "statements": 28,
+      "status": "used",
+      "task_id": 834,
+      "tests_kept": 8
+    },
+    {
+      "function": "slope",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 835
+    },
+    {
+      "function": "max_sub_array_sum",
+      "original_inputs": 3,
+      "statements": 15,
+      "status": "used",
+      "task_id": 836,
+      "tests_kept": 8
+    },
+    {
+      "function": "cube_Sum",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 837
+    },
+    {
+      "function": "min_Swaps",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 838,
+      "tests_kept": 11
+    },
+    {
+      "function": "sort_tuple",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 839
+    },
+    {
+      "function": "Check_Solution",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 840
+    },
+    {
+      "function": "get_inv_count",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 841,
+      "tests_kept": 12
+    },
+    {
+      "function": "get_odd_occurence",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 842,
+      "tests_kept": 10
+    },
+    {
+      "function": "nth_super_ugly_number",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 843,
+      "tests_kept": 15
+    },
+    {
+      "function": "get_Number",
+      "original_inputs": 3,
+      "statements": 13,
+      "status": "used",
+      "task_id": 844,
+      "tests_kept": 14
+    },
+    {
+      "function": "find_Digits",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 845,
+      "tests_kept": 8
+    },
+    {
+      "function": "find_platform",
+      "original_inputs": 3,
+      "statements": 16,
+      "status": "used",
+      "task_id": 846,
+      "tests_kept": 11
+    },
+    {
+      "function": "lcopy",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 847
+    },
+    {
+      "function": "area_trapezium",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 848
+    },
+    {
+      "function": "Sum",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 849,
+      "tests_kept": 10
+    },
+    {
+      "function": "is_triangleexists",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 850,
+      "tests_kept": 15
+    },
+    {
+      "function": "Sum_of_Inverse_Divisors",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 851
+    },
+    {
+      "function": "remove_negs",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 852
+    },
+    {
+      "function": "sum_of_odd_Factors",
+      "original_inputs": 3,
+      "statements": 16,
+      "status": "used",
+      "task_id": 853,
+      "tests_kept": 12
+    },
+    {
+      "function": "raw_heap",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 854
+    },
+    {
+      "function": "check_Even_Parity",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 855,
+      "tests_kept": 10
+    },
+    {
+      "function": "find_Min_Swaps",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 856,
+      "tests_kept": 11
+    },
+    {
+      "function": "listify_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 857
+    },
+    {
+      "function": "count_list",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 858
+    },
+    {
+      "function": "sub_lists",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 859,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_alphanumeric",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 860
+    },
+    {
+      "function": "anagram_lambda",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 861
+    },
+    {
+      "function": "n_common_words",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 862
+    },
+    {
+      "function": "find_longest_conseq_subseq",
+      "original_inputs": 3,
+      "statements": 14,
+      "status": "used",
+      "task_id": 863,
+      "tests_kept": 10
+    },
+    {
+      "function": "palindrome_lambda",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 864
+    },
+    {
+      "function": "ntimes_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 865
+    },
+    {
+      "function": "check_monthnumb",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 866
+    },
+    {
+      "function": "min_Num",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 867,
+      "tests_kept": 7
+    },
+    {
+      "function": "length_Of_Last_Word",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 868,
+      "tests_kept": 12
+    },
+    {
+      "function": "remove_list_range",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 869
+    },
+    {
+      "function": "sum_positivenum",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 870
+    },
+    {
+      "function": "are_Rotations",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 871,
+      "tests_kept": 15
+    },
+    {
+      "function": "check_subset",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 872
+    },
+    {
+      "function": "fibonacci",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 873
+    },
+    {
+      "function": "check_Concat",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 874,
+      "tests_kept": 15
+    },
+    {
+      "function": "min_difference",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 875
+    },
+    {
+      "function": "lcm",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 876,
+      "tests_kept": 15
+    },
+    {
+      "function": "sort_String",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 877
+    },
+    {
+      "function": "check_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 878
+    },
+    {
+      "function": "text_match",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 879
+    },
+    {
+      "function": "Check_Solution",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 880,
+      "tests_kept": 15
+    },
+    {
+      "function": "sum_even_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 881
+    },
+    {
+      "function": "parallelogram_perimeter",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 882
+    },
+    {
+      "function": "div_of_nums",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 883
+    },
+    {
+      "function": "all_Bits_Set_In_The_Given_Range",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 884,
+      "tests_kept": 15
+    },
+    {
+      "function": "is_Isomorphic",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 885,
+      "tests_kept": 15
+    },
+    {
+      "function": "sum_num",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 886
+    },
+    {
+      "function": "is_odd",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 887
+    },
+    {
+      "function": "substract_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 888
+    },
+    {
+      "function": "reverse_list_lists",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 889
+    },
+    {
+      "function": "find_Extra",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 890
+    },
+    {
+      "function": "same_Length",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 891,
+      "tests_kept": 15
+    },
+    {
+      "function": "remove_spaces",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 892
+    },
+    {
+      "function": "Extract",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 893
+    },
+    {
+      "function": "float_to_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 894
+    },
+    {
+      "function": "max_sum_subseq",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 895,
+      "tests_kept": 15
+    },
+    {
+      "function": "sort_list_last",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 896
+    },
+    {
+      "function": "is_Word_Present",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 897,
+      "tests_kept": 15
+    },
+    {
+      "function": "extract_elements",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 898
+    },
+    {
+      "function": "check",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 899,
+      "tests_kept": 9
+    },
+    {
+      "function": "match_num",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 900
+    },
+    {
+      "function": "smallest_multiple",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 901,
+      "tests_kept": 6
+    },
+    {
+      "function": "add_dict",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 902
+    },
+    {
+      "function": "count_Unset_Bits",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 903,
+      "tests_kept": 11
+    },
+    {
+      "function": "even_num",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 904
+    },
+    {
+      "function": "sum_of_square",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 905
+    },
+    {
+      "function": "extract_date",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 906
+    },
+    {
+      "function": "lucky_num",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 907,
+      "tests_kept": 10
+    },
+    {
+      "function": "find_fixed_point",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 908
+    },
+    {
+      "function": "previous_palindrome",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 909
+    },
+    {
+      "function": "check_date",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 910,
+      "tests_kept": 15
+    },
+    {
+      "function": "maximum_product",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 911
+    },
+    {
+      "function": "lobb_num",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 912
+    },
+    {
+      "function": "end_num",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 913
+    },
+    {
+      "function": "is_Two_Alter",
+      "original_inputs": 3,
+      "statements": 6,
+      "status": "used",
+      "task_id": 914,
+      "tests_kept": 13
+    },
+    {
+      "function": "rearrange_numbs",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 915
+    },
+    {
+      "function": "find_triplet_array",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 916,
+      "tests_kept": 15
+    },
+    {
+      "function": "text_uppercase_lowercase",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 917
+    },
+    {
+      "function": "coin_change",
+      "original_inputs": 3,
+      "statements": 9,
+      "status": "used",
+      "task_id": 918,
+      "tests_kept": 8
+    },
+    {
+      "function": "multiply_list",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 919
+    },
+    {
+      "function": "remove_tuple",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 920
+    },
+    {
+      "function": "chunk_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 921
+    },
+    {
+      "function": "max_product",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 922,
+      "tests_kept": 15
+    },
+    {
+      "function": "super_seq",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 923,
+      "tests_kept": 9
+    },
+    {
+      "function": "max_of_two",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 924
+    },
+    {
+      "function": "mutiple_tuple",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 5,
+      "status": "excluded",
+      "task_id": 925
+    },
+    {
+      "function": "rencontres_number",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 926,
+      "tests_kept": 14
+    },
+    {
+      "reason": "test setup code",
+      "status": "excluded",
+      "task_id": 927
+    },
+    {
+      "function": "change_date_format",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 928
+    },
+    {
+      "function": "count_tuplex",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 929
+    },
+    {
+      "function": "text_match",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 930
+    },
+    {
+      "function": "sum_series",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 931
+    },
+    {
+      "function": "remove_duplic_list",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 932,
+      "tests_kept": 15
+    },
+    {
+      "function": "camel_to_snake",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 933
+    },
+    {
+      "function": "dealnnoy_num",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 934
+    },
+    {
+      "function": "series_sum",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 935
+    },
+    {
+      "function": "re_arrange_tuples",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 936
+    },
+    {
+      "function": "max_char",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 937
+    },
+    {
+      "function": "find_closet",
+      "original_inputs": 3,
+      "statements": 23,
+      "status": "used",
+      "task_id": 938,
+      "tests_kept": 11
+    },
+    {
+      "function": "sorted_models",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 939
+    },
+    {
+      "function": "heap_sort",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 940,
+      "tests_kept": 15
+    },
+    {
+      "function": "count_elim",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 941
+    },
+    {
+      "function": "check_element",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 6,
+      "status": "excluded",
+      "task_id": 942
+    },
+    {
+      "function": "combine_lists",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 943
+    },
+    {
+      "function": "num_position",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 944
+    },
+    {
+      "function": "tuple_to_set",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 945
+    },
+    {
+      "function": "most_common_elem",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 946
+    },
+    {
+      "function": "len_log",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 947,
+      "tests_kept": 15
+    },
+    {
+      "function": "get_item",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 948
+    },
+    {
+      "function": "sort_list",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 949
+    },
+    {
+      "function": "chinese_zodiac",
+      "original_inputs": 3,
+      "statements": 24,
+      "status": "used",
+      "task_id": 950,
+      "tests_kept": 10
+    },
+    {
+      "function": "max_similar_indices",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 951
+    },
+    {
+      "function": "nCr_mod_p",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 952,
+      "tests_kept": 14
+    },
+    {
+      "function": "subset",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 953,
+      "tests_kept": 15
+    },
+    {
+      "function": "profit_amount",
+      "reason": "fewer than 5 statements",
+      "statements": 4,
+      "status": "excluded",
+      "task_id": 954
+    },
+    {
+      "function": "is_abundant",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 955
+    },
+    {
+      "function": "split_list",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 956
+    },
+    {
+      "function": "get_First_Set_Bit_Pos",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 957
+    },
+    {
+      "function": "int_to_roman",
+      "original_inputs": 3,
+      "statements": 10,
+      "status": "used",
+      "task_id": 958,
+      "tests_kept": 11
+    },
+    {
+      "function": "Average",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 959
+    },
+    {
+      "function": "get_noOfways",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 960,
+      "tests_kept": 7
+    },
+    {
+      "function": "roman_to_int",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 961,
+      "tests_kept": 7
+    },
+    {
+      "function": "sum_Even",
+      "reason": "fewer than 5 statements",
+      "statements": 1,
+      "status": "excluded",
+      "task_id": 962
+    },
+    {
+      "function": "discriminant_value",
+      "original_inputs": 3,
+      "statements": 7,
+      "status": "used",
+      "task_id": 963,
+      "tests_kept": 15
+    },
+    {
+      "function": "word_len",
+      "original_inputs": 3,
+      "statements": 5,
+      "status": "used",
+      "task_id": 964,
+      "tests_kept": 15
+    },
+    {
+      "function": "camel_to_snake",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 965
+    },
+    {
+      "function": "remove_empty",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 966
+    },
+    {
+      "function": "check",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 967
+    },
+    {
+      "function": "floor_Max",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 968
+    },
+    {
+      "function": "join_tuples",
+      "original_inputs": 0,
+      "reason": "fewer than 2 literal test inputs",
+      "statements": 7,
+      "status": "excluded",
+      "task_id": 969
+    },
+    {
+      "function": "min_of_two",
+      "reason": "fewer than 5 statements",
+      "statements": 3,
+      "status": "excluded",
+      "task_id": 970
+    },
+    {
+      "function": "maximum_segments",
+      "original_inputs": 3,
+      "statements": 11,
+      "status": "used",
+      "task_id": 971,
+      "tests_kept": 15
+    },
+    {
+      "function": "concatenate_nested",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 972
+    },
+    {
+      "function": "left_rotate",
+      "reason": "fewer than 5 statements",
+      "statements": 2,
+      "status": "excluded",
+      "task_id": 973
+    },
+    {
+      "function": "min_sum_path",
+      "original_inputs": 3,
+      "statements": 8,
+      "status": "used",
+      "task_id": 974,
+      "tests_kept": 12
+    }
+  ],
+  "problems": 974,
+  "programs_used": 362,
+  "sets": {
+    "M1": {
+      "cases": 1448,
+      "detected": 1260,
+      "programs": 361
+    },
+    "M2": {
+      "cases": 1446,
+      "detected": 1403,
+      "programs": 362
+    },
+    "M3": {
+      "cases": 720,
+      "detected": 711,
+      "programs": 360
+    }
+  },
+  "unusable_runs": 0
+}

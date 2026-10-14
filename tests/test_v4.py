@@ -14,7 +14,7 @@ import pytest
 from pcg import metrics, v4
 from pcg.flitsr import flitsr
 from pcg.humanevalfix import extract_test_inputs
-from pcg.interventional import (InterventionParams, VariantObservation, enumerate_configurations,
+from pcg.interventional import (Enumeration, InterventionParams, VariantObservation, enumerate_configurations,
                                 estimate_intervention_params, interventional_posterior, sole_cause_probability,
                                 summarise)
 from pcg.model import FaultModel, exact_posterior
@@ -333,3 +333,51 @@ def expected_value_two_of_four():
     from itertools import combinations
     values = [np.mean([(i + 1) / p for i, p in enumerate(pair)]) for pair in combinations([1, 2, 3, 4], 2)]
     return float(np.mean(values))
+
+
+def test_hierarchical_prior_matches_numerical_integration_and_the_independent_limit():
+    from pcg.interventional import cardinality_log_prior
+    n, mean, kappa = 6, 1 / 6, 6.0
+    a, b = mean * kappa, (1 - mean) * kappa
+    grid = np.linspace(0, 1, 400001)[1:-1]
+    density = grid ** (a - 1) * (1 - grid) ** (b - 1)
+    density /= np.trapezoid(density, grid)
+    sizes = np.array([1, 2, 3])
+    numeric = np.array([np.trapezoid(grid ** r * (1 - grid) ** (n - r) * density, grid) for r in sizes])
+    ours = np.exp(cardinality_log_prior(sizes, n, mean, kappa))
+    from math import lgamma
+    const = lgamma(a + b) - lgamma(a) - lgamma(b) - lgamma(a + b + n)  # the part that does not depend on r
+    assert ours * np.exp(const) == pytest.approx(numeric, rel=2e-3)
+    # large concentration: independent faults with probability `mean`
+    big = cardinality_log_prior(sizes, n, mean, 1e9)
+    assert np.diff(big) == pytest.approx(np.log(mean / (1 - mean)) * np.ones(2), abs=1e-5)
+
+
+def test_hierarchical_prior_changes_only_the_prior_over_the_fault_count():
+    prior, coverage, failed, observations = _random_instance(3, n=5)
+    prior = np.full(5, 0.2)
+    enumeration = enumerate_configurations(prior, coverage, failed, observations, PARAMS, GRID, WEIGHTS, LEAK, 3)
+    plain = summarise(enumeration)
+    near_independent = summarise(enumeration, kappa=1e9)
+    assert near_independent.marginals == pytest.approx(plain.marginals, abs=1e-6)
+    heavy_tail = summarise(enumeration, kappa=1.0)
+    assert heavy_tail.expected_faults != pytest.approx(plain.expected_faults, abs=1e-3)
+    with pytest.raises(ValueError):
+        non_uniform = Enumeration(enumeration.configs, enumeration.member, enumeration.sizes, enumeration.log_weight,
+                                  np.array([0.1, 0.2, 0.2, 0.2, 0.2]), enumeration.active, enumeration.max_faults)
+        summarise(non_uniform, kappa=2.0)
+
+
+def test_mbpp_helpers_are_deterministic_and_keep_the_kind_of_value():
+    from pcg.mbpp import amplify, perturb, tested_function
+    code = "def helper(x):\n    return x\n\ndef f(a, b):\n    return helper(a) + b\n"
+    tests = ["assert f(1, 2) == 3", "assert f(2, 2) == 4", "assert helper(1) == 1"]
+    assert tested_function(code, tests) == "f"
+    assert tested_function(code, ["assert g(1) == 1"]) is None
+    inputs = [(1, 2), (2, 2), ([1, 2, 3], "ab")]
+    first = amplify(inputs, np.random.default_rng(5))
+    assert first == amplify(inputs, np.random.default_rng(5))
+    assert 0 < len(first) <= 12 and len(set(map(repr, first))) == len(first) and not {repr(x) for x in first} & {repr(x) for x in inputs}
+    rng = np.random.default_rng(1)
+    assert perturb(True, rng) is False and isinstance(perturb(3, rng), int) and isinstance(perturb(2.0, rng), float)
+    assert isinstance(perturb("abc", rng), str) and isinstance(perturb([1, 2], rng), list) and perturb(None, rng) is None

@@ -72,6 +72,22 @@ def run_sensitivity(v4_path: Path, stage_cache: Path, out_path: Path = config.RE
 
     out = ex.OutputDir(out_path)
     out.write_csv("per_case.csv", rows)
+    write_derived(out.path, rows)
+    out.finish()
+    return out.path
+
+
+def rebuild_derived(path: Path, out_path: Path) -> Path:
+    """Rebuild ``summary.json`` and ``SUMMARY.md`` into ``out_path`` from the raw ``per_case.csv`` of ``path`` alone."""
+    from .v4_report import _read_csv
+
+    out_path.mkdir(parents=True, exist_ok=True)
+    write_derived(out_path, _read_csv(path / "per_case.csv"))
+    return out_path
+
+
+def write_derived(folder: Path, rows) -> None:
+    """Summary statistics, the corrected H1 comparisons and the Markdown table, from the per-case rows."""
     summary: dict = {"draws": DRAWS, "datasets": {}, "h1_corrected": []}
     for dataset in SETS:
         subset = [r for r in rows if r["dataset"] == dataset]
@@ -91,7 +107,7 @@ def run_sensitivity(v4_path: Path, stage_cache: Path, out_path: Path = config.RE
         entry["holm_p_value"] = adjusted
         entry["supported"] = bool(entry["ci_low"] > 0 and adjusted < 0.05)
     summary["h1_corrected"] = entries
-    out.write_json("summary.json", summary)
+    (folder / "summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True, default=float), encoding="utf-8")
     lines = ["# Tie-corrected sensitivity of the average-precision results (generated)", "",
              "Expected average precision under random tie-breaking (300 draws per case, seeded).", "",
              "| Set | Method | MAP (mid-rank, as pre-registered) | MAP (expected) | Cases with AP above 1 |", "|---|---|---|---|---|"]
@@ -104,6 +120,4 @@ def run_sensitivity(v4_path: Path, stage_cache: Path, out_path: Path = config.RE
     for e in entries:
         lines.append(f"| {e['dataset']} | {e['comparison']} | {e['mean_difference']:+.3f} [{e['ci_low']:+.3f}, {e['ci_high']:+.3f}] | "
                      f"{e['holm_p_value']:.4f} | {'yes' if e['supported'] else 'no'} |")
-    (out.path / "SUMMARY.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
-    out.finish()
-    return out.path
+    (folder / "SUMMARY.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")

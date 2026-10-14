@@ -9,6 +9,8 @@ Commands:
                write results/v4; uses data/external/QuixBugs and data/external/HumanEvalPack
     v4-synthetic  controlled study on simulated programs; writes results/v4_synthetic
     v4-report  rebuild summary, tables and figures from the raw files in results/v4
+    v5         version-5 confirmatory study on fresh MBPP programs; writes results/v5
+    v5-report  rebuild summary, tables and figures from the raw files in results/v5
     demo       run the demonstration (needs a finished benchmark run)
     demo-v4    three rule-selected cases for the version-4 model; writes results/demo_v4
     analyze    analyse your own function with your own tests
@@ -67,6 +69,8 @@ def main(argv: list[str] | None = None) -> int:
     v.add_argument("--quixbugs", help="folder with QuixBugs (default: data/external/QuixBugs)")
     v.add_argument("--humaneval", help="HumanEvalPack Python split as JSON lines")
     sub.add_parser("v4-report", help="rebuild summary, tables and figures from results/v4")
+    sub.add_parser("v5", help="run the version-5 confirmatory study on MBPP (results/v5)")
+    sub.add_parser("v5-report", help="rebuild summary, tables and figures from results/v5")
     sub.add_parser("demo-v4", help="demonstration of the version-4 model on three rule-selected cases")
     sub.add_parser("v4-synthetic", help="controlled study on simulated programs (needs results/v4)")
     p = sub.add_parser("analyze", help="analyse your own function")
@@ -96,6 +100,13 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "demo-v4":
         from .demo_v4 import run_demo_v4
         run_demo_v4()
+    if args.command == "v5":
+        from .v5 import run_v5
+        run_v5()
+    if args.command == "v5-report":
+        from . import v5_report
+        from .v5 import V5_DIR
+        v5_report.write_all(V5_DIR)
     if args.command == "v4-report":
         from . import v4_report
         from .v4 import V4_DIR

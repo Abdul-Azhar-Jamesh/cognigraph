@@ -1,0 +1,15 @@
+{
+  "D1": {
+    "cases": 594,
+    "seconds": 55.43217158317566,
+    "variant_texts_run": 6969,
+    "variants_generated": 13430
+  },
+  "MBPP": {
+    "cases": 3372,
+    "seconds": 1153.0494012832642,
+    "variant_texts_run": 76560,
+    "variants_generated": 80135
+  },
+  "total_seconds": 3561.797079563141
+}
